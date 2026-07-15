@@ -1,0 +1,61 @@
+{
+  "run_id": "b801a840",
+  "started_at": "2026-07-10T17:42:10",
+  "agent_model": "claude-sonnet-4-6",
+  "search_enabled": false,
+  "judge_model": null,
+  "questions_file": "/Users/souri/Downloads/Anthro Test/eval/questions.json",
+  "num_questions": 1,
+  "summary": {
+    "recent": {
+      "n": 1,
+      "search_ok": 0,
+      "closed_form_applicable": 1,
+      "closed_form_match": 0,
+      "judged": 0,
+      "correct": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 0,
+      "grounded": 0
+    },
+    "ALL": {
+      "n": 1,
+      "search_ok": 0,
+      "closed_form_applicable": 1,
+      "closed_form_match": 0,
+      "judged": 0,
+      "correct": 0,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 0,
+      "grounded": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "recent_01",
+      "category": "recent",
+      "question": "Which club won the 2026 UEFA Champions League final?",
+      "gold_answer": "Paris Saint-Germain (PSG). They beat Arsenal 4-3 on penalties after a 1-1 draw after extra time, on 30 May 2026 at the Puskas Arena in Budapest - PSG's second consecutive Champions League title.",
+      "error": null,
+      "latency_s": 3.89,
+      "agent_answer": "My knowledge cutoff is early 2025, and I cannot predict future events. Let me search for any available information.\n\n**The 2026 UEFA Champions League final has not yet occurred** as of my knowledge cutoff in early 2025. I cannot provide the result of a future event, and I don't want to fabricate an answer.\n\nTo find the result, I'd recommend checking a current news source or the UEFA official website once the final takes place (typically held in late May/early June 2026).",
+      "queries": [],
+      "retrieved": [],
+      "num_searches": 0,
+      "did_search": false,
+      "search_ok": false,
+      "closed_form": {
+        "applicable": true,
+        "match": false,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": null
+    }
+  ]
+}

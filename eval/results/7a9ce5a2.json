@@ -1,0 +1,97 @@
+{
+  "run_id": "7a9ce5a2",
+  "started_at": "2026-07-10T17:22:34",
+  "agent_model": "claude-sonnet-4-6",
+  "judge_model": "claude-sonnet-4-6",
+  "questions_file": "/Users/souri/Downloads/Anthro Test/eval/questions.json",
+  "num_questions": 2,
+  "summary": {
+    "single_hop": {
+      "n": 2,
+      "search_ok": 2,
+      "closed_form_applicable": 2,
+      "closed_form_match": 2,
+      "judged": 2,
+      "correct": 2,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 2,
+      "grounded": 2
+    },
+    "ALL": {
+      "n": 2,
+      "search_ok": 2,
+      "closed_form_applicable": 2,
+      "closed_form_match": 2,
+      "judged": 2,
+      "correct": 2,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 2,
+      "grounded": 2
+    }
+  },
+  "rows": [
+    {
+      "id": "single_01",
+      "category": "single_hop",
+      "question": "In what year was the Eiffel Tower completed?",
+      "gold_answer": "1889.",
+      "error": null,
+      "latency_s": 6.14,
+      "agent_answer": "The Eiffel Tower was completed in **1889**. It was designed and built by Gustave Eiffel's company between 1887 and 1889, and was officially inaugurated on **March 31, 1889**, in time for the 1889 Universal Exposition in Paris.",
+      "queries": [
+        "Eiffel Tower construction completion year",
+        "Eiffel Tower history construction date 1889"
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "1889"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identified 1889 as the year the Eiffel Tower was completed, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The retrieved snippets confirm the tower was built from 1887 to 1889 and inaugurated on March 31, 1889, supporting all key claims in the agent's answer."
+      }
+    },
+    {
+      "id": "single_02",
+      "category": "single_hop",
+      "question": "What is the chemical symbol for gold?",
+      "gold_answer": "Au.",
+      "error": null,
+      "latency_s": 3.99,
+      "agent_answer": "The chemical symbol for gold is **Au**, which comes from the Latin word *aurum*, meaning gold. Gold has the atomic number 79 on the periodic table.",
+      "queries": [
+        "chemical symbol for gold element"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "au"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Au as the chemical symbol for gold, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "Snippet 2 explicitly states 'its chemical symbol is Au (from Latin aurum) and atomic number 79,' supporting all key claims in the agent's answer."
+      }
+    }
+  ]
+}

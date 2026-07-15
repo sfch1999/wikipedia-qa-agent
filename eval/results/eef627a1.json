@@ -1,0 +1,263 @@
+{
+  "run_id": "eef627a1",
+  "started_at": "2026-07-13T17:53:29",
+  "agent_model": "claude-sonnet-4-6",
+  "prompt_version": "v1",
+  "search_enabled": true,
+  "judge_model": "claude-opus-4-8",
+  "questions_file": "/Users/souri/Downloads/Anthro Test/eval/questions.json",
+  "num_questions": 5,
+  "summary": {
+    "recent": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 5,
+      "closed_form_match": 2,
+      "judged": 5,
+      "correct": 2,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "grounded_applicable": 3,
+      "grounded": 3
+    },
+    "ALL": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 5,
+      "closed_form_match": 2,
+      "judged": 5,
+      "correct": 2,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "grounded_applicable": 3,
+      "grounded": 3
+    }
+  },
+  "rows": [
+    {
+      "id": "recent_01",
+      "category": "recent",
+      "question": "Which club won the 2026 UEFA Champions League final?",
+      "gold_answer": "Paris Saint-Germain (PSG). They beat Arsenal 4-3 on penalties after a 1-1 draw after extra time, on 30 May 2026 at the Puskas Arena in Budapest - PSG's second consecutive Champions League title.",
+      "error": null,
+      "latency_s": 10.57,
+      "agent_answer": "The snippets confirm the 2026 UEFA Champions League final took place but don't reveal the winner. Unfortunately, **I searched Wikipedia but couldn't find the specific result** (winning club) of the 2026 UEFA Champions League final from the available snippets. This may be because the event is very recent and the Wikipedia article hasn't been fully indexed in my search results.\n\nI'd recommend checking a current news source or the official UEFA website for the confirmed winner.",
+      "queries": [
+        "2026 UEFA Champions League final",
+        "2025-26 UEFA Champions League winner result",
+        "2025-26 UEFA Champions League final winner club"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 UEFA Champions League final",
+          "results": "1. 2026 UEFA Champions League final: The 2026 UEFA Champions League final was the final match of the 2025\u201326 UEFA Champions League, the 71st season of Europe's premier club football tournament\n2. 2026\u201327 UEFA Champions League: the UEFA Champions League final after 2019. The winners of the 2026\u201327 UEFA Champions League will automatically qualify for the 2027\u201328 UEFA Champions League\n3. 2027 UEFA Champions League final: The 2027 UEFA Champions League final will be the final match of the 2026\u201327 UEFA Champions League, the 72nd season of Europe's premier club football tournament\n4. List of European Cup and UEFA Champions League finals: tournament was named the European Cup. The UEFA Champions League is open to the league champions of all UEFA (Union of European Football Associations)\n5. 2026 UEFA Europa League final: 2026 UEFA Champions League final 2026 UEFA Conference League final 2026 UEFA Women's Champions League final 2026 UEFA Women's Europa Cup final 2026 UEFA"
+        },
+        {
+          "query": "2025-26 UEFA Champions League winner result",
+          "results": "1. 2025\u201326 UEFA Champions League: The 2025\u201326 UEFA Champions League was the 71st season of Europe's premier club football tournament organised by UEFA, and the 34th season since it was\n2. 2025\u201326 UEFA Conference League: The 2025\u201326 UEFA Conference League was the fifth season of the UEFA Conference League, Europe's tertiary club football tournament organised by UEFA. This\n3. 2025\u201326 UEFA Champions League league phase: The 2025\u201326 UEFA Champions League league phase began on 16 September 2025 and ended on 28 January 2026. A total of 36 teams competed in the league phase\n4. 2025\u201326 UEFA Champions League qualifying: 2025\u201326 UEFA Champions League qualifying was the preliminary phase of the 2025\u201326 UEFA Champions League, prior to the competition proper. Qualification\n5. 2025\u201326 UEFA Women's Champions League: The 2025\u201326 UEFA Women's Champions League was the 25th edition of the European women's club football championship organised by UEFA, and the 17th edition"
+        },
+        {
+          "query": "2025-26 UEFA Champions League final winner club",
+          "results": "1. 2025\u201326 UEFA Champions League: The 2025\u201326 UEFA Champions League was the 71st season of Europe's premier club football tournament organised by UEFA, and the 34th season since it was\n2. 2025 UEFA Champions League final: The 2025 UEFA Champions League final was the final match of the 2024\u201325 UEFA Champions League, the 70th season of Europe's premier club football tournament\n3. 2026 UEFA Champions League final: The 2026 UEFA Champions League final was the final match of the 2025\u201326 UEFA Champions League, the 71st season of Europe's premier club football tournament\n4. 2025\u201326 UEFA Champions League league phase: The 2025\u201326 UEFA Champions League league phase began on 16 September 2025 and ended on 28 January 2026. A total of 36 teams competed in the league phase\n5. 2025\u201326 UEFA Conference League: The 2025\u201326 UEFA Conference League was the fifth season of the UEFA Conference League, Europe's tertiary club football tournament organised by UEFA. This"
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": false,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "correctness_reason": "The agent failed to provide the winner (PSG) and instead declined to answer, so it does not match the gold answer.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "The snippets did not contain the winner, and the agent correctly acknowledged the information was absent rather than fabricating a claim."
+      }
+    },
+    {
+      "id": "recent_02",
+      "category": "recent",
+      "question": "Which country topped the medal table at the 2026 Winter Olympics?",
+      "gold_answer": "Norway. It topped the medal table at the 2026 Winter Olympics in Milan-Cortina with 18 gold medals and 41 total medals, leading on both golds and totals.",
+      "error": null,
+      "latency_s": 14.03,
+      "agent_answer": "I was able to confirm that the 2026 Winter Olympics were held in Milan and Cortina d'Ampezzo, Italy, but the search snippets did not include the specific detail of which country topped the medal table. I'm not able to reliably confirm this from the results returned, and I don't want to guess.\n\nCould you clarify what information you're looking for, or I can try searching again? I want to make sure I give you an accurate answer rather than an unverified one.",
+      "queries": [
+        "2026 Winter Olympics medal table",
+        "2026 Winter Olympics medal table top country gold medals",
+        "2026 Winter Olympics medal table Norway United States"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 Winter Olympics medal table",
+          "results": "1. 2026 Winter Olympics medal table: The 2026 Winter Olympics, officially known as the XXV Winter Olympic Games, were an international winter multi-sport event held in Milan and Cortina d'Ampezzo\n2. List of 2026 Winter Olympics medal winners: earlier round. 2026 Winter Olympics medal table \"Milano Cortina Winter Olympics 2026: Live medal count\". olympics.com. Retrieved 6 February 2026. \"Milano-Cortina\n3. All-time Olympic Games medal table: The all-time medal table for all Olympic Games from 1896 to 2026, including Summer Olympic Games, Winter Olympic Games, and a combined total of both,\n4. 2026 Winter Paralympics medal table: The medal table of the 2026 Winter Paralympics ranks the participating National Paralympic Committees (NPCs) by the number of gold medals that were won\n5. 2026 Winter Olympics: The 2026 Winter Olympics (Italian: Olimpiadi invernali del 2026), officially the XXV Olympic Winter Games and commonly known as Milano Cortina 2026, were"
+        },
+        {
+          "query": "2026 Winter Olympics medal table top country gold medals",
+          "results": "SEARCH ERROR: Wikipedia search for '2026 Winter Olympics medal table top country gold medals' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=2026+Winter+Olympics+medal+table+top+country+gold+medals&srlimit=5&format=json)."
+        },
+        {
+          "query": "2026 Winter Olympics medal table Norway United States",
+          "results": "SEARCH ERROR: Wikipedia search for '2026 Winter Olympics medal table Norway United States' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=2026+Winter+Olympics+medal+table+Norway+United+States&srlimit=5&format=json)."
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": false,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "correctness_reason": "The agent declined to answer instead of identifying Norway as the top country, so it did not answer the answerable question.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "The snippets did not contain the medal table result, and the agent made no factual claim about the topping country to ground."
+      }
+    },
+    {
+      "id": "recent_03",
+      "category": "recent",
+      "question": "Who won Super Bowl LX (the 2026 Super Bowl)?",
+      "gold_answer": "The Seattle Seahawks. They defeated the New England Patriots 29-13 in Super Bowl LX on February 8, 2026 at Levi's Stadium in Santa Clara, California.",
+      "error": null,
+      "latency_s": 7.45,
+      "agent_answer": "The **Seattle Seahawks** won Super Bowl LX! They defeated the **New England Patriots** on **February 8, 2026**, with a score of **29\u201313**. It was notably a rematch of Super Bowl XLIX (2015). The Seahawks claimed the NFL championship for the 2025 season.",
+      "queries": [
+        "Super Bowl LX 2026",
+        "Super Bowl LX winner champion Philadelphia Eagles Patriots Seahawks"
+      ],
+      "retrieved": [
+        {
+          "query": "Super Bowl LX 2026",
+          "results": "1. Super Bowl LX: Super Bowl LX was an American football game played to determine the champion of the National Football League (NFL) for the 2025 season. The National Football\n2. Super Bowl LX halftime show: Super Bowl LX halftime show, officially known as the Apple Music Super Bowl LX Halftime Show for sponsorship purposes, took place on February 8, 2026\n3. Super Bowl LXI: official logo for Super Bowl LXI was unveiled by the game's broadcaster ESPN on February 8, 2026, during a special post-Super Bowl LX edition of SportsCenter\n4. 2026 Pro Bowl Games: into the Super Bowl's festivities instead of a standalone event. It took place in the week leading up to Super Bowl LX on Tuesday, February 3, 2026, at the\n5. List of Super Bowl champions: Reference LLC. Retrieved February 20, 2026. \"Super Bowl LX - Seattle Seahawks vs. New England Patriots - February 8th, 2026\". Pro Football Reference. Sports"
+        },
+        {
+          "query": "Super Bowl LX winner champion Philadelphia Eagles Patriots Seahawks",
+          "results": "1. List of Super Bowl champions: champions are the Seattle Seahawks following their victory over the New England Patriots in Super Bowl LX. Colts Redskins Ravens Giants Jets Eagles Patriots\n2. Super Bowl XLVIII: Super Bowl appearance until eleven years later in 2026, where they earned a Super Bowl XLIX rematch with the Patriots, winning 29\u201313 in Super Bowl LX\n3. Seattle Seahawks: they defeated the New England Patriots in Super Bowl LX. The Seahawks have also appeared in Super Bowl XL and Super Bowl XLIX. Since joining the division\n4. Super Bowl XXXVI: Super Bowl XXXVI was an American football game between the National Football Conference (NFC) champion St. Louis Rams and the American Football Conference\n5. Super Bowl Most Valuable Player: to the Super Bowl MVP. Ottis Anderson was the first to win the trophy. The most recent Super Bowl MVP, from Super Bowl LX, is Seattle Seahawks running"
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "seattle seahawks"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies the Seattle Seahawks as winners over the Patriots 29-13 on February 8, 2026, matching the gold answer's key facts.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm the Seahawks beat the Patriots 29-13 in Super Bowl LX on February 8, 2026, as a rematch of Super Bowl XLIX for the 2025 season."
+      }
+    },
+    {
+      "id": "recent_04",
+      "category": "recent",
+      "question": "Who won the Eurovision Song Contest 2026?",
+      "gold_answer": "Bulgaria, with the song 'Bangaranga' performed by Dara - Bulgaria's first Eurovision win (516 points, topping both the jury vote and the televote). The contest was held in Vienna, with the grand final on 16 May 2026. Naming either the country or the artist/song counts as correct.",
+      "error": null,
+      "latency_s": 9.92,
+      "agent_answer": "The search snippets confirm that the Eurovision Song Contest 2026 took place (the 70th edition, with a final on 16 May), but unfortunately the snippets do not reveal the winner. The information may not yet be fully detailed in the Wikipedia snippets available to me.\n\nThat said, based on the search result mentioning **Eurovision Song Contest 2027**, it appears the 2026 contest has already concluded. However, I **cannot confirm the winner** from the search results returned \u2014 I don't want to guess or present unverified information.\n\nI'd recommend checking the official **Eurovision website (eurovision.tv)** or the **Wikipedia article on Eurovision Song Contest 2026** directly for the confirmed winner.",
+      "queries": [
+        "Eurovision Song Contest 2026",
+        "Eurovision Song Contest 2026 winner result",
+        "List of Eurovision Song Contest winners 2026"
+      ],
+      "retrieved": [
+        {
+          "query": "Eurovision Song Contest 2026",
+          "results": "1. Eurovision Song Contest 2026: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16\n2. Junior Eurovision Song Contest 2026: The Junior Eurovision Song Contest 2026 is set to be the 24th edition of the Junior Eurovision Song Contest, held on 24 October 2026 at the Malta Fairs\n3. Eurovision Song Contest Asia: The Eurovision Song Contest Asia (ESCA) is an upcoming international song competition modelled after the Eurovision Song Contest, where broadcasters from\n4. Eurovision Song Contest 2027: The Eurovision Song Contest 2027 will be the 71st edition of the Eurovision Song Contest. It is set to be organised by the European Broadcasting Union\n5. Bulgaria in the Eurovision Song Contest 2026: Bulgaria was represented at the Eurovision Song Contest 2026 with the song \"Bangaranga\", written by Anne Judith Wik, Cristian Tarcea, Darina Yotova and"
+        },
+        {
+          "query": "Eurovision Song Contest 2026 winner result",
+          "results": "1. Eurovision Song Contest 2026: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16\n2. Eurovision Song Contest Asia: The Eurovision Song Contest Asia (ESCA) is an upcoming international song competition modelled after the Eurovision Song Contest, where broadcasters from\n3. List of Eurovision Song Contest winners: 73 songs written by 154 songwriters have won the Eurovision Song Contest, an international song competition organised annually by the European Broadcasting\n4. Bulgaria in the Eurovision Song Contest 2026: Bulgaria was represented at the Eurovision Song Contest 2026 with the song \"Bangaranga\", written by Anne Judith Wik, Cristian Tarcea, Darina Yotova and\n5. Moldova in the Eurovision Song Contest 2026: Moldova was represented at the Eurovision Song Contest 2026 with the song \"Viva, Moldova!\", written by Andrei Vulpe, C\u0103t\u0103lin Temciuc, Vasile Advahov\u00a0[ro]"
+        },
+        {
+          "query": "List of Eurovision Song Contest winners 2026",
+          "results": "1. List of Eurovision Song Contest winners: 73 songs written by 154 songwriters have won the Eurovision Song Contest, an international song competition organised annually by the European Broadcasting\n2. Eurovision Song Contest 2026: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on\n3. Junior Eurovision Song Contest 2026: The Junior Eurovision Song Contest 2026 is set to be the 24th edition of the Junior Eurovision Song Contest, held on 24 October 2026 at the Malta Fairs\n4. Eurovision Song Contest Asia: The Eurovision Song Contest Asia (ESCA) is an upcoming international song competition modelled after the Eurovision Song Contest, where broadcasters from\n5. Eurovision Song Contest 2027: The Eurovision Song Contest 2027 will be the 71st edition of the Eurovision Song Contest. It is set to be organised by the European Broadcasting Union"
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": false,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "correctness_reason": "The agent failed to name the winner (Bulgaria/Dara/'Bangaranga') despite the snippets mentioning Bulgaria's entry, and explicitly declined to answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The agent's stated claims (70th edition, final on 16 May, inability to find explicit winner) are consistent with the retrieved snippets."
+      }
+    },
+    {
+      "id": "recent_05",
+      "category": "recent",
+      "question": "Who won the men's singles title at the 2026 Australian Open?",
+      "gold_answer": "Carlos Alcaraz. He defeated Novak Djokovic 2-6, 6-2, 6-3, 7-5 in the men's singles final of the 2026 Australian Open.",
+      "error": null,
+      "latency_s": 9.45,
+      "agent_answer": "**Carlos Alcaraz** won the men's singles title at the 2026 Australian Open. The Spanish tennis star defeated Novak Djokovic in the final with a score of 2\u20136, 6\u20132, 6\u20133, 7\u20135. It was his first Australian Open title and his seventh major title overall.",
+      "queries": [
+        "2026 Australian Open men's singles",
+        "2026 Australian Open men's singles winner champion name",
+        "2026 Australian Open men's singles Carlos Alcaraz Zverev final"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 Australian Open men's singles",
+          "results": "1. 2026 Australian Open \u2013 Men's singles: 2\u20136, 6\u20132, 6\u20133, 7\u20135 to win the men's singles tennis title at the 2026 Australian Open. It was his first Australian Open title and seventh major title overall\n2. 2026 French Open \u2013 Men's singles: the final, 6\u20131, 4\u20136, 6\u20134, 6\u20137(5\u20137), 6\u20131 to win the men's singles tennis title at the 2026 French Open. It was his first major title, following three previous\n3. 2025 Australian Open \u2013 Men's singles: 6\u20133, 7\u20136(7\u20134), 6\u20133 to win the men's singles tennis title at the 2025 Australian Open. It was his second Australian Open title and third major title overall\n4. 2026 Australian Open \u2013 Women's singles: Sabalenka in the final, 6\u20134, 4\u20136, 6\u20134 to win the women's singles tennis title at the 2026 Australian Open. It was her second major title. Rybakina was the fourth\n5. 2026 Australian Open: The 2026 Australian Open was a Grand Slam level tennis tournament that was held at Melbourne Park, from 18 January to 1 February 2026, with the preliminary"
+        },
+        {
+          "query": "2026 Australian Open men's singles winner champion name",
+          "results": "1. 2026 Australian Open: singles and doubles tournaments. The defending men's singles champion, Jannik Sinner, lost in the semifinals. The defending women's singles champion,\n2. List of US Open men's singles champions: US Open mixed doubles champions Grand Slam men's singles List of Australian Open men's singles champions List of French Open men's singles champions List\n3. List of French Open men's singles champions: Slam tournament to open to non-amateur players. The winner of the men's singles event receives the Coupe des Mousquetaires, named after The Four Musketeers\n4. 2023 Australian Open \u2013 Men's singles: the men's singles tennis title at the 2023 Australian Open. It was his record-extending tenth Australian Open title and 22nd major men's singles title\n5. 2026 French Open: and 2014. No former major winners reached the semifinals of either the men's or women's singles events. The 2026 French Open retained the use of human"
+        },
+        {
+          "query": "2026 Australian Open men's singles Carlos Alcaraz Zverev final",
+          "results": "1. 2026 Australian Open \u2013 Men's singles: Carlos Alcaraz defeated Novak Djokovic in the final, 2\u20136, 6\u20132, 6\u20133, 7\u20135 to win the men's singles tennis title at the 2026 Australian Open. It was his\n2. Carlos Alcaraz: Carlos Alcaraz Garfia (born 5 May 2003) is a Spanish professional tennis player. He has been ranked world No. 1 in men's singles by the Association of\n3. 2025 Australian Open \u2013 Men's singles: Alexander Zverev in the final, 6\u20133, 7\u20136(7\u20134), 6\u20133 to win the men's singles tennis title at the 2025 Australian Open. It was his second Australian Open title\n4. 2026 Carlos Alcaraz tennis season: The 2026 Carlos Alcaraz tennis season officially began on 18 January 2026, with the start of the Australian Open in Melbourne. During this season, Alcaraz:\n5. 2026 French Open \u2013 Men's singles: Alexander Zverev defeated Flavio Cobolli in the final, 6\u20131, 4\u20136, 6\u20134, 6\u20137(5\u20137), 6\u20131 to win the men's singles tennis title at the 2026 French Open. It was"
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "carlos alcaraz"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Carlos Alcaraz as the winner with the exact final score matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets explicitly state Alcaraz defeated Djokovic 2\u20136, 6\u20132, 6\u20133, 7\u20135 for his first Australian Open and seventh major title."
+      }
+    }
+  ]
+}

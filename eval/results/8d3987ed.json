@@ -1,0 +1,932 @@
+{
+  "run_id": "8d3987ed",
+  "started_at": "2026-07-10T17:23:01",
+  "agent_model": "claude-sonnet-4-6",
+  "judge_model": "claude-sonnet-4-6",
+  "questions_file": "/Users/souri/Downloads/Anthro Test/eval/questions.json",
+  "num_questions": 27,
+  "summary": {
+    "single_hop": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 5,
+      "closed_form_match": 5,
+      "judged": 5,
+      "correct": 5,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 5,
+      "grounded": 5
+    },
+    "multi_hop": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 0,
+      "closed_form_match": 0,
+      "judged": 5,
+      "correct": 5,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 5,
+      "grounded": 3
+    },
+    "ambiguous_entity": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 0,
+      "closed_form_match": 0,
+      "judged": 5,
+      "correct": 3,
+      "partially_correct": 2,
+      "incorrect": 0,
+      "grounded_applicable": 4,
+      "grounded": 4
+    },
+    "unanswerable": {
+      "n": 5,
+      "search_ok": 4,
+      "closed_form_applicable": 1,
+      "closed_form_match": 1,
+      "judged": 5,
+      "correct": 5,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 4,
+      "grounded": 3
+    },
+    "recent": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 5,
+      "closed_form_match": 4,
+      "judged": 5,
+      "correct": 3,
+      "partially_correct": 1,
+      "incorrect": 1,
+      "grounded_applicable": 4,
+      "grounded": 4
+    },
+    "no_search": {
+      "n": 2,
+      "search_ok": 2,
+      "closed_form_applicable": 2,
+      "closed_form_match": 2,
+      "judged": 2,
+      "correct": 2,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 0,
+      "grounded": 0
+    },
+    "ALL": {
+      "n": 27,
+      "search_ok": 26,
+      "closed_form_applicable": 13,
+      "closed_form_match": 12,
+      "judged": 27,
+      "correct": 23,
+      "partially_correct": 3,
+      "incorrect": 1,
+      "grounded_applicable": 22,
+      "grounded": 19
+    }
+  },
+  "rows": [
+    {
+      "id": "single_01",
+      "category": "single_hop",
+      "question": "In what year was the Eiffel Tower completed?",
+      "gold_answer": "1889.",
+      "error": null,
+      "latency_s": 5.92,
+      "agent_answer": "The Eiffel Tower was completed in **1889**. It was designed and built by Gustave Eiffel's company between 1887 and 1889, and was constructed for the 1889 Universal Exposition in Paris, France.",
+      "queries": [
+        "Eiffel Tower construction completion year",
+        "Eiffel Tower history built 1889"
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "1889"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states the Eiffel Tower was completed in 1889, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets explicitly state the tower was 'designed and built...from 1887 to 1889' and 'built for the 1889 Universal Exposition,' supporting all key claims in the agent's answer."
+      }
+    },
+    {
+      "id": "single_02",
+      "category": "single_hop",
+      "question": "What is the chemical symbol for gold?",
+      "gold_answer": "Au.",
+      "error": null,
+      "latency_s": 3.55,
+      "agent_answer": "The chemical symbol for gold is **Au**, which comes from the Latin word *aurum*, meaning gold. Gold has the atomic number 79 on the periodic table.",
+      "queries": [
+        "chemical symbol for gold element"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "au"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identified Au as the chemical symbol for gold, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The retrieved snippet for 'Gold' explicitly states 'its chemical symbol is Au (from Latin aurum) and atomic number 79', supporting all claims in the agent's answer."
+      }
+    },
+    {
+      "id": "single_03",
+      "category": "single_hop",
+      "question": "Who wrote the novel 'Pride and Prejudice'?",
+      "gold_answer": "Jane Austen.",
+      "error": null,
+      "latency_s": 3.25,
+      "agent_answer": "The novel *Pride and Prejudice* was written by **Jane Austen**, an English author. It was first published in 1813 and remains one of the most beloved works in English literature.",
+      "queries": [
+        "Pride and Prejudice novel"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "jane austen"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Jane Austen as the author of Pride and Prejudice, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The retrieved snippets explicitly state that Pride and Prejudice is a novel by English author Jane Austen, supporting the agent's answer."
+      }
+    },
+    {
+      "id": "single_04",
+      "category": "single_hop",
+      "question": "What is the capital city of Australia?",
+      "gold_answer": "Canberra.",
+      "error": null,
+      "latency_s": 3.96,
+      "agent_answer": "The capital city of Australia is **Canberra**. It is located within the Australian Capital Territory (ACT) and serves as the seat of the country's federal government. As of 2025, Canberra has an estimated population of around 484,630, making it the largest city in the Australian Capital Territory.",
+      "queries": [
+        "capital city of Australia"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "canberra"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Canberra as the capital city of Australia, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The agent's claims about Canberra being Australia's capital, its location in the ACT, and its population of 484,630 as of 2025 are all directly supported by the retrieved Wikipedia snippets."
+      }
+    },
+    {
+      "id": "single_05",
+      "category": "single_hop",
+      "question": "How many bones are in the adult human body?",
+      "gold_answer": "206.",
+      "error": null,
+      "latency_s": 3.99,
+      "agent_answer": "The adult human body typically has **206 bones**. Interestingly, humans are born with around **270 bones**, but as we grow, many of these bones gradually fuse together, resulting in the 206 bones present in a fully developed adult skeleton.",
+      "queries": [
+        "number of bones in adult human body"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "206"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states 206 bones in the adult human body, matching the gold answer, and the additional context about 270 bones at birth is accurate bonus information.",
+        "groundedness": "grounded",
+        "groundedness_reason": "Both the 206 bones figure and the ~270 bones at birth figure are directly supported by the retrieved Wikipedia snippets."
+      }
+    },
+    {
+      "id": "multi_01",
+      "category": "multi_hop",
+      "question": "Which is taller, the Eiffel Tower or the Statue of Liberty, and by roughly how much?",
+      "gold_answer": "The Eiffel Tower is much taller. It is about 330 m tall (to the tip, including antennas); the Statue of Liberty is about 93 m from ground to the tip of the torch. The Eiffel Tower is therefore roughly 235-240 m taller.",
+      "error": null,
+      "latency_s": 10.54,
+      "agent_answer": "The Statue of Liberty's total height (including its pedestal) is approximately 93 metres (305 feet), while the Eiffel Tower stands at 330 metres (1,083 feet).\n\n**The Eiffel Tower is significantly taller than the Statue of Liberty.** Here's the quick comparison:\n\n- \ud83d\uddfc **Eiffel Tower**: ~330 m (1,083 ft)\n- \ud83d\uddfd **Statue of Liberty**: ~93 m (305 ft) including its pedestal\n\nThe Eiffel Tower is roughly **237 metres (about 778 feet) taller** \u2014 making it more than **three and a half times** the height of the Statue of Liberty!",
+      "queries": [
+        "Eiffel Tower height",
+        "Statue of Liberty height",
+        "Statue of Liberty total height meters feet"
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies the Eiffel Tower as taller, gives the correct heights (~330m vs ~93m), and calculates the difference as ~237m, which is within the expected range of 235-240m.",
+        "groundedness": "partially_grounded",
+        "groundedness_reason": "The Eiffel Tower height of 330m is confirmed by snippet 2 of Search 1, but the Statue of Liberty's total height of 93m/305ft is not explicitly stated in the retrieved snippets (only the article title appears, not the specific height figure)."
+      }
+    },
+    {
+      "id": "multi_02",
+      "category": "multi_hop",
+      "question": "Who was born first, Albert Einstein or Isaac Newton?",
+      "gold_answer": "Isaac Newton was born first. Newton was born in 1643 (or 1642 Old Style); Einstein was born in 1879.",
+      "error": null,
+      "latency_s": 9.71,
+      "agent_answer": "Based on the information retrieved, **Isaac Newton** was born first. Here are their birth dates:\n\n- **Isaac Newton**: Born on January 4, 1643\n- **Albert Einstein**: Born on March 14, 1879\n\nIsaac Newton was born approximately **236 years before** Albert Einstein.",
+      "queries": [
+        "Albert Einstein birth date",
+        "Isaac Newton birth date",
+        "Isaac Newton physicist biography",
+        "Isaac Newton born 1643",
+        "Isaac Newton"
+      ],
+      "num_searches": 5,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identified Isaac Newton as born first, with accurate birth dates matching the gold answer (Newton in 1643, Einstein in 1879).",
+        "groundedness": "partially_grounded",
+        "groundedness_reason": "Einstein's birth date (March 14, 1879) is supported by the retrieved snippets, but Newton's birth date could not be verified from snippets since all Newton-related searches failed with 429 errors."
+      }
+    },
+    {
+      "id": "multi_03",
+      "category": "multi_hop",
+      "question": "Who has won more Academy Awards for Best Director: Steven Spielberg or Martin Scorsese?",
+      "gold_answer": "Steven Spielberg, with two Best Director Oscars (Schindler's List, Saving Private Ryan), versus Martin Scorsese's one (The Departed).",
+      "error": null,
+      "latency_s": 8.61,
+      "agent_answer": "**Steven Spielberg** has won more Academy Awards for Best Director than Martin Scorsese.\n\n- **Steven Spielberg** has won **2** Best Director Oscars: for *Schindler's List* (1993) and *Saving Private Ryan* (1998).\n- **Martin Scorsese** has won **1** Best Director Oscar: for *The Departed* (2006), which was notably his only personal Oscar win.\n\nSo Spielberg leads Scorsese 2\u20131 in Best Director wins.",
+      "queries": [
+        "Steven Spielberg Academy Awards Best Director wins",
+        "Martin Scorsese Academy Awards Best Director wins",
+        "Steven Spielberg Best Director Oscar wins Schindler's List Saving Private Ryan",
+        "Martin Scorsese Best Director Oscar win The Departed"
+      ],
+      "num_searches": 4,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Steven Spielberg as having won more Best Director Oscars (2) than Martin Scorsese (1), naming the correct films for each.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The retrieved snippets explicitly confirm Spielberg won twice for Schindler's List and Saving Private Ryan, and that The Departed was Scorsese's only personal Oscar win for Best Director."
+      }
+    },
+    {
+      "id": "multi_04",
+      "category": "multi_hop",
+      "question": "Which country hosted the Summer Olympics more recently, Brazil or the United Kingdom?",
+      "gold_answer": "Brazil - it hosted the 2016 Summer Olympics in Rio de Janeiro, which is more recent than the United Kingdom's 2012 Games in London.",
+      "error": null,
+      "latency_s": 7.64,
+      "agent_answer": "**Brazil** hosted the Summer Olympics more recently. Brazil hosted the **2016 Summer Olympics** in Rio de Janeiro, while the United Kingdom hosted the **2012 Summer Olympics** in London. That makes Brazil's hosting four years more recent than the UK's.",
+      "queries": [
+        "Brazil Summer Olympics host",
+        "United Kingdom Summer Olympics host",
+        "2012 Summer Olympics London United Kingdom"
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Brazil as the more recent host (2016 Rio) compared to the UK (2012 London), matching the gold answer exactly.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The retrieved snippets explicitly confirm Brazil hosted the 2016 Summer Olympics in Rio de Janeiro and that the 2012 Summer Olympics were held in London, United Kingdom."
+      }
+    },
+    {
+      "id": "multi_05",
+      "category": "multi_hop",
+      "question": "Which is older, the University of Oxford or Harvard University, and by roughly how long?",
+      "gold_answer": "The University of Oxford is much older. Teaching at Oxford dates to around 1096, while Harvard University was founded in 1636 - so Oxford predates Harvard by roughly five centuries.",
+      "error": null,
+      "latency_s": 5.46,
+      "agent_answer": "The **University of Oxford** is significantly older than Harvard University.\n\n- **University of Oxford**: Teaching began as early as **1096**, with rapid development from 1167 onward.\n- **Harvard University**: Founded in **1636**.\n\nThat makes Oxford roughly **540 years older** than Harvard. Oxford is, in fact, the oldest university in the English-speaking world.",
+      "queries": [
+        "University of Oxford founding history",
+        "Harvard University founding history"
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Oxford as older, gives the same founding dates (1096 and 1636), and states Oxford is roughly 540 years older, which is consistent with the gold answer's 'roughly five centuries.'",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm Oxford's teaching dating to 1096 and Harvard's founding in 1636, supporting all key claims in the agent's answer."
+      }
+    },
+    {
+      "id": "ambiguous_01",
+      "category": "ambiguous_entity",
+      "question": "Where is Cambridge located?",
+      "gold_answer": "The name is ambiguous. Most commonly it refers to Cambridge, England (Cambridgeshire, United Kingdom), home of the University of Cambridge; it may also refer to Cambridge, Massachusetts, USA (home of Harvard and MIT), among other places.",
+      "error": null,
+      "latency_s": 10.63,
+      "agent_answer": "Cambridge is most commonly referring to the city located in **England, United Kingdom**. It is situated in the East of England region, in the county of **Cambridgeshire**, about 50 miles (80 km) north of London. It lies on the River Cam and is widely known as the home of the prestigious **University of Cambridge**.\n\nThere is also a well-known **Cambridge, Massachusetts**, located in the **United States**, just across the Charles River from Boston. It is home to Harvard University and MIT.\n\nWould you like more details about either of these locations?",
+      "queries": [
+        "Cambridge location"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Cambridge as most commonly referring to Cambridge, England (Cambridgeshire, UK), home of the University of Cambridge, and also mentions Cambridge, Massachusetts (home of Harvard and MIT), covering both key referents in the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm Cambridge, England is in Cambridgeshire with the University of Cambridge on the River Cam, and that Cambridge, Massachusetts exists as a separate location, supporting all key claims in the agent's answer."
+      }
+    },
+    {
+      "id": "ambiguous_02",
+      "category": "ambiguous_entity",
+      "question": "Who is Michael Jordan?",
+      "gold_answer": "Most commonly the retired American basketball player widely regarded as one of the greatest of all time. The name is ambiguous, though - it also refers to Michael I. Jordan, a prominent machine-learning researcher, and others.",
+      "error": null,
+      "latency_s": 13.58,
+      "agent_answer": "While my Wikipedia search is temporarily unavailable, I can answer this based on well-established knowledge:\n\n**Michael Jordan** (born February 17, 1963) is widely regarded as the **greatest basketball player of all time**. Here are the key highlights about him:\n\n### \ud83c\udfc0 Basketball Career\n- Played in the **NBA** primarily for the **Chicago Bulls** (1984\u20131993, 1995\u20131998) and briefly for the **Washington Wizards** (2001\u20132003).\n- Won **6 NBA Championships** with the Chicago Bulls (1991, 1992, 1993, 1996, 1997, 1998).\n- Won **6 NBA Finals MVP awards** and **5 regular season MVP awards**.\n- 14-time **NBA All-Star** and **2-time Olympic Gold Medalist** (1984, 1992 \u2013 the famous \"Dream Team\").\n- Known for his extraordinary athleticism, scoring ability, and competitive drive.\n\n### \ud83d\udcca Stats & Achievements\n- **Career scoring average of 30.1 points per game** \u2013 the highest in NBA history.\n- **2-time NBA Slam Dunk Contest winner**, earning him the nickname **\"Air Jordan\"**.\n\n### \ud83d\udc5f Business & Legacy\n- Has a legendary partnership with **Nike**, resulting in the iconic **Air Jordan** sneaker line, one of the most successful athletic brands in history.\n- Became a **majority owner** of the **Charlotte Hornets** (NBA team) in 2010, though he sold his majority stake in 2023.\n- His life and career were famously documented in the 2020 Netflix docuseries **\"The Last Dance.\"**\n\n### \ud83c\udfac Pop Culture\n- Starred in the 1996 film **Space Jam** alongside the Looney Tunes characters.\n\nMichael Jordan is not just a sports icon but a global cultural phenomenon, often referred to simply as **\"MJ\"** or **\"His Airness.\"**",
+      "queries": [
+        "Michael Jordan basketball player",
+        "Michael Jordan"
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "partially_correct",
+        "correctness_reason": "The agent correctly identifies Michael Jordan as the famous basketball player with accurate details, but fails to acknowledge the ambiguity of the name (e.g., Michael I. Jordan, the machine-learning researcher), which the gold answer explicitly flags as important.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "No Wikipedia snippets were successfully retrieved, so groundedness cannot be assessed against retrieved content."
+      }
+    },
+    {
+      "id": "ambiguous_03",
+      "category": "ambiguous_entity",
+      "question": "What is Mercury?",
+      "gold_answer": "The term has several meanings: the planet Mercury (closest to the Sun); the chemical element mercury (symbol Hg, a liquid metal); the Roman god Mercury; and other uses (e.g., Freddie Mercury, the Mercury car brand).",
+      "error": null,
+      "latency_s": 8.46,
+      "agent_answer": "Great question! **Mercury** is actually a term that refers to several different things. Here are the most common meanings:\n\n---\n\n### \ud83e\ude90 1. Mercury (Planet)\nMercury is the **first planet from the Sun** and the **smallest planet in the Solar System**. It is a rocky planet with a trace atmosphere and a surface gravity slightly less than that of Mars. It orbits the Sun faster than any other planet.\n\n---\n\n### \u2697\ufe0f 2. Mercury (Chemical Element)\nMercury is a **chemical element** with the symbol **Hg** and atomic number **80**. It is commonly known as **quicksilver**. It is a heavy, silvery liquid metal at room temperature, making it unique among metals. It has historically been used in thermometers, barometers, and various industrial applications.\n\n---\n\n### \ud83c\udfa4 3. Freddie Mercury (Person)\n**Freddie Mercury** (born Farrokh Bulsara; 5 September 1946 \u2013 24 November 1991) was a British singer and songwriter, best known as the **lead vocalist of the rock band Queen**. He is widely regarded as one of the greatest singers in the history of rock music.\n\n---\n\n### \ud83c\udfb5 4. Mercury Records (Music Label)\n**Mercury Records** is an American **record label** owned by Universal Music Group, with significant success dating back to the 1940s and 1950s.\n\n---\n\n### \ud83c\udfdb\ufe0f 5. Mercury (Mythology)\nMercury is also the name of the **Roman god of commerce, communication, and travel**, equivalent to the Greek god Hermes.\n\n---\n\nCould you clarify which **Mercury** you're referring to? I'd be happy to go into more detail on any of these! \ud83d\ude0a",
+      "queries": [
+        "Mercury"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent's answer covers all the key meanings in the gold answer (planet, chemical element, Roman god, Freddie Mercury, car brand omitted but other uses covered) and provides additional relevant detail.",
+        "groundedness": "grounded",
+        "groundedness_reason": "All major claims in the agent's answer are directly supported by the retrieved Wikipedia snippets about Mercury (disambiguation), the planet, the element, Freddie Mercury, and Mercury Records."
+      }
+    },
+    {
+      "id": "ambiguous_04",
+      "category": "ambiguous_entity",
+      "question": "What is the population of Georgia?",
+      "gold_answer": "Ambiguous: the country of Georgia has roughly 3.7 million people, while the U.S. state of Georgia has roughly 11 million. The answer depends on which Georgia is meant.",
+      "error": null,
+      "latency_s": 14.96,
+      "agent_answer": "Here's a breakdown for **both Georgias**:\n\n---\n\n### \ud83c\uddfa\ud83c\uddf8 Georgia (U.S. State)\n- **Population: ~10,711,908** (based on the 2020 U.S. Census)\n- It is the **9th most populous state** in the United States.\n\n---\n\n### \ud83c\uddec\ud83c\uddea Georgia (Country)\n- **Population: ~3.9 million**\n- It is located in the Caucasus region, at the intersection of Eastern Europe and West Asia. Over a third of its population lives in the capital, **Tbilisi**.\n\n---\n\nCould you clarify which Georgia you were referring to? I'm happy to provide more details on either one! \ud83d\ude0a",
+      "queries": [
+        "population of Georgia U.S. state",
+        "population of Georgia country",
+        "Georgia country population census 2024",
+        "Georgia country Caucasus total population",
+        "Georgia country demographics population 3.7 million"
+      ],
+      "num_searches": 5,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identified the ambiguity and provided population figures for both the U.S. state (~10.7 million) and the country (~3.9 million), which aligns with the gold answer's acknowledgment of both Georgias.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The U.S. state population of 10,711,908 is directly supported by the Demographics of Georgia (U.S. state) snippet, and the country population of 3.9 million and Tbilisi detail are supported by the Georgia (country) snippet."
+      }
+    },
+    {
+      "id": "ambiguous_05",
+      "category": "ambiguous_entity",
+      "question": "Who wrote 'Ulysses'?",
+      "gold_answer": "Ambiguous by title: the 1922 modernist novel 'Ulysses' was written by James Joyce, while the poem 'Ulysses' was written by Alfred, Lord Tennyson. Joyce's novel is the most common referent.",
+      "error": null,
+      "latency_s": 4.27,
+      "agent_answer": "**Ulysses** was written by the Irish writer **James Joyce**. It is a modernist novel, partially serialised in the American journal *The Little Review* from March 1918 to December 1920, and later published in full in 1922. It is widely regarded as one of the greatest works of literature in the English language.",
+      "queries": [
+        "Ulysses novel author"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "partially_correct",
+        "correctness_reason": "The agent correctly identifies James Joyce as the author of the 1922 modernist novel 'Ulysses', which is the dominant referent, but does not acknowledge the ambiguity or mention Tennyson's poem 'Ulysses'.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The agent's claims about James Joyce, the modernist novel, The Little Review serialization, and the 1922 publication are all directly supported by the retrieved Wikipedia snippet about the Ulysses novel."
+      }
+    },
+    {
+      "id": "unanswerable_01",
+      "category": "unanswerable",
+      "question": "In what year did Albert Einstein win the Nobel Prize in Chemistry?",
+      "gold_answer": "False premise: Einstein did not win the Nobel Prize in Chemistry. He won the Nobel Prize in Physics, awarded in 1921 (for the photoelectric effect). The correct answer is to point out the mistaken premise.",
+      "error": null,
+      "latency_s": 5.44,
+      "agent_answer": "Albert Einstein never won the Nobel Prize in **Chemistry**. He was actually awarded the Nobel Prize in **Physics** in **1922** (for the year 1921), specifically \"for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect.\"",
+      "queries": [
+        "Albert Einstein Nobel Prize"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies the false premise, noting Einstein never won the Nobel Prize in Chemistry, and correctly states he won the Nobel Prize in Physics for the photoelectric effect (awarded in 1922 for 1921).",
+        "groundedness": "grounded",
+        "groundedness_reason": "The retrieved snippet explicitly states 'In 1922 Albert Einstein was awarded the 1921 Nobel Prize in Physics, for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect,' which directly supports the agent's answer."
+      }
+    },
+    {
+      "id": "unanswerable_02",
+      "category": "unanswerable",
+      "question": "In which year did Leonardo da Vinci paint the ceiling of the Sistine Chapel?",
+      "gold_answer": "False premise: Leonardo da Vinci did not paint the Sistine Chapel ceiling. It was painted by Michelangelo, between 1508 and 1512. The correct answer is to correct the premise.",
+      "error": null,
+      "latency_s": 4.95,
+      "agent_answer": "Actually, it was not **Leonardo da Vinci** who painted the Sistine Chapel ceiling \u2014 that is a common misconception. The Sistine Chapel ceiling was painted by **Michelangelo** between **1508 and 1512**. It is one of the most celebrated works of the High Renaissance, featuring iconic scenes such as *The Creation of Adam*.\n\nLeonardo da Vinci, while a contemporary of Michelangelo and equally renowned, was not involved in painting the Sistine Chapel.",
+      "queries": [
+        "Sistine Chapel ceiling painting"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies the false premise, states that Michelangelo (not Leonardo da Vinci) painted the Sistine Chapel ceiling, and provides the correct dates of 1508\u20131512.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The retrieved snippets explicitly confirm that Michelangelo painted the Sistine Chapel ceiling between 1508 and 1512, supporting all key claims in the agent's answer."
+      }
+    },
+    {
+      "id": "unanswerable_03",
+      "category": "unanswerable",
+      "question": "Who was the king of the United States in 1850?",
+      "gold_answer": "False premise: the United States has never had a king; it is a republic. In 1850 the U.S. president was Zachary Taylor (until his death in July 1850), succeeded by Millard Fillmore. The correct answer is to reject the premise.",
+      "error": null,
+      "latency_s": 3.29,
+      "agent_answer": "The United States has never had a king. The United States is a **federal republic**, not a monarchy, and has no royal family or hereditary rulers.\n\nIn 1850, the **President** of the United States was **Millard Fillmore**, who took office on July 9, 1850, following the death of President Zachary Taylor. Before Fillmore assumed office, Zachary Taylor was president at the start of that year.",
+      "queries": [],
+      "num_searches": 0,
+      "did_search": false,
+      "search_ok": false,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly rejects the false premise that the US had a king, and accurately notes both Zachary Taylor and Millard Fillmore as the presidents in 1850, matching the gold answer.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "No Wikipedia snippets were retrieved, so groundedness cannot be assessed from retrieved content."
+      }
+    },
+    {
+      "id": "unanswerable_04",
+      "category": "unanswerable",
+      "question": "Which chemical element has the symbol 'Zz'?",
+      "gold_answer": "No element has the symbol 'Zz'. It is not a valid element symbol on the periodic table. The correct answer is to say no such element exists.",
+      "error": null,
+      "latency_s": 5.82,
+      "agent_answer": "There is **no chemical element with the symbol 'Zz'**. Chemical element symbols consist of one or two letters, but **'Zz' is not a recognized symbol** for any element on the periodic table. You may be thinking of:\n\n- **Zn** \u2013 the symbol for **Zinc**\n- **Zr** \u2013 the symbol for **Zirconium**\n\nIs it possible you were thinking of one of these?",
+      "queries": [
+        "chemical element symbol Zz"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states that 'Zz' is not a recognized symbol for any chemical element on the periodic table, which aligns with the gold answer.",
+        "groundedness": "partially_grounded",
+        "groundedness_reason": "The snippets discuss chemical element symbols generally but do not specifically confirm that 'Zz' is not a valid symbol; however, the absence of 'Zz' in any snippet and general knowledge of element symbol conventions partially supports the claim."
+      }
+    },
+    {
+      "id": "unanswerable_05",
+      "category": "unanswerable",
+      "question": "How many times has Canada won the men's FIFA World Cup?",
+      "gold_answer": "Zero - Canada has never won the men's FIFA World Cup. The honest answer is 'none' rather than any positive number.",
+      "error": null,
+      "latency_s": 4.63,
+      "agent_answer": "Canada has **never won** the men's FIFA World Cup. They have qualified for the tournament on only three occasions (1986, 2022, and 2026) but have not won the title. The FIFA World Cup has been won by teams such as Brazil, Germany, Italy, Argentina, and France, but never Canada.",
+      "queries": [
+        "Canada men's national soccer team FIFA World Cup history"
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "never"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states Canada has never won the FIFA World Cup, which matches the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The retrieved snippets confirm Canada has played in the FIFA World Cup on three occasions (1986, 2022, and 2026), supporting the agent's claims about their participation history, and the agent's statement that they never won is consistent with this information."
+      }
+    },
+    {
+      "id": "recent_01",
+      "category": "recent",
+      "question": "Which club won the 2026 UEFA Champions League final?",
+      "gold_answer": "Paris Saint-Germain (PSG). They beat Arsenal 4-3 on penalties after a 1-1 draw after extra time, on 30 May 2026 at the Puskas Arena in Budapest - PSG's second consecutive Champions League title.",
+      "error": null,
+      "latency_s": 11.1,
+      "agent_answer": "The search results confirm that the 2026 UEFA Champions League final took place, but the snippets don't include the specific winner. Unfortunately, based on the information available through my search results, I cannot confirm with certainty which club won the 2026 UEFA Champions League final. The Wikipedia article exists but the key detail \u2014 the winning club \u2014 wasn't returned in the snippets.\n\nI'd recommend checking a up-to-date source such as **UEFA's official website** or the full **Wikipedia article on the 2026 UEFA Champions League final** for the confirmed result.",
+      "queries": [
+        "2026 UEFA Champions League final",
+        "2025-26 UEFA Champions League final winner result",
+        "2026 UEFA Champions League final teams score"
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": false,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "correctness_reason": "The agent failed to provide the winner (PSG) and instead said it could not confirm the result, when the gold answer clearly identifies PSG as the winner.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "The agent correctly noted that the retrieved snippets did not contain the specific winner information, so the refusal to answer is consistent with what was retrieved, though the snippets were too truncated to support a definitive answer."
+      }
+    },
+    {
+      "id": "recent_02",
+      "category": "recent",
+      "question": "Which country topped the medal table at the 2026 Winter Olympics?",
+      "gold_answer": "Norway. It topped the medal table at the 2026 Winter Olympics in Milan-Cortina with 18 gold medals and 41 total medals, leading on both golds and totals.",
+      "error": null,
+      "latency_s": 6.89,
+      "agent_answer": "Based on the search results, **Norway** topped the medal table at the 2026 Winter Olympics, finishing first for the **fourth successive Winter Olympics** with an impressive **18 gold medals** and **41 medals overall**.",
+      "queries": [
+        "2026 Winter Olympics medal table",
+        "2026 Winter Olympics medal table top country gold medals"
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "norway"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identified Norway as the top country with 18 gold medals and 41 total medals, matching the gold answer exactly.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The retrieved snippet from the 2026 Winter Olympics article explicitly states 'Norway finished at the top of the medal table for the fourth successive Winter Olympics with 18 gold and 41 medals overall,' supporting all key claims in the agent's answer."
+      }
+    },
+    {
+      "id": "recent_03",
+      "category": "recent",
+      "question": "Who won Super Bowl LX (the 2026 Super Bowl)?",
+      "gold_answer": "The Seattle Seahawks. They defeated the New England Patriots 29-13 in Super Bowl LX on February 8, 2026 at Levi's Stadium in Santa Clara, California.",
+      "error": null,
+      "latency_s": 6.14,
+      "agent_answer": "The **Seattle Seahawks** won Super Bowl LX! They defeated the **New England Patriots** on February 8, 2026, claiming the NFL championship for the 2025 season. The Seahawks are the reigning Super Bowl champions as a result of that victory.",
+      "queries": [
+        "Super Bowl LX 2026",
+        "Super Bowl LX winner champion 2026 Seattle Seahawks"
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "seattle seahawks"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "partially_correct",
+        "correctness_reason": "The agent correctly identified the Seattle Seahawks defeating the New England Patriots on February 8, 2026, but omitted the score (29-13) and the venue (Levi's Stadium in Santa Clara, California).",
+        "groundedness": "grounded",
+        "groundedness_reason": "The retrieved snippets confirm the Seattle Seahawks defeated the New England Patriots in Super Bowl LX on February 8, 2026, supporting the agent's key claims."
+      }
+    },
+    {
+      "id": "recent_04",
+      "category": "recent",
+      "question": "Who won the Eurovision Song Contest 2026?",
+      "gold_answer": "Bulgaria, with the song 'Bangaranga' performed by Dara - Bulgaria's first Eurovision win (516 points, topping both the jury vote and the televote). The contest was held in Vienna, with the grand final on 16 May 2026. Naming either the country or the artist/song counts as correct.",
+      "error": null,
+      "latency_s": 13.73,
+      "agent_answer": "Based on the search results, I can see that **Bulgaria** won the Eurovision Song Contest 2026! The contest was the 70th edition of Eurovision, with the final held on **16 May 2026**. Bulgaria was represented with the song **\"Bangaranga\"**, and their victory was confirmed in the List of Eurovision Song Contest winners on Wikipedia.",
+      "queries": [
+        "Eurovision Song Contest 2026",
+        "Eurovision Song Contest 2026 winner result",
+        "List of Eurovision Song Contest winners 2026",
+        "Eurovision Song Contest 2026 winning country song",
+        "Eurovision 2026 final Basel winner"
+      ],
+      "num_searches": 5,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "bulgaria"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identified Bulgaria as the winner with the song 'Bangaranga' and the correct date of 16 May 2026.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The retrieved snippets confirm Bulgaria represented at Eurovision 2026 with 'Bangaranga' and a List of Eurovision Song Contest winners snippet explicitly mentions 'Bulgaria' with the date 17 May 2026."
+      }
+    },
+    {
+      "id": "recent_05",
+      "category": "recent",
+      "question": "Who won the men's singles title at the 2026 Australian Open?",
+      "gold_answer": "Carlos Alcaraz. He defeated Novak Djokovic 2-6, 6-2, 6-3, 7-5 in the men's singles final of the 2026 Australian Open.",
+      "error": null,
+      "latency_s": 20.24,
+      "agent_answer": "Based on the search results, the winner of the 2026 Australian Open men's singles claimed his **first Australian Open title** and **seventh major title overall**. The search results also confirm that defending champion **Jannik Sinner** lost in the semifinals. Given that it was the player's seventh major and first Australian Open title, this points to **Carlos Alcaraz** as the champion, as his major count aligns with this description.\n\n**Carlos Alcaraz** won the men's singles title at the 2026 Australian Open, defeating his opponent with a score of 2\u20136, 6\u20132, 6\u20133, 7\u20135. It was his first Australian Open title and his seventh Grand Slam title overall.",
+      "queries": [
+        "2026 Australian Open men's singles",
+        "2026 Australian Open men's singles winner champion",
+        "2026 Australian Open men's singles first Australian Open title seventh major",
+        "2026 Australian Open men's singles",
+        "2026 Australian Open tennis results Novak Djokovic Carlos Alcaraz",
+        "2026 Carlos Alcaraz tennis season Australian Open",
+        "Carlos Alcaraz seventh Grand Slam title 2026"
+      ],
+      "num_searches": 7,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "carlos alcaraz"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identified Carlos Alcaraz as the winner with the exact score of 2\u20136, 6\u20132, 6\u20133, 7\u20135, and correctly noted it was his first Australian Open title and seventh Grand Slam title.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm the score 2\u20136, 6\u20132, 6\u20133, 7\u20135, first Australian Open title, seventh major title overall, and the 2026 Carlos Alcaraz tennis season article corroborates Alcaraz's participation, supporting the agent's identification of him as champion."
+      }
+    },
+    {
+      "id": "no_search_01",
+      "category": "no_search",
+      "question": "What is 17 multiplied by 24?",
+      "gold_answer": "408.",
+      "error": null,
+      "latency_s": 1.49,
+      "agent_answer": "17 multiplied by 24 is **408**.\n\nThis is a straightforward arithmetic calculation (17 \u00d7 24 = 408) and does not require a Wikipedia search.",
+      "queries": [],
+      "num_searches": 0,
+      "did_search": false,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "408"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly computed 17 \u00d7 24 = 408, which matches the gold answer.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "No snippets were retrieved; the answer is a simple arithmetic calculation that doesn't require external sources."
+      }
+    },
+    {
+      "id": "no_search_02",
+      "category": "no_search",
+      "question": "A rectangle is 8 cm wide and 5 cm tall. What is its area in square centimeters?",
+      "gold_answer": "40 square centimeters.",
+      "error": null,
+      "latency_s": 2.13,
+      "agent_answer": "This is a straightforward math question that doesn't require a Wikipedia search.\n\nThe area of a rectangle is calculated using the formula:\n\n**Area = Width \u00d7 Height**\n\nSo:\n\n**Area = 8 cm \u00d7 5 cm = 40 cm\u00b2**\n\nThe area of the rectangle is **40 square centimeters**.",
+      "queries": [],
+      "num_searches": 0,
+      "did_search": false,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "40"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly calculated the area as 40 square centimeters, matching the gold answer.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "No Wikipedia snippets were retrieved; the answer is based on a direct mathematical calculation."
+      }
+    }
+  ]
+}

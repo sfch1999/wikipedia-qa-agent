@@ -1,0 +1,260 @@
+{
+  "run_id": "9e6ef13f",
+  "started_at": "2026-07-14T17:00:30",
+  "agent_model": "claude-sonnet-4-6",
+  "prompt_version": "v1",
+  "search_enabled": true,
+  "judge_model": "claude-opus-4-8",
+  "questions_file": "/Users/souri/Downloads/Anthro Test/eval/questions.json",
+  "num_questions": 5,
+  "summary": {
+    "recent": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 5,
+      "closed_form_match": 2,
+      "judged": 5,
+      "correct": 2,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "grounded_applicable": 2,
+      "grounded": 2,
+      "honest_declines": 3
+    },
+    "ALL": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 5,
+      "closed_form_match": 2,
+      "judged": 5,
+      "correct": 2,
+      "partially_correct": 0,
+      "incorrect": 3,
+      "grounded_applicable": 2,
+      "grounded": 2,
+      "honest_declines": 3
+    }
+  },
+  "rows": [
+    {
+      "id": "recent_01",
+      "category": "recent",
+      "question": "Which club won the 2026 UEFA Champions League final?",
+      "gold_answer": "Paris Saint-Germain (PSG). They beat Arsenal 4-3 on penalties after a 1-1 draw after extra time, on 30 May 2026 at the Puskas Arena in Budapest - PSG's second consecutive Champions League title.",
+      "error": null,
+      "latency_s": 9.14,
+      "agent_answer": "I'm currently unable to retrieve results from Wikipedia due to search errors. Additionally, as of my knowledge cutoff, the **2026 UEFA Champions League final** had not yet taken place. This event is scheduled for **2026**, which is in the future relative to my training data.\n\nTherefore, I cannot tell you which club won \u2014 the result is either not yet available or not something I can confirm. Please check a current news source or UEFA's official website for up-to-date results.",
+      "queries": [
+        "2026 UEFA Champions League final",
+        "2025-26 UEFA Champions League"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 UEFA Champions League final",
+          "results": "SEARCH ERROR: Wikipedia search for '2026 UEFA Champions League final' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=2026+UEFA+Champions+League+final&srlimit=5&format=json)."
+        },
+        {
+          "query": "2025-26 UEFA Champions League",
+          "results": "SEARCH ERROR: Wikipedia search for '2025-26 UEFA Champions League' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=2025-26+UEFA+Champions+League&srlimit=5&format=json)."
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": false,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "correctness_reason": "The agent failed to provide the answer (PSG), claiming the event had not yet occurred.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "All searches returned errors, so no snippets were available to ground an answer.",
+        "honest_decline": true
+      }
+    },
+    {
+      "id": "recent_02",
+      "category": "recent",
+      "question": "Which country topped the medal table at the 2026 Winter Olympics?",
+      "gold_answer": "Norway. It topped the medal table at the 2026 Winter Olympics in Milan-Cortina with 18 gold medals and 41 total medals, leading on both golds and totals.",
+      "error": null,
+      "latency_s": 9.73,
+      "agent_answer": "I'm currently unable to retrieve Wikipedia search results due to request errors. Additionally, the 2026 Winter Olympics (scheduled to be held in Milan-Cortina, Italy) are set to take place in February 2026, which is beyond my knowledge cutoff date \u2014 so I don't have the final results.\n\n**I cannot answer this question** because the 2026 Winter Olympics either haven't occurred yet or the results are not available to me. Please check a current news source or the official Olympics website for the latest medal standings.",
+      "queries": [
+        "2026 Winter Olympics medal table",
+        "2026 Winter Olympics Milan Cortina results"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 Winter Olympics medal table",
+          "results": "SEARCH ERROR: Wikipedia search for '2026 Winter Olympics medal table' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=2026+Winter+Olympics+medal+table&srlimit=5&format=json)."
+        },
+        {
+          "query": "2026 Winter Olympics Milan Cortina results",
+          "results": "SEARCH ERROR: Wikipedia search for '2026 Winter Olympics Milan Cortina results' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=2026+Winter+Olympics+Milan+Cortina+results&srlimit=5&format=json)."
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": false,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "correctness_reason": "The agent failed to provide the answer (Norway), declining instead of identifying the top medal country.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "No snippets were retrieved due to search errors, and the agent correctly declined rather than fabricating.",
+        "honest_decline": true
+      }
+    },
+    {
+      "id": "recent_03",
+      "category": "recent",
+      "question": "Who won Super Bowl LX (the 2026 Super Bowl)?",
+      "gold_answer": "The Seattle Seahawks. They defeated the New England Patriots 29-13 in Super Bowl LX on February 8, 2026 at Levi's Stadium in Santa Clara, California.",
+      "error": null,
+      "latency_s": 8.81,
+      "agent_answer": "The **Seattle Seahawks** won Super Bowl LX! They defeated the **New England Patriots 29\u201313** on **February 8, 2026**, at Levi's Stadium in Santa Clara, California. It was the Seahawks' second Super Bowl title (their first since Super Bowl XLVIII in 2013), while the Patriots were seeking a record seventh championship but came up short.",
+      "queries": [
+        "Super Bowl LX 2026",
+        "Super Bowl LX"
+      ],
+      "retrieved": [
+        {
+          "query": "Super Bowl LX 2026",
+          "results": "SEARCH ERROR: Wikipedia search for 'Super Bowl LX 2026' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Super+Bowl+LX+2026&srlimit=5&format=json)."
+        },
+        {
+          "query": "Super Bowl LX",
+          "results": "1. Super Bowl LX: Super Bowl LX was an American football game played to determine the champion of the National Football League (NFL) for the 2025 season. The National Football\n   Intro: Super Bowl LX was an American football game played to determine the champion of the National Football League (NFL) for the 2025 season. The National Football Conference (NFC) champion Seattle Seahawks defeated the American Football Conference (AFC) champion New England Patriots 29\u201313. The game took place on February 8, 2026, at Levi's Stadium in Santa Clara, California, the second Super Bowl held in the stadium and the third held in the San Francisco Bay Area.\nThe Seahawks' victory was their second, previously having won 2013's Super Bowl XLVIII during their Legion of Boom era. Led by their Dark Side defense, they were making their fourth appearance with a 14\u20133 record and the NFC's top seed. The Patriots, who finished with a 14\u20133 record and the AFC's second seed, extended their record of appearances to 12. They were seeking a record seventh title and their first since the Brady\u2013Belichick era after last winning 2018's Super Bowl LIII. The two franchises previously met in Super Bowl XLIX\u2026\n2. Super Bowl LX halftime show: The Super Bowl LX halftime show, officially known as the Apple Music Super Bowl LX Halftime Show for sponsorship purposes, took place on February 8, 2026\n   Intro: The Super Bowl LX halftime show, officially known as the Apple Music Super Bowl LX Halftime Show for sponsorship purposes, took place on February 8, 2026, at Levi's Stadium in Santa Clara, California, United States. It was headlined by Bad Bunny and featured guest appearances from Lady Gaga, Ricky Martin, and Los Pleneros de la Cresta. The performance marked the first time a Latino solo artist headlined the Super Bowl halftime show and the first halftime set performed almost entirely in Spanish.\nThe show was broadcast across the US on NBC, Peacock, Telemundo, Universo, NFL+ and select NBC Sports digital platforms. It drew 128.2 million viewers domestically across all platforms\u2014making it the fourth-most-watched halftime show in history\u2014and attracted 4.8 million viewers on Telemundo, the network's largest audience for an American football broadcast. It was met with widespread critical acclaim, with critics praising the performance, production, tone, and themes. Analysts highlighted the s\u2026\n3. List of Super Bowl champions: Seattle Seahawks following their victory over the New England Patriots in Super Bowl LX. Colts Redskins Ravens Giants Jets Eagles Patriots Colts Dolphins Steelers\n4. Super Bowl LXI: official logo for Super Bowl LXI was unveiled by the game's broadcaster ESPN on February 8, 2026, during a special post-Super Bowl LX edition of SportsCenter\n5. 2026 Pro Bowl Games: integrated into the Super Bowl's festivities instead of a standalone event. It took place in the week leading up to Super Bowl LX on Tuesday, February"
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "seattle seahawks"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identified the Seattle Seahawks won 29-13 over the New England Patriots on February 8, 2026 at Levi's Stadium, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "All key claims including the score, teams, date, venue, and it being Seattle's second title since Super Bowl XLVIII are supported by the retrieved snippets.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "recent_04",
+      "category": "recent",
+      "question": "Who won the Eurovision Song Contest 2026?",
+      "gold_answer": "Bulgaria, with the song 'Bangaranga' performed by Dara - Bulgaria's first Eurovision win (516 points, topping both the jury vote and the televote). The contest was held in Vienna, with the grand final on 16 May 2026. Naming either the country or the artist/song counts as correct.",
+      "error": null,
+      "latency_s": 15.04,
+      "agent_answer": "**Bulgaria** won the Eurovision Song Contest 2026! \ud83c\udde7\ud83c\uddec\n\nThe contest was the 70th edition, held at the Wiener Stadthalle in Vienna, Austria, on 16 May 2026. Bulgaria was represented by **Dara** (stage name of Darina Yotova) with the song **\"Bangaranga\"**. Bulgaria placed first in both their semi-final (with 278 points) and the grand final, winning out of 25 participating countries. This was a notable return for Bulgaria, which had been absent from the contest for three years.",
+      "queries": [
+        "Eurovision Song Contest 2026",
+        "Eurovision Song Contest 2026 winner result",
+        "List of Eurovision Song Contest winners 2026",
+        "Eurovision 2026 winning country song Vienna"
+      ],
+      "retrieved": [
+        {
+          "query": "Eurovision Song Contest 2026",
+          "results": "1. Eurovision Song Contest 2026: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16\n   Intro: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16 May 2026, held at Wiener Stadthalle in Vienna, Austria, and presented by Victoria Swarovski and Michael Ostrowski, with Emily Busvine acting as the green room host. It was organised by the European Broadcasting Union (EBU) and host broadcaster \u00d6sterreichischer Rundfunk (ORF), which staged the event after winning the 2025 contest for Austria with the song \"Wasted Love\" by JJ.\nBroadcasters from thirty-five countries participated in the contest, two fewer than in 2025 and the smallest number of participants since 2003, before the introduction of semi-finals. Iceland, Ireland, the Netherlands, Slovenia, and Spain opted not to participate in protest at Israel's inclusion in the context of the Gaza war, marking the largest number of boycotting countries in the contest's history since 1970, while Bulgaria, Moldova, and Romania returned after\u2026\n2. Junior Eurovision Song Contest 2026: The Junior Eurovision Song Contest 2026 is set to be the 24th edition of the Junior Eurovision Song Contest, held on 24 October 2026 at the Malta Fairs\n   Intro: The Junior Eurovision Song Contest 2026 is set to be the 24th edition of the Junior Eurovision Song Contest, held on 24 October 2026 at the Malta Fairs & Conventions Centre in Ta' Qali, Attard, Malta. It will be organised by the European Broadcasting Union (EBU) and host broadcaster Public Broadcasting Services (PBS).\n3. Eurovision Song Contest 2027: The Eurovision Song Contest 2027 will be the 71st edition of the Eurovision Song Contest. It is set to be organised by the European Broadcasting Union\n4. Eurovision Song Contest Asia: The Eurovision Song Contest Asia (ESCA) is an upcoming international song competition modelled after the Eurovision Song Contest, where broadcasters from\n5. Bulgaria in the Eurovision Song Contest 2026: Bulgaria was represented at the Eurovision Song Contest 2026 with the song \"Bangaranga\", written by Anne Judith Wik, Cristian Tarcea, Darina Yotova and"
+        },
+        {
+          "query": "Eurovision Song Contest 2026 winner result",
+          "results": "1. Eurovision Song Contest 2026: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16\n   Intro: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16 May 2026, held at Wiener Stadthalle in Vienna, Austria, and presented by Victoria Swarovski and Michael Ostrowski, with Emily Busvine acting as the green room host. It was organised by the European Broadcasting Union (EBU) and host broadcaster \u00d6sterreichischer Rundfunk (ORF), which staged the event after winning the 2025 contest for Austria with the song \"Wasted Love\" by JJ.\nBroadcasters from thirty-five countries participated in the contest, two fewer than in 2025 and the smallest number of participants since 2003, before the introduction of semi-finals. Iceland, Ireland, the Netherlands, Slovenia, and Spain opted not to participate in protest at Israel's inclusion in the context of the Gaza war, marking the largest number of boycotting countries in the contest's history since 1970, while Bulgaria, Moldova, and Romania returned after\u2026\n2. Eurovision Song Contest Asia: The Eurovision Song Contest Asia (ESCA) is an upcoming international song competition modelled after the Eurovision Song Contest, where broadcasters from\n   Intro: The Eurovision Song Contest Asia (ESCA) is an upcoming international song competition modelled after the Eurovision Song Contest, where broadcasters from the Asia-Pacific region will compete representing their countries. The inaugural edition, organised by the European Broadcasting Union (EBU) and Voxovation, produced by S2O Productions, and staged by host broadcaster Channel 3, will be held on 14 November 2026 at IdeaLive in Bangkok, Thailand.\nPlans to adapt the Eurovision Song Contest for the Asia-Pacific region started in earnest in 2008. In 2016, Australia's Special Broadcasting Service (SBS) took on the project, developing a version of the format with Blink TV and the EBU for a planned debut in 2019. SBS shelved the project in 2021, and it was later handed over to Voxovation, a company created to develop adaptations of the contest format in different territories with licenses from the EBU. No further updates were provided until 2025, when the Bhutan Broadcasting Service (BBS) aire\u2026\n3. List of Eurovision Song Contest winners: 73 songs written by 154 songwriters have won the Eurovision Song Contest, an international song competition organised annually by the European Broadcasting\n4. Bulgaria in the Eurovision Song Contest 2026: Bulgaria was represented at the Eurovision Song Contest 2026 with the song \"Bangaranga\", written by Anne Judith Wik, Cristian Tarcea, Darina Yotova and\n5. Moldova in the Eurovision Song Contest 2026: Moldova was represented at the Eurovision Song Contest 2026 with the song \"Viva, Moldova!\", written by Andrei Vulpe, C\u0103t\u0103lin Temciuc, Vasile Advahov\u00a0[ro]"
+        },
+        {
+          "query": "List of Eurovision Song Contest winners 2026",
+          "results": "1. List of Eurovision Song Contest winners: 73 songs written by 154 songwriters have won the Eurovision Song Contest, an international song competition organised annually by the European Broadcasting\n   Intro: 73 songs written by 154 songwriters have won the Eurovision Song Contest, an international song competition organised annually by the European Broadcasting Union (EBU). The contest, which has been broadcast every year since its debut in 1956, is one of the longest-running television programmes in the world. The contest's winner has been determined using numerous voting techniques throughout its history; centre to these have been the awarding of points by juries or televoters. The entry awarded the most points is declared the winner. The first contest was not won on points, but by votes (two per country), and only the winner was announced.\nThere have been 70 contests, with one winner each year except for the tied 1969 contest, which had four. Songs representing 28 countries have won the contest, with Switzerland winning the first contest in 1956. The countries with the highest number of wins are Ireland and Sweden with seven wins each. Two people have won more than once as a performer:\u2026\n2. Junior Eurovision Song Contest 2026: The Junior Eurovision Song Contest 2026 is set to be the 24th edition of the Junior Eurovision Song Contest, held on 24 October 2026 at the Malta Fairs\n   Intro: The Junior Eurovision Song Contest 2026 is set to be the 24th edition of the Junior Eurovision Song Contest, held on 24 October 2026 at the Malta Fairs & Conventions Centre in Ta' Qali, Attard, Malta. It will be organised by the European Broadcasting Union (EBU) and host broadcaster Public Broadcasting Services (PBS).\n3. Eurovision Song Contest 2026: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on\n4. Eurovision Song Contest 2027: The Eurovision Song Contest 2027 will be the 71st edition of the Eurovision Song Contest. It is set to be organised by the European Broadcasting Union\n5. Eurovision Song Contest Asia: The Eurovision Song Contest Asia (ESCA) is an upcoming international song competition modelled after the Eurovision Song Contest, where broadcasters from"
+        },
+        {
+          "query": "Eurovision 2026 winning country song Vienna",
+          "results": "1. Eurovision Song Contest 2026: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16\n   Intro: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16 May 2026, held at Wiener Stadthalle in Vienna, Austria, and presented by Victoria Swarovski and Michael Ostrowski, with Emily Busvine acting as the green room host. It was organised by the European Broadcasting Union (EBU) and host broadcaster \u00d6sterreichischer Rundfunk (ORF), which staged the event after winning the 2025 contest for Austria with the song \"Wasted Love\" by JJ.\nBroadcasters from thirty-five countries participated in the contest, two fewer than in 2025 and the smallest number of participants since 2003, before the introduction of semi-finals. Iceland, Ireland, the Netherlands, Slovenia, and Spain opted not to participate in protest at Israel's inclusion in the context of the Gaza war, marking the largest number of boycotting countries in the contest's history since 1970, while Bulgaria, Moldova, and Romania returned after\u2026\n2. Bulgaria in the Eurovision Song Contest 2026: Bulgaria was represented at the Eurovision Song Contest 2026 with the song \"Bangaranga\", written by Anne Judith Wik, Cristian Tarcea, Darina Yotova and\n   Intro: Bulgaria was represented at the Eurovision Song Contest 2026 with the song \"Bangaranga\", written by Anne Judith Wik, Cristian Tarcea, Darina Yotova and Dimitris Kontopoulos, and performed by Yotova under her stage name Dara. The Bulgarian participating broadcaster, Bulgarian National Television (BNT), returned to the contest after a three-year hiatus and organised the national final Natsionalnata selektsiya in order to select its entry for the contest.\nBulgaria was drawn to compete in the second semi-final of the Eurovision Song Contest which took place on 14 May 2026. Performing during the show in position 1, \"Bangaranga\" was announced among the top 10 entries of the second semi-final and therefore qualified to compete in the final on 16 May. It was later revealed that Bulgaria placed first out of the 15 participating countries in the semi-final with 278 points. In the final, Bulgaria performed in position 12 and placed first out of the 25 participating countries, winning the contest\u2026\n3. Austria in the Eurovision Song Contest 2026: Austria was represented at the Eurovision Song Contest 2026 with the song \"Tanzschein\", written by Benjamin Gedeon, Elias Stejskal and Ella Stern, and\n4. List of Eurovision Song Contest winners: 73 songs written by 154 songwriters have won the Eurovision Song Contest, an international song competition organised annually by the European Broadcasting\n5. Azerbaijan in the Eurovision Song Contest 2026: Azerbaijan was represented at the Eurovision Song Contest 2026 with the song \"Just Go\", written by Fuad Javadov and Nurlana Jafarova, and performed by"
+        }
+      ],
+      "num_searches": 4,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "bulgaria"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Bulgaria as the winner with Dara performing 'Bangaranga', matching the gold answer's key facts.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm Bulgaria won, Dara/Darina Yotova performed 'Bangaranga', the 278-point semi-final win, first out of 25 in the final, Vienna venue, and the three-year hiatus.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "recent_05",
+      "category": "recent",
+      "question": "Who won the men's singles title at the 2026 Australian Open?",
+      "gold_answer": "Carlos Alcaraz. He defeated Novak Djokovic 2-6, 6-2, 6-3, 7-5 in the men's singles final of the 2026 Australian Open.",
+      "error": null,
+      "latency_s": 8.87,
+      "agent_answer": "I was unable to retrieve results from Wikipedia due to search errors. Additionally, the **2026 Australian Open** has not yet taken place \u2014 it is typically held in January, and as of my knowledge cutoff, the 2026 tournament is in the future. Therefore, there is no winner to report yet.\n\nIf the tournament has recently concluded and you're looking for the latest result, I'd recommend checking a current news source or the official Australian Open website for the most up-to-date information.",
+      "queries": [
+        "2026 Australian Open men's singles",
+        "2026 Australian Open tennis"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 Australian Open men's singles",
+          "results": "SEARCH ERROR: Wikipedia search for '2026 Australian Open men's singles' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=2026+Australian+Open+men%27s+singles&srlimit=5&format=json)."
+        },
+        {
+          "query": "2026 Australian Open tennis",
+          "results": "SEARCH ERROR: Wikipedia search for '2026 Australian Open tennis' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=2026+Australian+Open+tennis&srlimit=5&format=json)."
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": false,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "correctness_reason": "The agent claimed the tournament had not occurred and gave no winner, whereas the gold says Carlos Alcaraz won.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "All searches failed with errors, so no snippets were available to ground any claim.",
+        "honest_decline": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,1158 @@
+{
+  "run_id": "ee8fa7e3",
+  "started_at": "2026-07-14T17:20:50",
+  "agent_model": "claude-sonnet-4-6",
+  "prompt_version": "v1",
+  "search_enabled": true,
+  "judge_model": "claude-opus-4-8",
+  "questions_file": "/Users/souri/Downloads/Anthro Test/eval/questions.json",
+  "num_questions": 27,
+  "summary": {
+    "single_hop": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 5,
+      "closed_form_match": 5,
+      "judged": 5,
+      "correct": 5,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 5,
+      "grounded": 4,
+      "honest_declines": 0
+    },
+    "multi_hop": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 0,
+      "closed_form_match": 0,
+      "judged": 5,
+      "correct": 5,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 5,
+      "grounded": 5,
+      "honest_declines": 0
+    },
+    "ambiguous_entity": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 0,
+      "closed_form_match": 0,
+      "judged": 5,
+      "correct": 3,
+      "partially_correct": 2,
+      "incorrect": 0,
+      "grounded_applicable": 5,
+      "grounded": 4,
+      "honest_declines": 0
+    },
+    "unanswerable": {
+      "n": 5,
+      "search_ok": 4,
+      "closed_form_applicable": 1,
+      "closed_form_match": 1,
+      "judged": 5,
+      "correct": 5,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 3,
+      "grounded": 3,
+      "honest_declines": 0
+    },
+    "recent": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 5,
+      "closed_form_match": 5,
+      "judged": 5,
+      "correct": 5,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 5,
+      "grounded": 5,
+      "honest_declines": 0
+    },
+    "no_search": {
+      "n": 2,
+      "search_ok": 2,
+      "closed_form_applicable": 2,
+      "closed_form_match": 2,
+      "judged": 2,
+      "correct": 2,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 0,
+      "grounded": 0,
+      "honest_declines": 0
+    },
+    "ALL": {
+      "n": 27,
+      "search_ok": 26,
+      "closed_form_applicable": 13,
+      "closed_form_match": 13,
+      "judged": 27,
+      "correct": 25,
+      "partially_correct": 2,
+      "incorrect": 0,
+      "grounded_applicable": 23,
+      "grounded": 21,
+      "honest_declines": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "single_01",
+      "category": "single_hop",
+      "question": "In what year was the Eiffel Tower completed?",
+      "gold_answer": "1889.",
+      "error": null,
+      "latency_s": 7.34,
+      "agent_answer": "The Eiffel Tower was completed in **1889**. It was built by Gustave Eiffel's company between 1887 and 1889, and served as the centrepiece of the 1889 World's Fair in Paris, also celebrating the centennial of the French Revolution.",
+      "queries": [
+        "Eiffel Tower construction completion year",
+        "Eiffel Tower"
+      ],
+      "retrieved": [
+        {
+          "query": "Eiffel Tower construction completion year",
+          "results": "1. Eiffel Tower\n2. Gustave Eiffel\n3. Calgary Tower\n   Intro: The Calgary Tower is a 190.8-metre (626 ft) free-standing observation tower  in the downtown core of Calgary, Alberta, Canada. Originally called the Husky Tower, it was conceived as a joint venture between Marathon Realty Company Limited and Husky Oil as part of an urban renewal plan and to celebrate Canada's centennial of 1967. The tower was built at a cost of CA$3,500,000 and weighs approximately 10,884 tonnes, of which 60% is below ground. It opened to the public on June 30, 1968, as the tallest structure in Calgary and the tallest in Canada outside Toronto. It was renamed the \"Calgary Tower\" in 1971.\nThe building is a founding member of the World Federation of Great Towers.\n4. CN Tower\n   Intro: The CN Tower is a 553.3-metre-high (1,815.3 ft) communications and observation tower in Toronto, Ontario, Canada. Completed in 1976, it is located in downtown Toronto, built on the former Railway Lands. Its name \"CN\" refers to Canadian National, the railway company that built the tower. Following the railway's decision to divest non-core freight railway assets prior to the company's privatization in 1995, it transferred the tower to the Canada Lands Company, a federal Crown corporation responsible for the government's real estate portfolio.\nThe CN Tower held the record for the world's tallest free-standing structure for 32 years, from 1975 until 2007, when it was surpassed by the Burj Khalifa, and was the world's tallest tower until 2009 when it was surpassed by the Canton Tower. It is currently the tenth-tallest free-standing structure in the world and remains the tallest free-standing structure on land in North America, the Western Hemisphere, and the entire Western world. In 1995, t\u2026\n5. Tokyo Tower"
+        },
+        {
+          "query": "Eiffel Tower",
+          "results": "1. Eiffel Tower\n   Intro: The Eiffel Tower (  EYE-f\u0259l; French: Tour Eiffel [tu\u0281 \u025bf\u025bl] ) is a lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.\nLocally nicknamed \"La dame de fer\" (French for \"Iron Lady\") for its use of wrought iron, it was constructed as the centrepiece of the 1889 World's Fair, and to crown the centennial anniversary of the French Revolution. Although initially criticised by some of France's leading artists and intellectuals for its design, it has since become a global cultural icon of France and one of the most recognisable structures in the world. The tower received 5,889,000 visitors in 2022. The Eiffel Tower is the most visited monument with an entrance fee in the world: 6.91 million people ascended it in 2015. It was designated a monument historique in 1964, and was named part of a UNESCO World Heritage Site (\"Paris, Banks of the Seine\") in 1991.\nThe tower is 330 metres (1,083 ft\u2026\n2. List of names on the Eiffel Tower\n3. Gustave Eiffel\n4. Eiffel Tower replicas and derivatives\n5. Champ de Mars\n   Intro: The Champ de Mars is a large public greenspace in Paris, France, located in the seventh arrondissement, between the Eiffel Tower to the northwest and the \u00c9cole Militaire to the southeast. The park is named after the Campus Martius (\"Mars Field\") in Rome, which was dedicated to the god Mars. The name alludes to the fact that the lawns here were formerly used as drilling and marching grounds by the French military. \nThe nearest M\u00e9tro stations are La Motte-Picquet\u2013Grenelle, \u00c9cole Militaire, and Champ de Mars-Tour Eiffel, an RER suburban-commuter-railway station. A disused station, Champ de Mars, is also nearby."
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "1889"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent states the Eiffel Tower was completed in 1889, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippet confirms the tower was built from 1887 to 1889 as the centrepiece of the 1889 World's Fair and to crown the French Revolution centennial.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "single_02",
+      "category": "single_hop",
+      "question": "What is the chemical symbol for gold?",
+      "gold_answer": "Au.",
+      "error": null,
+      "latency_s": 3.38,
+      "agent_answer": "The chemical symbol for gold is **Au**, derived from the Latin word *aurum*, meaning gold. Gold is element number 79 on the periodic table.",
+      "queries": [
+        "chemical symbol for gold element"
+      ],
+      "retrieved": [
+        {
+          "query": "chemical symbol for gold element",
+          "results": "1. Chemical symbol\n   Intro: Chemical symbols are the abbreviations used in chemistry, mainly for chemical elements, but also for functional groups, chemical compounds, and other entities. Element symbols for chemical elements, also known as atomic symbols, normally consist of one or two letters from the Latin alphabet and are written with the first letter capitalised.\n2. Gold\n3. Alchemical symbol\n   Intro: Alchemical symbols were used to denote chemical elements and compounds, as well as alchemical apparatus and processes, until the 18th century. Although notation was partly standardized, style and symbol varied between alchemists. L\u00fcdy-Tenger published an inventory of 3,695 symbols and variants, and that was not exhaustive, omitting for example many of the symbols used by Isaac Newton. This page therefore lists only the most common symbols.\n4. List of chemical elements\n5. List of chemical element name etymologies"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "au"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Au as the chemical symbol for gold, matching the gold answer.",
+        "groundedness": "partially_grounded",
+        "groundedness_reason": "The snippets reference gold and chemical symbols but do not explicitly state 'Au', the Latin aurum, or atomic number 79.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "single_03",
+      "category": "single_hop",
+      "question": "Who wrote the novel 'Pride and Prejudice'?",
+      "gold_answer": "Jane Austen.",
+      "error": null,
+      "latency_s": 4.7,
+      "agent_answer": "**Pride and Prejudice** was written by the English author **Jane Austen**. She wrote it when she was 20\u201321 years old, and it was published in **1813**. It is one of her most beloved works and follows the story of Elizabeth Bennet as its protagonist.",
+      "queries": [
+        "Pride and Prejudice novel"
+      ],
+      "retrieved": [
+        {
+          "query": "Pride and Prejudice novel",
+          "results": "1. Pride and Prejudice\n   Intro: Pride and Prejudice is a novel by English author Jane Austen. Written when she was aged 20\u201321, it was her third novel scribed and became the second to see print when it was published in 1813. A novel of manners, it follows the character development of Elizabeth Bennet, the protagonist of the book, who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness.\nHer father, Mr Bennet\u2014owner of the Longbourn estate in Hertfordshire\u2014has five daughters; but this estate is entailed by a strict settlement that Mr Bennet entered into when coming of age, so now can only be inherited in the male line. His wife brought a settlement of \u00a35,000 into the marriage as her 'separate estate', and has since inherited an additional \u00a34,000 on the death of her father; however, Mrs Bennet and her daughters face living only on the interest from these sums upon Mr Bennet's death. To his regret, he has failed to save out of the income\u2026\n2. Pride and Prejudice and Zombies\n3. Pride and Prejudice (2026 TV series)\n4. Pride & Prejudice (2005 film)\n   Intro: Pride & Prejudice is a 2005 period romance film directed by Joe Wright, in his feature directorial debut, based on Jane Austen's 1813 novel of the same name. The film features five sisters from an English family of landed gentry as they deal with issues of marriage, morality, and misconceptions. Keira Knightley stars as Elizabeth Bennet, while Matthew Macfadyen plays Mr Darcy, who falls in love with her.\nScreenwriter Deborah Moggach initially attempted to make her script as faithful to the novel as possible, writing from Elizabeth's perspective while preserving much of the original dialogue. Wright encouraged greater deviation from the text, including changing the Bennet family dynamics. Wright and Moggach set the film in an earlier period and avoided depicting a \"perfectly clean Regency world\", presenting instead a \"muddy hem version\" of the time. It was shot entirely on location in England on an 11-week schedule. Wright found casting difficult due to past performances of particular c\u2026\n5. Pride and Prejudice and Zombies (film)"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "jane austen"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Jane Austen as the author, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "All claims (Jane Austen, age 20-21, published 1813, Elizabeth Bennet protagonist) are directly supported by snippet 1.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "single_04",
+      "category": "single_hop",
+      "question": "What is the capital city of Australia?",
+      "gold_answer": "Canberra.",
+      "error": null,
+      "latency_s": 4.18,
+      "agent_answer": "The capital city of Australia is **Canberra**. It is located within the **Australian Capital Territory (ACT)** in southeastern Australia. Canberra was purpose-built as a compromise between Sydney and Melbourne following the federation of the Australian colonies, and it serves as the seat of the national government, hosting institutions such as the Parliament of Australia and the High Court of Australia.",
+      "queries": [
+        "capital city of Australia"
+      ],
+      "retrieved": [
+        {
+          "query": "capital city of Australia",
+          "results": "1. List of Australian capital cities\n2. Australian Capital Territory\n   Intro: The Australian Capital Territory (ACT), known as the Federal Capital Territory until 1938, is an internal territory of Australia. Canberra, the capital city of Australia, is situated within the territory and is the territory's primate city. The Australian Capital Territory is located in southeastern Australia as an enclave surrounded by the state of New South Wales. The territory was excised from New South Wales in 1911 to serve as the seat of government for the Commonwealth, in accordance with Section 125 of the Australian Constitution. Today, the ACT hosts important institutions, such as the Parliament of Australia and High Court of Australia, as well as the headquarters of many federal departments and agencies.\nOn 1 January 1901, the self-governing Australian colonies federated to form the Commonwealth of Australia. Section 125 of the Australian Constitution provided that a tract of land, situated in New South Wales and not less than 100 miles (160 km) from Sydney, would be ceded to\u2026\n3. List of cities in Australia by population\n4. Capital city\n5. Canberra\n   Intro: Canberra (  KAN-br\u0259; Ngunawal: Kanbarra) is the capital city of Australia and the largest population centre in the Australian Capital Territory. With an estimated population of 484,630 as of 2025, Canberra is Australia's largest inland city and the eighth-largest Australian city by population. The city occupies most of the northern quadrant of the Australian Capital Territory, and its urban sprawl borders the state of New South Wales to the northwest, northeast and southeast. The Brindabellas are located south and west of the city, and form the northern part of the Australian Alps, the country's highest mountain range.\nCanberra was established following the federation of the Australian colonies to serve as the seat of government for the new nation, being a compromise between Sydney and Melbourne, Australia\u2019s two largest cities. The area chosen for the capital had been inhabited by Aboriginal Australians for up to 21,000 years, by groups including the Ngunnawal and Ngambri. European set\u2026"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "canberra"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Canberra as the capital of Australia, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "All key claims (Canberra, ACT location, compromise between Sydney and Melbourne, hosting Parliament and High Court) are supported by the retrieved snippets.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "single_05",
+      "category": "single_hop",
+      "question": "How many bones are in the adult human body?",
+      "gold_answer": "206.",
+      "error": null,
+      "latency_s": 8.27,
+      "agent_answer": "The adult human body has **206 bones**. Interestingly, we are born with around **270 bones**, but as we grow, many of these fuse together, leaving 206 by adulthood. The skeleton is divided into two main parts: the **axial skeleton** (skull, spine, and rib cage) and the **appendicular skeleton** (limbs, shoulder girdle, and pelvic girdle).",
+      "queries": [
+        "number of bones in adult human body",
+        "human skeleton total bones 206",
+        "human skeleton"
+      ],
+      "retrieved": [
+        {
+          "query": "number of bones in adult human body",
+          "results": "1. List of bones of the human skeleton\n2. List of organs of the human body\n3. Composition of the human body\n   Intro: Body composition may be analyzed in various ways. This can be done in terms of the chemical elements present, or by molecular structure e.g., water, protein, fats (or lipids), hydroxyapatite (in bones), carbohydrates (such as glycogen and glucose) and DNA. In terms of tissue type, the body may be analyzed into water, fat, connective tissue, muscle, bone, etc. In terms of cell type, the body contains hundreds of different types of cells, but notably, the largest number of cells contained in a human body (though not the largest mass of cell) are not human cells, but bacteria residing in the normal human gastrointestinal tract.\n4. Development of the human body\n   Intro: Development of the human body is the process of growth to maturity. The process begins with fertilization, where an egg released from the ovary of a female is penetrated by a sperm cell from a male. The resulting zygote develops through cell proliferation and differentiation, and the resulting embryo then implants in the uterus, where the embryo continues development through a fetal stage until birth. Further growth and development continues after birth, and includes both physical and psychological development that is influenced by genetic, hormonal, environmental and other factors. This continues throughout life: through childhood and adolescence into adulthood.\n5. List of human cell types"
+        },
+        {
+          "query": "human skeleton total bones 206",
+          "results": "1. List of bones of the human skeleton\n2. Human skeleton\n3. Bones (TV series)\n   Intro: Bones is an American police procedural drama television series created by Hart Hanson for Fox. It premiered on September 13, 2005, and concluded on March 28, 2017, airing for 246 episodes over 12 seasons. The show is based on forensic anthropology and forensic archaeology, with each episode focusing on a Federal Bureau of Investigation (FBI) case file concerning the mystery behind human remains brought by FBI Special Agent Seeley Booth (David Boreanaz) to Temperance \"Bones\" Brennan (Emily Deschanel), a forensic anthropologist. It also explores the personal lives of the characters. The rest of the main cast includes Michaela Conlin, T. J. Thyne, Eric Millegan, Jonathan Adams, Tamara Taylor, John Francis Daley, and John Boyd.\nThe series is based on the life and novels of forensic anthropologist Kathy Reichs, who also produced the show. Its title character, Temperance Brennan, is named after the protagonist of Reichs' crime novel series. In the Bones universe, Brennan writes successful my\u2026\n4. Skeleton\n5. Bone\n   Intro: A bone is a rigid organ that constitutes part of the skeleton in most vertebrate animals. Bones protect the organs of the body, produce red and white blood cells, store minerals, help regulate acid-base homeostasis, provide structure and support for the body, and enable mobility and hearing. Bones come in a variety of shapes and sizes and have complex internal and external structures.\nBone tissue (also known as osseous tissue or bone in the uncountable) is a form of hard tissue, specialised connective tissue that is mineralized and has an intercellular honeycomb-like matrix, which helps to give the bone rigidity. Bone tissue is made up of different types of bone cells: osteoblasts and osteocytes (which form and mineralise bone), osteoclasts (which resorb bone), and modified or flattened osteoblasts (lining cells that form a protective layer on the bone surface). The mineralised matrix of bone tissue has an organic component of mainly ossein, a form of collagen, and an inorganic compone\u2026"
+        },
+        {
+          "query": "human skeleton",
+          "results": "1. Human skeleton\n   Intro: The human skeleton is the internal framework of the human body. It is composed of around 270 bones at birth \u2013 this total decreases to around 206 bones by adulthood after some bones fuse together, not counting accessory bones. The bone mass in the skeleton makes up about 14% of the total body weight (ca. 10\u201311 kg for an average person) and reaches maximum mass between the ages of 25 and 30. The human skeleton can be divided into the axial skeleton and the appendicular skeleton. The axial skeleton is formed by the spinal column, the rib cage, the skull, and associated bones. The appendicular skeleton, which is attached to the axial skeleton, is formed by the shoulder girdle, the pelvic girdle and the bones of the upper and lower limbs.\nThe human skeleton performs six major functions: support, movement, protection, production of blood cells, storage of minerals, and endocrine regulation.\nThe human skeleton is not as sexually dimorphic as that of many other primate species, but subtle diff\u2026\n2. List of bones of the human skeleton\n3. Giant human skeletons\n   Intro: Giant skeletons reported in the United States until the early 20th century were a combination of hoaxes, scams, fabrications, and the misidentifications of extinct megafauna. Many were reported to have been found in Native American burial mounds. Examples from 7 ft (2.1 m) to 20 ft (6.1 m) tall were reported in many parts of the United States.\nThe claims of \"giant skeletons\" were debunked in 1934 by Ale\u0161 Hrdli\u010dka, curator of anthropology at the Smithsonian Institution. The Smithsonian Institution opposed the popular myth that an \"ancient white race\" were the Mound Builders. The role of the Smithsonian Institution in debunking such claims led to a conspiracy theory that Smithsonian archeologists were destroying giants' bones in order to cover up the existence of giants.\nHrdli\u010dka blamed the reports of giant skeletons on the \"will to believe\" coupled with \"amateur anthropologists\" who were unfamiliar with human anatomy. In 2014 an internet story began circulating which claimed that the Sm\u2026\n4. Skeleton\n5. Skeletonization"
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "206"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent states 206 bones in the adult body, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The Human skeleton snippet confirms ~270 bones at birth decreasing to ~206 by adulthood and the axial/appendicular division.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "multi_01",
+      "category": "multi_hop",
+      "question": "Which is taller, the Eiffel Tower or the Statue of Liberty, and by roughly how much?",
+      "gold_answer": "The Eiffel Tower is much taller. It is about 330 m tall (to the tip, including antennas); the Statue of Liberty is about 93 m from ground to the tip of the torch. The Eiffel Tower is therefore roughly 235-240 m taller.",
+      "error": null,
+      "latency_s": 5.8,
+      "agent_answer": "The **Eiffel Tower** is significantly taller than the Statue of Liberty.\n\n- **Eiffel Tower**: ~330 metres (1,083 ft)\n- **Statue of Liberty**: ~93 metres (305 ft) including its pedestal, or just 46 metres (151 ft) for the statue alone\n\nThe Eiffel Tower is roughly **3.5 times taller** than the full Statue of Liberty (statue + pedestal), or about **240 metres (780 ft) taller**. Even compared just to the statue itself, the Eiffel Tower dwarfs it by around 280 metres (930 ft).",
+      "queries": [
+        "Eiffel Tower height",
+        "Statue of Liberty height"
+      ],
+      "retrieved": [
+        {
+          "query": "Eiffel Tower height",
+          "results": "1. Eiffel Tower\n   Intro: The Eiffel Tower (  EYE-f\u0259l; French: Tour Eiffel [tu\u0281 \u025bf\u025bl] ) is a lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.\nLocally nicknamed \"La dame de fer\" (French for \"Iron Lady\") for its use of wrought iron, it was constructed as the centrepiece of the 1889 World's Fair, and to crown the centennial anniversary of the French Revolution. Although initially criticised by some of France's leading artists and intellectuals for its design, it has since become a global cultural icon of France and one of the most recognisable structures in the world. The tower received 5,889,000 visitors in 2022. The Eiffel Tower is the most visited monument with an entrance fee in the world: 6.91 million people ascended it in 2015. It was designated a monument historique in 1964, and was named part of a UNESCO World Heritage Site (\"Paris, Banks of the Seine\") in 1991.\nThe tower is 330 metres (1,083 ft\u2026\n2. Eiffel Tower replicas and derivatives\n3. Gustave Eiffel\n4. Eiffel Tower (Paris, Texas)\n   Intro: Texas's Eiffel Tower is a landmark in the city of Paris, Texas. The tower was constructed in 1993. It is a rough scale model of the Eiffel Tower in Paris, France; at 65 ft (20 m) in height, it is roughly one-sixteenth of the height of the original.  It is located adjacent to the Love Civic Center and the Red River Valley Veterans Memorial in the southeastern part of the city.\n5. Eiffel Tower (Six Flags)"
+        },
+        {
+          "query": "Statue of Liberty height",
+          "results": "1. Replicas of the Statue of Liberty\n   Intro: Hundreds of replicas of New York City's Statue of Liberty (Liberty Enlightening the World) have been created worldwide. The original Statue of Liberty, designed by sculptor Fr\u00e9d\u00e9ric Auguste Bartholdi, is 151 feet tall and stands on a pedestal that is 154 feet tall, making the height of the entire sculpture 305 feet. The design for the original Statue of Liberty began in 1865, with final installation in 1886.\n2. List of tallest statues\n   Intro: This list of tallest statues includes completed statues that are at least 50 m (164 ft) tall. The height values in this list are measured to the highest part of the human or animal figure, but exclude the height of any pedestal (plinth), or other base platform as well as any mast, spire, or other structure that extends higher than the tallest figure in the monument.\nThe definition of statue for this list is a free-standing sculpture (as opposed to a relief), representing one or more people or animals (real or mythical), in their entirety or partially (such as a bust). Heights stated are those of the statue itself and (separately) the total height of the monument that includes structures the statue is standing on or holding. Monuments that contain statues are included in this list only if the statue fulfills these and the height criteria.\n3. Statue of Liberty\n4. Statue of Unity\n5. Statue of Liberty (Finland)"
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies the Eiffel Tower as much taller (~330 m vs ~93 m) and gives the difference as roughly 240 m, matching the gold.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The Eiffel Tower's 330 m and the Statue of Liberty's 151 ft statue / 305 ft total figures appear in the retrieved snippets.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "multi_02",
+      "category": "multi_hop",
+      "question": "Who was born first, Albert Einstein or Isaac Newton?",
+      "gold_answer": "Isaac Newton was born first. Newton was born in 1643 (or 1642 Old Style); Einstein was born in 1879.",
+      "error": null,
+      "latency_s": 4.53,
+      "agent_answer": "**Isaac Newton** was born first. Here's a quick comparison:\n\n- **Isaac Newton** was born on **January 4, 1643** (by the Gregorian calendar).\n- **Albert Einstein** was born on **March 14, 1879**.\n\nNewton was born over **236 years** before Einstein.",
+      "queries": [
+        "Albert Einstein birth date",
+        "Isaac Newton birth date"
+      ],
+      "retrieved": [
+        {
+          "query": "Albert Einstein birth date",
+          "results": "1. Albert Einstein\n   Intro: Albert Einstein (14 March 1879 \u2013 18 April 1955) was a German-born theoretical physicist best known for developing the known theory of relativity. Einstein also made important contributions to quantum theory. His mass\u2013energy equivalence formula E = mc2, which arises from special relativity, has been called \"the world's most famous equation\". He received the 1921 Nobel Prize in Physics for \"his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect\".\nBorn as a subject to the Kingdom of W\u00fcrttemberg, part of the German Empire, Einstein moved to Switzerland in 1895, forsaking his citizenship the following year. In 1896, at the age of seventeen, he enrolled in the mathematics and physics teaching diploma program at the Swiss federal polytechnic school in Zurich, graduating in 1900. He acquired Swiss citizenship a year later, which he kept for the rest of his life, and afterwards secured a permanent position at the Swiss Patent Office in Bern.\u2026\n2. Albert Einstein Memorial\n   Intro: The Albert Einstein Memorial is a monumental bronze statue by sculptor Robert Berks, depicting Albert Einstein seated with manuscript papers in hand. It is located in central Washington, D.C., United States, in a grove of trees at the southwest corner of the grounds of the National Academy of Sciences at 2101 Constitution Avenue N.W., near the Vietnam Veterans Memorial. Two replicas exist at the Israel Academy of Sciences and Humanities and the Georgia Institute of Technology.\n3. General relativity\n4. Bohr\u2013Einstein debates\n5. Alfred Einstein"
+        },
+        {
+          "query": "Isaac Newton birth date",
+          "results": "1. Date of the birth of Jesus\n   Intro: The date of the birth of Jesus is not stated in the gospels or in any historical sources and the evidence is insufficient to allow for consistent dating. However, most biblical scholars and ancient historians believe that his birth date is around 6 to 4 BC. Two main approaches have been used to estimate the year of the birth of Jesus: one based on the accounts in the Gospels of his birth with reference to King Herod's reign, and the other by subtracting his stated age of \"about 30 years\" when he began preaching. \nAside from the historiographical approach of anchoring the possible year to certain independently well-documented events mentioned in Matthew and Luke, other techniques used by believers to identify the year of the birth of Jesus have included working backward from the estimation of the start of the ministry of Jesus and assuming that the accounts of astrological portents in the gospels can be associated with certain astronomical alignments or other phenomena.\nThe day or seaso\u2026\n2. Isaac Newton's occult studies\n3. Early life of Isaac Newton\n   Intro: The following article is part of a biography of Sir Isaac Newton, the English mathematician and scientist, author of the Principia. It portrays the years after Newton's birth in 1643, his education, as well as his early scientific contributions, before the writing of his main work, the Principia Mathematica, in 1685.\n4. Isaac Newton\n5. Newton's laws of motion"
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states Isaac Newton was born first, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "Einstein's 1879 birth and Newton's 1643 birth are both supported by the retrieved snippets.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "multi_03",
+      "category": "multi_hop",
+      "question": "Who has won more Academy Awards for Best Director: Steven Spielberg or Martin Scorsese?",
+      "gold_answer": "Steven Spielberg, with two Best Director Oscars (Schindler's List, Saving Private Ryan), versus Martin Scorsese's one (The Departed).",
+      "error": null,
+      "latency_s": 8.67,
+      "agent_answer": "Based on the Wikipedia search results, **Steven Spielberg has won more Academy Awards for Best Director than Martin Scorsese \u2014 but only slightly.**\n\n- **Steven Spielberg** has won **2** Academy Awards for Best Director: for *Schindler's List* (1993) and *Saving Private Ryan* (1998).\n- **Martin Scorsese** has won **1** Academy Award for Best Director: for *The Departed* (2006).\n\nInterestingly, Scorsese actually holds more *nominations* for Best Director \u2014 10 nominations compared to Spielberg's 9 \u2014 making him the most-nominated living director in that category. But when it comes to wins, Spielberg leads 2 to 1.",
+      "queries": [
+        "Steven Spielberg Academy Awards Best Director wins",
+        "Martin Scorsese Academy Awards Best Director wins",
+        "Steven Spielberg Academy Award Best Director wins Schindler's List"
+      ],
+      "retrieved": [
+        {
+          "query": "Steven Spielberg Academy Awards Best Director wins",
+          "results": "1. Steven Spielberg\n2. List of awards and nominations received by Steven Spielberg\n3. 98th Academy Awards\n   Intro: The 98th Academy Awards ceremony, presented by the Academy of Motion Picture Arts and Sciences (AMPAS), took place on March 15, 2026, at the Dolby Theatre in Hollywood, Los Angeles. During the gala, the AMPAS presented Academy Awards (commonly referred to as Oscars) in 24 categories honoring films released in 2025. The ceremony, televised in the United States by ABC and streamed on Hulu, was produced by Raj Kapoor and Katy Mullan, and was directed by Hamish Hamilton. Comedian Conan O'Brien hosted the show for the second consecutive year.\nIn related events, the Academy held its 16th Governors Awards ceremony at the Ray Dolby Ballroom of the Ovation Hollywood complex in Hollywood on November 16, 2025. The Academy Scientific and Technical Awards were presented by host Sofia Carson on April 28, 2026, in a ceremony at the Academy Museum of Motion Pictures in Los Angeles.\nOne Battle After Another won a leading six awards, including Best Picture and Best Casting, becoming the inaugural recipi\u2026\n4. Lincoln (film)\n5. 96th Academy Awards\n   Intro: The 96th Academy Awards ceremony, presented by the Academy of Motion Picture Arts and Sciences (AMPAS), took place on March 10, 2024, at the Dolby Theatre in Hollywood, Los Angeles. During the gala, the AMPAS presented Academy Awards (commonly referred to as Oscars) in 23 categories honoring films released in 2023. The ceremony, televised in the United States by ABC, was produced by Raj Kapoor and Katy Mullan, and was directed by Hamish Hamilton. Comedian Jimmy Kimmel hosted the show for the fourth time. He first presided over the 89th ceremony held in 2017, and had most recently hosted the previous year's ceremony.\nIn related events, the Academy held its 14th Governors Awards ceremony at the Ray Dolby Ballroom of the Ovation Hollywood complex in Hollywood, on January 9, 2024. The Academy Scientific and Technical Awards were presented by host Natasha Lyonne on February 23, 2024, in a ceremony at the Academy Museum of Motion Pictures in Los Angeles.\nOppenheimer won seven awards, includi\u2026"
+        },
+        {
+          "query": "Martin Scorsese Academy Awards Best Director wins",
+          "results": "1. Martin Scorsese\n2. 96th Academy Awards\n   Intro: The 96th Academy Awards ceremony, presented by the Academy of Motion Picture Arts and Sciences (AMPAS), took place on March 10, 2024, at the Dolby Theatre in Hollywood, Los Angeles. During the gala, the AMPAS presented Academy Awards (commonly referred to as Oscars) in 23 categories honoring films released in 2023. The ceremony, televised in the United States by ABC, was produced by Raj Kapoor and Katy Mullan, and was directed by Hamish Hamilton. Comedian Jimmy Kimmel hosted the show for the fourth time. He first presided over the 89th ceremony held in 2017, and had most recently hosted the previous year's ceremony.\nIn related events, the Academy held its 14th Governors Awards ceremony at the Ray Dolby Ballroom of the Ovation Hollywood complex in Hollywood, on January 9, 2024. The Academy Scientific and Technical Awards were presented by host Natasha Lyonne on February 23, 2024, in a ceremony at the Academy Museum of Motion Pictures in Los Angeles.\nOppenheimer won seven awards, includi\u2026\n3. List of awards and nominations received by Martin Scorsese\n   Intro: Martin Scorsese is an American filmmaker who has received several awards over his six decade long career, including an Academy Award, four BAFTA Awards, three Emmy Awards, three Golden Globe Awards and a Grammy Award.\nChronicling his achievements in the film industry, the acclaimed filmmaker has received ten nominations for the Academy Award for Best Director, one more than Steven Spielberg, making him the most-nominated living director, second all-time only to William Wyler (12 nominations). He has won the Academy Award once, for the crime thriller The Departed (2006). Ten of Scorsese's films have been nominated for the Academy Award for Best Picture: the psychological drama Taxi Driver (1976), the sports drama Raging Bull (1980), the mobster film Goodfellas (1990), the drama Gangs of New York (2002), the historical epic The Aviator (2004), the crime thriller The Departed (2006), the children's adventure Hugo (2011), the crime comedy-dramaThe Wolf of Wall Street (2013), the mobster ep\u2026\n4. Mr. Scorsese\n5. The Departed"
+        },
+        {
+          "query": "Steven Spielberg Academy Award Best Director wins Schindler's List",
+          "results": "1. Steven Spielberg\n2. Schindler's List\n3. List of awards and nominations received by Steven Spielberg\n4. Academy Award for Best Director\n   Intro: The Academy Award for Best Director (officially known as the Academy Award of Merit for Directing) is an award presented annually by the Academy of Motion Picture Arts and Sciences (AMPAS). It is given in honor of a film director who has exhibited outstanding directing while working in the film industry.\nThe 1st Academy Awards ceremony was held in 1929 with the award being split into \"Dramatic\" and \"Comedy\" categories; Frank Borzage and Lewis Milestone won for 7th Heaven and Two Arabian Knights, respectively. However, these categories were merged for all subsequent ceremonies. Nominees are determined by single transferable vote within the directors branch of AMPAS; winners are selected by a plurality vote from the entire eligible voting members of the academy.\nFor the first eleven years of the Academy Awards, directors were allowed to be nominated for multiple films in the same year. However, after the nomination of Michael Curtiz for two films, Angels with Dirty Faces and Four Daughte\u2026\n5. Golden Globe Award for Best Director\n   Intro: The Golden Globe Award for Best Director \u2013 Motion Picture is a Golden Globe Award that was first presented annually by the Hollywood Foreign Press Association, an organization composed of journalists who cover the United States film industry for publications based outside North America, since 1943 until 2023.\nHaving won all four of his nominations, Elia Kazan has been honored most often in this category. Clint Eastwood, Milo\u0161 Forman, David Lean, Martin Scorsese, Steven Spielberg, and Oliver Stone tie for second place with three wins each. Steven Spielberg has had the most nominations (fourteen). Barbra Streisand, Chlo\u00e9 Zhao and Jane Campion are the only women to have won the award.\nReceiving the award in 1984 for Yentl, Barbra Streisand became the first woman to win the Golden Globe for Best Director.\nShe remained the only woman to win a Golden Globe for directing for 37 years until Chlo\u00e9 Zhao won the award for Nomadland in 2021 and became the second woman and the first Asian woman to\u2026"
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states Spielberg won 2 (Schindler's List, Saving Private Ryan) versus Scorsese's 1 (The Departed), matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm Scorsese won once for The Departed and has 10 nominations (one more than Spielberg's 9), and the Spielberg pages support his Best Director wins.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "multi_04",
+      "category": "multi_hop",
+      "question": "Which country hosted the Summer Olympics more recently, Brazil or the United Kingdom?",
+      "gold_answer": "Brazil - it hosted the 2016 Summer Olympics in Rio de Janeiro, which is more recent than the United Kingdom's 2012 Games in London.",
+      "error": null,
+      "latency_s": 5.18,
+      "agent_answer": "**Brazil** hosted the Summer Olympics more recently. Brazil hosted the **2016 Summer Olympics** in Rio de Janeiro, while the United Kingdom (London) last hosted the Summer Olympics in **2012**. So Brazil's hosting was four years more recent than the UK's.",
+      "queries": [
+        "Brazil Summer Olympics host",
+        "United Kingdom Summer Olympics host"
+      ],
+      "retrieved": [
+        {
+          "query": "Brazil Summer Olympics host",
+          "results": "1. Brazil at the Olympics\n   Intro: Brazil first participated at the Olympic Games in 1920, after missing the previous five Summer editions. The country has sent athletes to compete in every Summer Olympic Games since then, except for the 1928 Games. As of 2026, Brazilian athletes have won a total of 171 Olympic medals, among them 170 medals in 18 different Summer sports and 1 in a Winter sport.\nIn its inaugural participation at the 1920 Summer Olympics in Antwerp, Brazil won its first Olympic medal, a silver with Afr\u00e2nio da Costa in men's 50 metre free pistol in Shooting. In the same edition and sport, the first gold medal was also conquered by Guilherme Paraense in men's 30 metre military pistol. The first Olympic medal and the first women's gold medal in Brazilian history were simultaneously earned 76 years later, at the 1996 Summer Olympics in Atlanta, in the all-Brazilian final between Sandra Pires and Jackie Silva (who won gold) and M\u00f4nica Rodrigues and Adriana Samuel in women's beach volleyball.\nBrazil has also pa\u2026\n2. Brazil at the 2016 Summer Olympics\n   Intro: Brazil was the host nation of the 2016 Summer Olympics in Rio de Janeiro from 5 to 21 August 2016. This was the nation's twenty-second appearance at the Summer Olympics, having competed in all editions in the modern era from 1920 onwards, except the 1928 Summer Olympics in Amsterdam. Setting a milestone in Olympic history, Brazil became the first South American country to host the Summer Olympics, and the second Latin American host following the 1968 Summer Olympics in Mexico.\nIn this edition, Brazil beat both its previous highest number of gold medals obtained at one Olympics until this games (five gold medals in Athens 2004), and its record of total medals won at a Games (17 medals in Beijing 2008 and London 2012). Brazil won gold for the first time in two sports: boxing (Robson Concei\u00e7\u00e3o in men's lightweight) and football (men's team).  It was also the first time a Brazilian athlete won three medals at one Games: Isaquias Queiroz in canoeing (two silvers and one bronze). Brazil also\u2026\n3. Football at the 2016 Summer Olympics\n4. List of Olympic Games host cities\n5. Summer Olympic Games"
+        },
+        {
+          "query": "United Kingdom Summer Olympics host",
+          "results": "1. Summer Olympic Games\n2. List of Olympic Games host cities\n3. Great Britain at the Olympics\n   Intro: The United Kingdom of Great Britain and Northern Ireland, referred to as simply \"Great Britain\", has been represented at every modern Olympic Games. As of the 2024 Summer Olympics, it is third in the all-time Summer Olympic medal table by overall number of medals and fourth in number of gold medals won. London hosted the Summer Olympic Games in 1908, 1948 and 2012.\nAthletes from the United Kingdom compete as part of the Great Britain and Northern Ireland Olympic Team, branded \"Team GB\". The team is organised by the British Olympic Association, the National Olympic Committee for the UK. Team GB also represents the three Crown Dependencies of Guernsey, Jersey and the Isle of Man and the UK's Overseas Territories (with the exceptions of Bermuda, the British Virgin Islands and the Cayman Islands). Athletes from Northern Ireland can choose to compete for either Great Britain or Ireland, with most choosing Ireland. The use of \"Great Britain\" over \"United Kingdom\" has faced criticism in North\u2026\n4. Football at the Summer Olympics\n   Intro: Association football has been included in every Summer Olympic Games as a men's competition sport, except 1896 (the inaugural Games) and 1932 (in an attempt to promote the new FIFA World Cup tournament). Women's football was added to the official program at the Atlanta 1996 Games.\nA major difference between the men's and women's tournaments is that the men's tournament is not included in the FIFA International Match Calendar, while the women's tournament is included. This in turn means that clubs are not required to release players for the men's tournament, but must release players for the women's event.\nIn order to avoid competition with the World Cup, FIFA have restricted participation of elite players in the men's tournament in various ways: currently, squads for the men's tournament are required to be composed of players under 23 years of age, with three permitted exceptions.\nBy comparison, the women's football tournament is a full senior-level international tournament, second in p\u2026\n5. United Kingdom national football team"
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Brazil (2016) as more recent than the UK (2012), matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "Snippets confirm Brazil hosted the 2016 Games in Rio and the UK (London) hosted in 2012.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "multi_05",
+      "category": "multi_hop",
+      "question": "Which is older, the University of Oxford or Harvard University, and by roughly how long?",
+      "gold_answer": "The University of Oxford is much older. Teaching at Oxford dates to around 1096, while Harvard University was founded in 1636 - so Oxford predates Harvard by roughly five centuries.",
+      "error": null,
+      "latency_s": 11.01,
+      "agent_answer": "The **University of Oxford** is significantly older than **Harvard University**.\n\n- **University of Oxford**: Teaching is recorded as having taken place there as early as **1096**, with rapid development from **1167** onward (when Henry II banned English students from attending the University of Paris). It is widely recognized as one of the oldest universities in the world.\n- **Harvard University**: Founded in **1636**, it is the oldest institution of higher learning in the United States.\n\nThat means Oxford predates Harvard by roughly **400\u2013500 years** (approximately 470 years if comparing Oxford's accelerated growth around 1167, or closer to 540 years using the earliest teaching date of 1096).",
+      "queries": [
+        "University of Oxford founding date history",
+        "Harvard University founding date history",
+        "University of Oxford founding year 1096 1167",
+        "University of Oxford history teaching existed 1096"
+      ],
+      "retrieved": [
+        {
+          "query": "University of Oxford founding date history",
+          "results": "1. University of Oxford\n2. University College, Oxford\n3. List of oldest universities in continuous operation\n   Intro: This is a list of the oldest existing universities in continuous operation in the world.\nInclusion in this list is determined by the date at which the educational institute is generally recognised as having become a university by academic historians, although it may have existed as a different kind of institution before that time. This limits the term \"university\" to institutions with distinctive structural and legal features that developed in Europe, and which make the university form different from other institutions of higher learning in the pre-modern world, even though these may sometimes now be referred to popularly as universities.\nThe main list consists of institutions generally recognised by historians as having been universities (Latin: studia generalia prior to 1500, while the second part of the list gives the oldest university derived from the medieval European model in a country, or part of a country where there are multiple university systems identified by independent sou\u2026\n4. Timeline of Oxford\n5. Ancient university\n   Intro: The ancient universities are a set of seven surviving British and Irish medieval universities and early modern universities that were founded before 1600 AD, and are located in Scotland, England, and Ireland. The seven universities are:\n\nEngland: University of Oxford and University of Cambridge\nScotland: University of Edinburgh, University of Glasgow, University of St Andrews, and University of Aberdeen\nIreland: University of Dublin\nThese ancient universities in Great Britain and Ireland are amongst the oldest extant universities in the world. The ancient universities in Britain are also among twenty-seven institutions recognised by the British monarchy as privileged bodies of the United Kingdom."
+        },
+        {
+          "query": "Harvard University founding date history",
+          "results": "1. History of Harvard University\n2. Harvard University\n   Intro: Harvard University is a private Ivy League research university in Cambridge, Massachusetts, United States. Founded in 1636, and named Harvard College in 1639 in honor of its first benefactor, Puritan clergyman John Harvard, it is the oldest institution of higher learning in the United States. Its influence, wealth, and rankings have made it one of the most prestigious universities in the world.\nHarvard was founded and authorized by the Massachusetts General Court, the governing legislature of colonial-era Massachusetts Bay Colony. While never formally affiliated with any Protestant denomination, Harvard trained Congregational clergy until its curriculum and student body were gradually secularized in the 18th century. In 1780, the Constitution of Massachusetts referred to it as a university, and a new medical school established in 1782 was named the Medical Institution of Harvard University; but this was a new name, not a new foundation. Harvard College soon became the name of the unive\u2026\n3. First university in the United States\n   Intro: The first university in the United States is a status that has been asserted by or given to more than one university in the United States. These include Harvard University, the oldest institution of higher education in the United states, College of William & Mary, and the University of Pennsylvania.\n4. Harvard University endowment\n5. Parenthetical referencing"
+        },
+        {
+          "query": "University of Oxford founding year 1096 1167",
+          "results": "1. University of Oxford\n2. Ancient university\n   Intro: The ancient universities are a set of seven surviving British and Irish medieval universities and early modern universities that were founded before 1600 AD, and are located in Scotland, England, and Ireland. The seven universities are:\n\nEngland: University of Oxford and University of Cambridge\nScotland: University of Edinburgh, University of Glasgow, University of St Andrews, and University of Aberdeen\nIreland: University of Dublin\nThese ancient universities in Great Britain and Ireland are amongst the oldest extant universities in the world. The ancient universities in Britain are also among twenty-seven institutions recognised by the British monarchy as privileged bodies of the United Kingdom.\n3. List of oldest universities in continuous operation\n4. List of medieval universities\n   Intro: The list of medieval universities comprises universities (more precisely, studia generalia) which existed in Europe during the Middle Ages. It also includes short-lived foundations and European educational institutions whose university status is a matter of debate. The degree-awarding university with its corporate organization and relative autonomy is a product of medieval Christian Europe. Before the year 1500, over eighty universities were established in Western and Central Europe. During the subsequent Colonization of the Americas the university was introduced to the New World, marking the beginning of its worldwide spread as the center of higher learning everywhere (see List of oldest universities).\n5. Timeline of Oxford"
+        },
+        {
+          "query": "University of Oxford history teaching existed 1096",
+          "results": "1. University of Oxford\n2. Ancient university\n   Intro: The ancient universities are a set of seven surviving British and Irish medieval universities and early modern universities that were founded before 1600 AD, and are located in Scotland, England, and Ireland. The seven universities are:\n\nEngland: University of Oxford and University of Cambridge\nScotland: University of Edinburgh, University of Glasgow, University of St Andrews, and University of Aberdeen\nIreland: University of Dublin\nThese ancient universities in Great Britain and Ireland are amongst the oldest extant universities in the world. The ancient universities in Britain are also among twenty-seven institutions recognised by the British monarchy as privileged bodies of the United Kingdom.\n3. List of oldest universities in continuous operation\n   Intro: This is a list of the oldest existing universities in continuous operation in the world.\nInclusion in this list is determined by the date at which the educational institute is generally recognised as having become a university by academic historians, although it may have existed as a different kind of institution before that time. This limits the term \"university\" to institutions with distinctive structural and legal features that developed in Europe, and which make the university form different from other institutions of higher learning in the pre-modern world, even though these may sometimes now be referred to popularly as universities.\nThe main list consists of institutions generally recognised by historians as having been universities (Latin: studia generalia prior to 1500, while the second part of the list gives the oldest university derived from the medieval European model in a country, or part of a country where there are multiple university systems identified by independent sou\u2026\n4. Timeline of Oxford\n5. Rhineland massacres"
+        }
+      ],
+      "num_searches": 4,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Oxford as much older (teaching from 1096 vs Harvard 1636) and gives roughly the right gap of ~500 years.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The 1096 Oxford teaching date and 1636 Harvard founding are supported by the retrieved snippets.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "ambiguous_01",
+      "category": "ambiguous_entity",
+      "question": "Where is Cambridge located?",
+      "gold_answer": "The name is ambiguous. Most commonly it refers to Cambridge, England (Cambridgeshire, United Kingdom), home of the University of Cambridge; it may also refer to Cambridge, Massachusetts, USA (home of Harvard and MIT), among other places.",
+      "error": null,
+      "latency_s": 4.93,
+      "agent_answer": "**Cambridge** is most commonly referred to as the city in **Cambridgeshire, England**, located on the **River Cam**, approximately **55 miles (89 km) north of London**. It is the county town of Cambridgeshire and is world-famous as the home of the **University of Cambridge**.\n\nHowever, it's worth noting that **Cambridge** is an ambiguous term \u2014 another well-known Cambridge is **Cambridge, Massachusetts, USA**, located in the Greater Boston metropolitan area, directly across the Charles River from Boston. It is home to Harvard University and MIT.",
+      "queries": [
+        "Cambridge location"
+      ],
+      "retrieved": [
+        {
+          "query": "Cambridge location",
+          "results": "1. Cambridge\n   Intro: Cambridge (  KAYM-brij) is a city and non-metropolitan district in the county of Cambridgeshire, England. It is the county town of Cambridgeshire and is located on the River Cam, 55 miles (89 km) north of London. As of the 2021 United Kingdom census, the population of the City of Cambridge was 145,700; the population of the wider built-up area (which extends outside the city council area) was 181,137. There is archaeological evidence of settlement in the area dating back to as early as the Bronze Age, and Cambridge became an important trading centre during the Roman and Viking eras. The first town charters were granted in the 12th century, although modern city status was not officially conferred until 1951.\nThe city is well known as the home of the University of Cambridge, which was founded in 1209 and consistently ranks among the best universities in the world. The buildings of the university include King's College Chapel, Cavendish Laboratory, and the Cambridge University Library, on\u2026\n2. University of Cambridge\n3. Cambridge, Massachusetts\n   Intro: Cambridge ( KAYM-brij) is a city in Middlesex County, Massachusetts, United States. It is located in the Greater Boston metropolitan area directly across the Charles River from Boston. The city's population as of the 2020 U.S. census was 118,403, making it the most populous city in the county, the fourth-largest in Massachusetts behind Boston, Worcester, and Springfield, and ninth-most populous in New England. The city was named in honor of the University of Cambridge in Cambridge, England, which was an important center of the Puritan theology that was embraced by the town's founders.\nFounded in December 1630 during the colonial era, Cambridge was one among the first cities established in the Thirteen Colonies, and it went on to play a historic role during the American Revolution. In May 1775, approximately 16,000 American patriots assembled in Cambridge Common to begin organizing a military retaliation against British troops following the Battles of Lexington and Concord. On July 2, 1\u2026\n4. Trinity College, Cambridge\n5. King's College, Cambridge"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent identifies the dominant referent (Cambridge, England) and acknowledges the ambiguity with Cambridge, Massachusetts, matching the gold.",
+        "groundedness": "grounded",
+        "groundedness_reason": "All key claims (Cambridgeshire, River Cam, 55 miles north of London, University of Cambridge, and Cambridge MA across the Charles River from Boston) appear in the retrieved snippets.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "ambiguous_02",
+      "category": "ambiguous_entity",
+      "question": "Who is Michael Jordan?",
+      "gold_answer": "Most commonly the retired American basketball player widely regarded as one of the greatest of all time. The name is ambiguous, though - it also refers to Michael I. Jordan, a prominent machine-learning researcher, and others.",
+      "error": null,
+      "latency_s": 17.57,
+      "agent_answer": "Here is a comprehensive overview of **Michael Jordan**:\n\n---\n\n### \ud83c\udfc0 Michael Jordan (born February 17, 1963)\n\n**Michael Jeffrey Jordan** is widely regarded as the **greatest basketball player of all time**. Here are the key highlights of his life and career:\n\n#### Early Life & Education\n- Born in **Brooklyn, New York**, and raised in **Wilmington, North Carolina**.\n- Played college basketball at the **University of North Carolina (UNC)**.\n\n#### NBA Career\n- Drafted by the **Chicago Bulls** in 1984 (3rd overall pick).\n- Won **6 NBA Championships** with the Chicago Bulls (1991, 1992, 1993, 1996, 1997, 1998) \u2014 in two separate \"three-peats.\"\n- Won **6 NBA Finals MVP awards** and **5 regular season MVP awards**.\n- A **14-time NBA All-Star** and considered the defining player of his era.\n- Also briefly played for the **Washington Wizards** (2001\u20132003) near the end of his career.\n\n#### Achievements & Legacy\n- Known for his extraordinary athleticism, scoring ability, and competitive drive.\n- Career scoring average of **30.1 points per game** \u2014 the highest in NBA history.\n- Won **2 Olympic Gold Medals** (1984, 1992 \u2013 the famous \"Dream Team\").\n- His famous **\"Air Jordan\"** sneaker line, launched in partnership with **Nike** in 1984, became one of the most iconic and profitable shoe brands in history.\n\n#### Business & Ownership\n- Became a **principal owner of the Charlotte Hornets** NBA franchise (formerly the Charlotte Bobcats), making him one of the first former players to become a majority owner of an NBA team.\n\n#### Cultural Impact\n- Nicknamed **\"Air Jordan\"** and **\"His Airness\"** for his incredible leaping ability.\n- His career inspired the 1996 film **Space Jam** and the 2023 film **Air**, which tells the story of Nike's signing of Jordan.\n- Universally considered a cultural icon who transcended basketball and became a global sports legend.\n\n---\n\n> **Note:** The name \"Michael Jordan\" is also shared by **Michael B. Jordan**, a well-known American actor (*Creed*, *Black Panther*), who is a completely different person.",
+      "queries": [
+        "Michael Jordan",
+        "Michael Jordan basketball player biography",
+        "Michael Jordan NBA career Chicago Bulls championships"
+      ],
+      "retrieved": [
+        {
+          "query": "Michael Jordan",
+          "results": "1. Michael Jordan\n2. Michael B. Jordan\n3. Air Jordan\n   Intro: Air Jordan is a line of basketball and sportswear shoes produced by Nike, Inc. The shoes, related apparel and accessories are now marketed under Jordan Brand. The first Air Jordan shoe was produced for basketball player Michael Jordan during his time with the Chicago Bulls on November 17, 1984, and released to the public on April 1, 1985. The shoes were designed for Nike by Peter Moore, Tinker Hatfield, and Bruce Kilgore. The brand's logo, known as the \"Jumpman\", originated from a photograph by Co Rentmeester that was taken before Jordan played for Team USA in the 1984 Summer Olympics.\n4. Jeremy Jordan (actor, born 1984)\n5. James R. Jordan Sr.\n   Intro: James Raymond Jordan Sr. (July 31, 1936 \u2013 July 23, 1993) was the father of former basketball player and businessman Michael Jordan."
+        },
+        {
+          "query": "Michael Jordan basketball player biography",
+          "results": "1. Michael Jordan\n2. Michael B. Jordan\n3. LeBron James\n   Intro: LeBron Raymone James Sr. ( l\u0259-BRON; born December 30, 1984) is an American professional basketball player who most recently played for the Los Angeles Lakers of the National Basketball Association (NBA). Nicknamed \"King James\", he is the NBA's all-time leading scorer and has won four NBA championships from 10 NBA Finals appearances, including eight consecutive appearances between 2011 and 2018. He has won three Olympic gold medals as a member of the U.S. national team, and is widely considered to be one of the greatest basketball players of all time and one of the greatest athletes in modern history.\nIn addition to ranking fourth in NBA career assists and sixth in NBA career steals, James holds several individual honors, including four NBA MVP awards, four Finals MVP awards, the Rookie of the Year award, three All-Star Game MVP awards, the inaugural NBA Cup MVP, and the Olympics MVP in the 2024 Summer Olympics. A record 22-time All-Star and 21-time All-NBA selection (including a record\u2026\n4. Air (2023 American film)\n   Intro: Air is a 2023 American biographical sports comedy-drama film directed by Ben Affleck and written by Alex Convery. It is based on true events about the origin of Air Jordan, a basketball shoeline, of which a Nike employee seeks to strike a business deal with rookie player Michael Jordan. The film stars Matt Damon, Ben Affleck, Jason Bateman, Chris Messina, Matthew Maher, Marlon Wayans, Jay Mohr, Julius Tennon, Chris Tucker, and Viola Davis.\nThe project was announced in April 2022 with Affleck set to direct, as well as star and produce alongside Damon with their newly formed production company Artists Equity. Principal photography took place between June and July 2022 with Affleck reuniting with his frequent collaborators cinematographer Robert Richardson and editor William Goldenberg. While Michael Jordan was not involved with the production, he did meet with Affleck, offering several suggestions, including the casting of Davis as his mother. Originally set to premiere on the streaming\u2026\n5. Scottie Pippen"
+        },
+        {
+          "query": "Michael Jordan NBA career Chicago Bulls championships",
+          "results": "1. List of Chicago Bulls seasons\n2. Michael Jordan\n3. Chicago Bulls\n4. 1990\u201391 Chicago Bulls season\n   Intro: The 1990\u201391 Chicago Bulls season was the 25th season for the Chicago Bulls in the National Basketball Association. During the off-season, the Bulls acquired Dennis Hopson from the New Jersey Nets, and signed free agent Cliff Levingston.\nThe Bulls got off to a slow start losing their first three games, and later on holding a 5\u20136 start to the regular season. However, the team soon recovered posting a seven-game winning streak between November and December afterwards, and posting another seven-game winning streak in January, as the team held a 32\u201314 record at the All-Star break. The Bulls posted an 11-game winning streak between February and March, and then posted a nine-game winning streak in March, finishing in first place in the Central Division with a 61\u201321 record, surpassing their previous franchise-best record from the 1971\u201372 season, and earning the first seed in the Eastern Conference; the team qualified for the NBA playoffs for the seventh consecutive year. Widely regarded as one\u2026\n5. 1993 NBA Finals\n   Intro: The 1993 NBA Finals was the championship series of the National Basketball Association's (NBA) 1992\u201393 season, and the conclusion of the season's playoffs. It featured the two-time defending NBA champion and Eastern Conference champion Chicago Bulls, led by Michael Jordan, and the Western Conference champion Phoenix Suns, winners of 62 games and led by regular season MVP Charles Barkley. \nThe Bulls became the first team since the Boston Celtics of the 1960s to win three consecutive championship titles, clinching the \"three-peat\" with John Paxson's game-winning 3-pointer that gave them a 99\u201398 victory in Game 6."
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "partially_correct",
+        "correctness_reason": "The agent correctly identifies the dominant basketball referent and notes the name is shared (Michael B. Jordan), acknowledging ambiguity, but its identified other referent differs from the gold's example (machine-learning researcher); still, it satisfies the ambiguity requirement while containing some factual errors (Jordan was born in Brooklyn but the '1984 Olympic gold' claim and details are minor).",
+        "groundedness": "partially_grounded",
+        "groundedness_reason": "Basketball identity, Air Jordan, Space Jam/Air film, and Michael B. Jordan are supported by snippets, but detailed career stats, MVP counts, and Charlotte Hornets ownership are not present in the retrieved text.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "ambiguous_03",
+      "category": "ambiguous_entity",
+      "question": "What is Mercury?",
+      "gold_answer": "The term has several meanings: the planet Mercury (closest to the Sun); the chemical element mercury (symbol Hg, a liquid metal); the Roman god Mercury; and other uses (e.g., Freddie Mercury, the Mercury car brand).",
+      "error": null,
+      "latency_s": 8.96,
+      "agent_answer": "\"Mercury\" is an ambiguous term with several common meanings. Here are the most notable ones:\n\n---\n\n### 1. \ud83e\ude90 Mercury (Planet)\nMercury is the **closest planet to the Sun** in our solar system. It is the smallest planet, has no moons, and has a very thin atmosphere. Its surface is heavily cratered, similar to the Moon, and it experiences extreme temperature swings \u2014 from about 430\u00b0C (800\u00b0F) during the day to -180\u00b0C (-290\u00b0F) at night.\n\n---\n\n### 2. \u2697\ufe0f Mercury (Chemical Element)\nMercury is a **chemical element** with the symbol **Hg** and atomic number **80**. It is unique among metals in that it is **liquid at room temperature**. It is used in thermometers, barometers, and various industrial applications, though it is highly toxic.\n\n---\n\n### 3. \ud83c\udfdb\ufe0f Mercury (Mythology)\nMercury is a **Roman god**, equivalent to the Greek god Hermes. He is the messenger of the gods and the deity of trade, communication, and travel, often depicted with winged sandals and a staff (caduceus).\n\n---\n\n### 4. \ud83c\udfa4 Freddie Mercury (Person)\n**Freddie Mercury** (1946\u20131991) was the legendary lead vocalist and pianist of the rock band **Queen**, widely regarded as one of the greatest singers in rock history, known for his extraordinary vocal range and theatrical performances.\n\n---\n\n### Other Uses:\n- **Mercury Records** \u2013 a major American record label\n- **NASA's Project Mercury** \u2013 the first U.S. human spaceflight program\n\nWould you like more details on any specific meaning of \"Mercury\"?",
+      "queries": [
+        "Mercury"
+      ],
+      "retrieved": [
+        {
+          "query": "Mercury",
+          "results": "1. Mercury\n   Intro: Mercury most commonly refers to:\n\nMercury (planet), the closest planet to the Sun\nMercury (element), a chemical element\nMercury (mythology), a Roman deity\nMercury or The Mercury may also refer to:\n2. Freddie Mercury\n   Intro: Freddie Mercury (born Farrokh Bulsara; 5 September 1946 \u2013 24 November 1991) was a British singer and songwriter who achieved global fame as the lead vocalist and pianist of the rock band Queen. Regarded as one of the greatest singers in the history of rock music, he is known for his flamboyant stage persona and four-octave vocal range. Mercury defied the conventions of a rock frontman with his theatrical style, influencing the artistic direction of Queen.\nBorn in 1946 in Zanzibar to Indian parents from the Parsi community, Mercury attended British boarding schools in India from the age of eight and returned to Zanzibar after secondary school. In 1964, his family fled the Zanzibar Revolution, moving to Middlesex, England. Having previously studied and written music, he formed Queen in 1970 with guitarist Brian May and drummer Roger Taylor. Mercury wrote numerous hits for Queen, including \"Killer Queen\", \"Bohemian Rhapsody\", \"Somebody to Love\", \"We Are the Champions\", \"Don't Stop Me Now\"\u2026\n3. Mercury (planet)\n4. Mercury (element)\n5. Mercury Records"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent identifies the dominant referents (planet, element, god) and acknowledges ambiguity including Freddie Mercury and Mercury Records, matching the gold.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The key referents (planet, element, mythology, Freddie Mercury, Mercury Records) all appear in the retrieved snippets.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "ambiguous_04",
+      "category": "ambiguous_entity",
+      "question": "What is the population of Georgia?",
+      "gold_answer": "Ambiguous: the country of Georgia has roughly 3.7 million people, while the U.S. state of Georgia has roughly 11 million. The answer depends on which Georgia is meant.",
+      "error": null,
+      "latency_s": 6.95,
+      "agent_answer": "Since \"Georgia\" is ambiguous, here are the populations for both:\n\n1. **Georgia (U.S. State):** As of 2025, the estimated population is approximately **11,302,748**, making it the 8th most populous state in the U.S. The majority of its population is concentrated in the Metro Atlanta area.\n\n2. **Georgia (Country):** The country of Georgia, located in the Caucasus region near the Black Sea, has a population of approximately **3.9 million**, with over a third living in its capital, Tbilisi.\n\nCould you clarify which Georgia you were referring to? \ud83d\ude0a",
+      "queries": [
+        "Georgia U.S. state population",
+        "Georgia country population"
+      ],
+      "retrieved": [
+        {
+          "query": "Georgia U.S. state population",
+          "results": "1. List of municipalities in Georgia (U.S. state)\n2. Demographics of Georgia (U.S. state)\n   Intro: Georgia is a South Atlantic U.S. state with a population of 10,711,908 according to the 2020 United States census, or just over 3% of the U.S. population. The majority of the state's population is concentrated within Metro Atlanta, although other highly populated regions include: West Central and East Central Georgia; West, Central, and East Georgia; and Coastal Georgia; and their Athens, Columbus, Macon and Warner Robins, Augusta, Savannah, Hinesville, and Brunswick metropolitan statistical areas.\n3. List of U.S. states and territories by population\n4. Georgia (U.S. state)\n   Intro: Georgia (  JOR-j\u0259) is a state in the Southeastern, South Atlantic, and Deep South regions of the United States. It borders Tennessee to the northwest, North Carolina and South Carolina to the northeast, the Atlantic Ocean to the east, Florida to the south, and Alabama to the west. Of the 50 U.S. states, Georgia is the 24th-largest by area and eighth-most populous. According to the U.S. Census Bureau, its 2025 estimated population was 11,302,748. Atlanta, a global city, is both the state's capital and its largest city. The Atlanta metropolitan area, with a population greater than 6.3 million people in 2023, is the eighth most populous metropolitan area in the United States and contains about 57% of Georgia's entire population. Other major metropolitan areas in the state include Augusta, Savannah, Columbus, and Macon.\nThe Province of Georgia was established in 1732, with its first settlement occurring in 1733 when Savannah was founded. By 1752, Georgia had transitioned into a British roy\u2026\n5. List of counties in Georgia"
+        },
+        {
+          "query": "Georgia country population",
+          "results": "1. List of countries and dependencies by population\n2. Georgia (country)\n   Intro: Georgia is a country in the Caucasus region on the coast of the Black Sea. It is located at the intersection of Eastern Europe and West Asia, and is today generally regarded as part of Europe. It is bordered to the north and northeast by Russia; to the west by the Black Sea, to the south by Turkey and Armenia, and to the southeast by Azerbaijan. It has a population of 3.9 million, of which over a third live in Tbilisi, the capital and largest city. Georgians, who are native to the region and constitute the majority of the population, are ethno-linguistically distinct from all of their neighboring nations and primarily speak Georgian, a Kartvelian language that has no relation to any other language family in the world.\nGeorgia has been inhabited since prehistory and is known for hosting the world's earliest known sites of winemaking. The classical era saw the emergence of several kingdoms, such as Colchis and Iberia, that formed the nucleus of the modern Georgian state. In the early fou\u2026\n3. List of European countries by population\n   Intro: This list of European countries by population comprises the 51 countries and 5 territories, and dependencies in Europe, broadly defined, including Cyprus, Kazakhstan, Turkey, and the countries of the Caucasus. \nThe most populous European country is Russia, with a population of over 110 million in its European part (144 million overall). Turkey, with a population of about 85 million, has most of its population living within its Asian part; though within its territory in Europe, some one-tenth of its population is situated. Excluding Turkey, Germany is the second-most populous country on the continent, with a population of about 84 million.\n4. List of countries and dependencies by population density\n5. List of countries in the Americas by population"
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent identifies both referents with populations (~11.3M for the state, ~3.9M for the country) and acknowledges the ambiguity, matching the gold.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The state figure 11,302,748 and country figure 3.9 million both appear directly in the retrieved snippets.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "ambiguous_05",
+      "category": "ambiguous_entity",
+      "question": "Who wrote 'Ulysses'?",
+      "gold_answer": "Ambiguous by title: the 1922 modernist novel 'Ulysses' was written by James Joyce, while the poem 'Ulysses' was written by Alfred, Lord Tennyson. Joyce's novel is the most common referent.",
+      "error": null,
+      "latency_s": 4.32,
+      "agent_answer": "**Ulysses** was written by the Irish author **James Joyce**. It was first published in 1922 and is widely considered one of the most important works of modernist literature. The novel follows the experiences of Leopold Bloom in Dublin over the course of a single day, June 16, 1904.",
+      "queries": [
+        "Ulysses novel author"
+      ],
+      "retrieved": [
+        {
+          "query": "Ulysses novel author",
+          "results": "1. HMS Ulysses (novel)\n2. Ulysses (novel)\n3. Flora & Ulysses\n   Intro: Flora & Ulysses: The Illuminated Adventures is a children's novel by American author Kate DiCamillo and illustrated by K.G. Campbell, published in 2013 by Candlewick Press. It tells the story of Flora Belle Buckman and a squirrel named Ulysses. The illustrations include full-page and small pencil drawings, together with comic-book panels describing the gang's adventures.\n4. Linati schema for Ulysses\n5. Gilbert schema for Ulysses\n   Intro: This schema for the novel Ulysses was produced by its author, James Joyce, in November 1921 in order to help his friend, Valery Larbaud, prepare a public lecture on the novel, which Joyce was still writing at the time. The lecture took place on 7 December 1921 at the Maison des Amis des Livres bookshop and lending library, owned and run by Adrienne Monnier. The schema was shown to intimates of Joyce during the 1920s and was eventually published by Stuart Gilbert in 1930 in his book, James Joyce\u2019s \u201cUlysses\u201d: A Study. Gilbert\u2019s typed copy of the schema is housed in the Harley K. Croessmann Collection of James Joyce at Southern Illinois University Carbondale."
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "partially_correct",
+        "correctness_reason": "The agent correctly identifies James Joyce as author of the novel but fails to acknowledge the ambiguity (e.g., Tennyson's poem) as the gold requires.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm James Joyce as the author of the novel Ulysses (1922).",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "unanswerable_01",
+      "category": "unanswerable",
+      "question": "In what year did Albert Einstein win the Nobel Prize in Chemistry?",
+      "gold_answer": "False premise: Einstein did not win the Nobel Prize in Chemistry. He won the Nobel Prize in Physics, awarded in 1921 (for the photoelectric effect). The correct answer is to point out the mistaken premise.",
+      "error": null,
+      "latency_s": 4.12,
+      "agent_answer": "Albert Einstein did not win the Nobel Prize in **Chemistry** \u2014 that is a false premise. He was awarded the **Nobel Prize in Physics** in **1921**, specifically \"for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect.\"",
+      "queries": [
+        "Albert Einstein Nobel Prize"
+      ],
+      "retrieved": [
+        {
+          "query": "Albert Einstein Nobel Prize",
+          "results": "1. Albert Einstein House\n2. List of awards and honors received by Albert Einstein\n3. Albert Brooks\n   Intro: Albert Lawrence Einstein (born July 22, 1947), known professionally as Albert Brooks, is an American actor, comedian, director, and screenwriter. He received an Academy Award nomination for Best Supporting Actor for his performance in the comedy-drama Broadcast News (1987) and was widely praised for his performance in the action drama Drive (2011). Brooks has acted in films such as Taxi Driver (1976), Private Benjamin (1980), Unfaithfully Yours (1984), Out of Sight (1998), My First Mister (2001), and Concussion (2015). He has written, directed, and starred in a number of comedies, including Modern Romance (1981), Lost in America (1985), and Defending Your Life (1991). He is the author of 2030: The Real Story of What Happens to America (2011).\nBrooks voiced several characters in animated films and television shows. For example, Marlin in Finding Nemo (2003) and its sequel Finding Dory (2016), Tiberius in The Secret Life of Pets (2016), and several one-time characters on The Simpsons, in\u2026\n4. Albert Einstein\n   Intro: Albert Einstein (14 March 1879 \u2013 18 April 1955) was a German-born theoretical physicist best known for developing the known theory of relativity. Einstein also made important contributions to quantum theory. His mass\u2013energy equivalence formula E = mc2, which arises from special relativity, has been called \"the world's most famous equation\". He received the 1921 Nobel Prize in Physics for \"his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect\".\nBorn as a subject to the Kingdom of W\u00fcrttemberg, part of the German Empire, Einstein moved to Switzerland in 1895, forsaking his citizenship the following year. In 1896, at the age of seventeen, he enrolled in the mathematics and physics teaching diploma program at the Swiss federal polytechnic school in Zurich, graduating in 1900. He acquired Swiss citizenship a year later, which he kept for the rest of his life, and afterwards secured a permanent position at the Swiss Patent Office in Bern.\u2026\n5. Outline of Albert Einstein"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly rejects the false premise and states Einstein won the Nobel Prize in Physics in 1921 for the photoelectric effect.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The Albert Einstein snippet explicitly states he received the 1921 Nobel Prize in Physics for the photoelectric effect law.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "unanswerable_02",
+      "category": "unanswerable",
+      "question": "In which year did Leonardo da Vinci paint the ceiling of the Sistine Chapel?",
+      "gold_answer": "False premise: Leonardo da Vinci did not paint the Sistine Chapel ceiling. It was painted by Michelangelo, between 1508 and 1512. The correct answer is to correct the premise.",
+      "error": null,
+      "latency_s": 4.22,
+      "agent_answer": "The premise of your question contains a factual error. **Leonardo da Vinci did not paint the Sistine Chapel ceiling.** It was **Michelangelo** who painted it, between **1508 and 1512**, commissioned by Pope Julius II. The ceiling is one of the most celebrated works of the High Renaissance, most famous for its central scene, *The Creation of Adam*.",
+      "queries": [
+        "Sistine Chapel ceiling painting"
+      ],
+      "retrieved": [
+        {
+          "query": "Sistine Chapel ceiling painting",
+          "results": "1. Sistine Chapel ceiling\n2. Gallery of the Sistine Chapel ceiling\n   Intro: The Sistine Chapel ceiling, painted by Michelangelo between 1508 and 1512, is one of the most renowned artworks of the High Renaissance. Central to the ceiling decoration are nine scenes from the Book of Genesis the most famous of which is The Creation of Adam, the hands of God and Adam being reproduced in countless imitations.  The complex design includes multiple groups of individual figures, both clothed and nude, allowing Michelangelo to fully demonstrate his skill in depicting a wide variety of human poses, and has since served as an enormously influential reference for other artists.\n3. Restoration of the Sistine Chapel frescoes\n   Intro: The conservation-restoration of the frescoes of the Sistine Chapel was one of the most significant conservation-restorations of the 20th century.\nThe Sistine Chapel was built by Pope Sixtus IV within the Vatican immediately to the north of St. Peter's Basilica and completed in about 1481. Its walls were decorated by a number of Renaissance painters who were among the most highly regarded artists of late 15th century Italy, including Ghirlandaio, Perugino, and Botticelli. The Chapel was further enhanced under Pope Julius II by the painting of the ceiling by Michelangelo between 1508 and 1512 and by the painting of the Last Judgment, commissioned by Pope Clement VII and completed in 1541, again by Michelangelo. The tapestries on the lowest tier, today best known from the Raphael Cartoons (painted designs) of 1515\u201316, completed the ensemble.\nTogether the paintings make up the greatest pictorial scheme of the Renaissance. Individually, some of Michelangelo's paintings on the ceiling are am\u2026\n4. Sistine Chapel\n5. The Creation of Adam"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly rejects the false premise and attributes the ceiling to Michelangelo (1508-1512), matching the gold.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm Michelangelo painted the ceiling between 1508 and 1512 and mention The Creation of Adam.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "unanswerable_03",
+      "category": "unanswerable",
+      "question": "Who was the king of the United States in 1850?",
+      "gold_answer": "False premise: the United States has never had a king; it is a republic. In 1850 the U.S. president was Zachary Taylor (until his death in July 1850), succeeded by Millard Fillmore. The correct answer is to reject the premise.",
+      "error": null,
+      "latency_s": 4.02,
+      "agent_answer": "The United States has never had a king. It is a **federal republic**, not a monarchy, and has never had a monarchical head of state.\n\nIn 1850, the head of state and government was the **President of the United States**. The presidency that year was held by two individuals:\n\n- **Zachary Taylor** (in office March 1849 \u2013 July 9, 1850), who died in office.\n- **Millard Fillmore** (in office July 9, 1850 \u2013 March 1853), who succeeded Taylor upon his death.\n\nThe United States declared independence from the British monarchy in 1776 and established a republican form of government, explicitly rejecting the concept of a king or hereditary ruler.",
+      "queries": [],
+      "retrieved": [],
+      "num_searches": 0,
+      "did_search": false,
+      "search_ok": false,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly rejects the false premise and identifies both Taylor and Fillmore as the 1850 presidents.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "No searches were performed; groundedness is not applicable.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "unanswerable_04",
+      "category": "unanswerable",
+      "question": "Which chemical element has the symbol 'Zz'?",
+      "gold_answer": "No element has the symbol 'Zz'. It is not a valid element symbol on the periodic table. The correct answer is to say no such element exists.",
+      "error": null,
+      "latency_s": 4.68,
+      "agent_answer": "**No chemical element has the symbol \"Zz.\"** This symbol does not exist in the periodic table. All official chemical element symbols consist of one or two letters, and none of the known elements use \"Zz.\" You may be thinking of symbols like **Zn** (Zinc) or **Zr** (Zirconium), which are the only element symbols beginning with \"Z.\"",
+      "queries": [
+        "chemical element symbol Zz"
+      ],
+      "retrieved": [
+        {
+          "query": "chemical element symbol Zz",
+          "results": "1. Crossword abbreviations\n   Intro: Cryptic crosswords often use abbreviations to clue individual letters or short fragments of the overall solution. These include:\n\nAny conventional abbreviations found in a standard dictionary, such as:\n\"current\": AC (for \"alternating current\"); less commonly, DC (for \"direct current\"); or even I (the symbol used in physics and electronics)\nRoman numerals: for example the word \"six\" in the clue might be used to indicate the letters VI\nThe name of a chemical element may be used to signify its symbol; e.g., W for tungsten\nThe days of the week; e.g., TH for Thursday\nCountry codes; e.g., \"Switzerland\" can indicate the letters CH\nICAO spelling alphabet: where Mike signifies M and Romeo R\nConventional abbreviations for US cities and states: for example, \"New York\" can indicate NY and \"California\" CA or CAL.\nThe abbreviation is not always a short form of the word used in the clue. For example:\n\n\"Knight\" for N (the symbol used in chess notation)\nTaking this one stage further, the clue word can\u2026\n2. B\n   Intro: B (minuscule: b) is the second letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western European languages and others worldwide. Its name in English is bee (pronounced  ), plural bees.\nIt represents the voiced bilabial stop in many languages, including English. In some other languages, it is used to represent other bilabial consonants.\n3. O\n4. K\n5. F"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states no element has the symbol 'Zz', matching the gold answer.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "The snippets did not address element symbols directly; the agent correctly rejected the false premise using general knowledge.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "unanswerable_05",
+      "category": "unanswerable",
+      "question": "How many times has Canada won the men's FIFA World Cup?",
+      "gold_answer": "Zero - Canada has never won the men's FIFA World Cup. The honest answer is 'none' rather than any positive number.",
+      "error": null,
+      "latency_s": 4.75,
+      "agent_answer": "Canada has **never won** the men's FIFA World Cup. Their best result to date came at the **2026 FIFA World Cup**, which they co-hosted, where they reached the **round of 16**. Canada has only appeared at the World Cup three times in total: 1986, 2022, and 2026.",
+      "queries": [
+        "Canada men's national soccer team FIFA World Cup history"
+      ],
+      "retrieved": [
+        {
+          "query": "Canada men's national soccer team FIFA World Cup history",
+          "results": "1. Canada at the FIFA World Cup\n   Intro: The Canada men's national soccer team have played at the FIFA World Cup on three occasions: in 1986, 2022, and 2026. For most other editions of the World Cup, Canada has not succeeded in gaining one of the places reserved for the North American CONCACAF teams.\nCanada made their World Cup debut in 1986, but were eliminated in the group stage after failing to win a single match. In 2022, Canada qualified for the World Cup for only the second time in history, ending a 36-year drought. Four years later, Canada automatically qualified for the 2026 FIFA World Cup as co-hosts (together with the United States and Mexico). At this World Cup, Canada earned their first-ever group stage point in a 1\u20131 draw against Bosnia and Herzegovina and their first-ever World Cup match win six days later in a decisive 6\u20130 win over Qatar, the widest win margin for a CONCACAF team in World Cup history, with Jonathan David scoring the first World Cup hat-trick for a host nation since Geoff Hurst in 1966.\n2. Canada men's national soccer team\n   Intro: The Canada men's national soccer team (French: \u00c9quipe du Canada de soccer masculin) represents Canada in men's international soccer, which is governed by the Canadian Soccer Association (French: Association canadienne de soccer), the governing body for soccer in Canada founded in 1912. It has been an affiliate member of FIFA since 1912 and a founding affiliate member of CONCACAF since 1961. Regionally, it is an affiliate member of NAFU in the North American Zone.\nCanada has played in the FIFA World Cup three times: 1986, 2022, and 2026. Their best result came in 2026 where they co-hosted the tournament and reached the round of 16.\nIt has qualified for the FIFA Confederations Cup once (2001).\nCanada has participated twenty times in CONCACAF's premier continental competition, winning the CONCACAF Championship in 1985 and the successor CONCACAF Gold Cup in 2000. It also finished as runners-up in the CONCACAF Nations League in the 2023 finals. It participated once in the Copa Am\u00e9rica, fini\u2026\n3. History of the United States men's national soccer team\n4. United States at the FIFA World Cup\n5. FIFA Women's World Cup"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "never"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states Canada has never won the men's FIFA World Cup, matching the gold's 'none' answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm Canada's three appearances (1986, 2022, 2026), the 2026 round of 16 best result, and no World Cup title.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "recent_01",
+      "category": "recent",
+      "question": "Which club won the 2026 UEFA Champions League final?",
+      "gold_answer": "Paris Saint-Germain (PSG). They beat Arsenal 4-3 on penalties after a 1-1 draw after extra time, on 30 May 2026 at the Puskas Arena in Budapest - PSG's second consecutive Champions League title.",
+      "error": null,
+      "latency_s": 4.79,
+      "agent_answer": "**Paris Saint-Germain (PSG)** won the 2026 UEFA Champions League final. They defeated **Arsenal** 4\u20133 on penalties after a 1\u20131 draw following extra time. The match was played on **30 May 2026** at the **Pusk\u00e1s Ar\u00e9na in Budapest, Hungary**. It was PSG's second UEFA Champions League title, making them the second club to win back-to-back titles in the Champions League era, matching Real Madrid's feat from 2016\u201317.",
+      "queries": [
+        "2026 UEFA Champions League final"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 UEFA Champions League final",
+          "results": "1. 2026 UEFA Champions League final\n   Intro: The 2026 UEFA Champions League final was the final match of the 2025\u201326 UEFA Champions League, the 71st season of Europe's premier club football tournament organised by UEFA, and the 34th season since it was renamed from the European Champion Clubs' Cup to the UEFA Champions League. It was played at the Pusk\u00e1s Ar\u00e9na in Budapest, Hungary, on 30 May 2026 between French club Paris Saint-Germain, the defending champions, and English club Arsenal. This was the first final to include the reigning champions since 2018.\nParis Saint-Germain won the match 4\u20133 on penalties, following a 1\u20131 draw after extra time, for their second UEFA Champions League title, becoming the second club to win back-to-back titles in the UEFA Champions League era, matching Real Madrid's feat in the 2016\u201317 edition. As winners, Paris Saint-Germain earned the right to play against Aston Villa, the winners of the 2025\u201326 UEFA Europa League, in the 2026 UEFA Super Cup. They will also compete in the final of the 2026 FIFA I\u2026\n2. 2026\u201327 UEFA Champions League\n   Intro: The 2026\u201327 UEFA Champions League is the 72nd season of Europe's premier football tournament organised by UEFA and the 35th season since it was rebranded from the European Cup to the UEFA Champions League. The season began on 7 July 2026 with qualifying, and the league phase will start on 8 September 2026.\nThe final will be held on 5 June 2027 at Metropolitano Stadium in Madrid, Spain. It will be the second time Metropolitano Stadium has hosted the UEFA Champions League final after 2019. The winners of the 2026\u201327 UEFA Champions League will automatically qualify for the 2027\u201328 UEFA Champions League league phase, the 2027 FIFA Intercontinental Cup final, the 2029 FIFA Club World Cup group stage and earn the right to play against the winners of the 2026\u201327 UEFA Europa League in the 2027 UEFA Super Cup.\nParis Saint-Germain are the two-time defending champions.\n3. 2027 UEFA Champions League final\n4. List of European Cup and UEFA Champions League finals\n5. 2026\u201327 UEFA Champions League qualifying"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "paris saint-germain"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies PSG as the winner with matching score, opponent, date, and venue details from the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "All key claims including the penalty result, back-to-back title, and Real Madrid comparison are directly supported by the first snippet.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "recent_02",
+      "category": "recent",
+      "question": "Which country topped the medal table at the 2026 Winter Olympics?",
+      "gold_answer": "Norway. It topped the medal table at the 2026 Winter Olympics in Milan-Cortina with 18 gold medals and 41 total medals, leading on both golds and totals.",
+      "error": null,
+      "latency_s": 3.76,
+      "agent_answer": "**Norway** topped the medal table at the 2026 Winter Olympics. Norwegian athletes won the most gold medals (18) and the most total medals (41), both of which set new Winter Olympics records. The games were held in Milan and Cortina d'Ampezzo, Italy, from 6 to 22 February 2026.",
+      "queries": [
+        "2026 Winter Olympics medal table"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 Winter Olympics medal table",
+          "results": "1. 2026 Winter Olympics medal table\n   Intro: The 2026 Winter Olympics, officially known as the XXV Winter Olympic Games, were an international winter multi-sport event held in Milan and Cortina d'Ampezzo, Italy, from 6 to 22 February. A total of 2,900 athletes representing 92 National Olympic Committees (NOCs) participated, including first-time entrants Benin, Guinea-Bissau, and the United Arab Emirates. The games featured 116 events in eight sports across 16 disciplines, including ski mountaineering, which made its Olympic debut.\nAthletes representing 29 NOCs received at least one medal, with 19 winning at least one gold medal. Athletes from Norway won the most medals overall, with 41, surpassing the previous record of 39 medals set by Norway at the 2018 Winter Olympics. Norwegian athletes also won the most gold medals with 18, breaking the previous record of 16 golds set by the Norwegians at the 2022 Winter Olympics.\nBrazil won the first medal and first gold medal in their Winter Olympic history. It is also the first tropical,\u2026\n2. List of 2026 Winter Olympics medal winners\n3. All-time Olympic Games medal table\n4. 2026 Winter Paralympics medal table\n5. 2026 Winter Olympics\n   Intro: The 2026 Winter Olympics (Italian: Olimpiadi invernali del 2026), officially the XXV Olympic Winter Games and commonly known as Milano Cortina 2026, were an international winter multi-sport event held from 6 to 22 February 2026, at multiple sites across Lombardy, Veneto and Trentino-Alto Adige/S\u00fcdtirol, with competition in selected events beginning on 4 February 2026. Featuring the debut of ski mountaineering as a Winter Olympic event, Milano Cortina 2026 was the first Olympic Games under the IOC presidency of Kirsty Coventry.\nA joint bid by Milan and Cortina d'Ampezzo was awarded on 24 June 2019, at the 134th IOC Session in Lausanne, Switzerland, in preference to another joint bid made by Stockholm and \u00c5re, Sweden. The 2026 Olympic Games were the first to be officially co-hosted by two cities. Milan primarily hosted the ice events, while the remaining events were hosted in clusters around Cortina, Livigno, and Fiemme. These were the third Winter Olympics, and the fourth Olympics overa\u2026"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "norway"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Norway as topping the medal table with 18 golds and 41 total medals, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm Norway won the most golds (18) and most total medals (41), both records, and that the games were held in Milan and Cortina from 6-22 February 2026.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "recent_03",
+      "category": "recent",
+      "question": "Who won Super Bowl LX (the 2026 Super Bowl)?",
+      "gold_answer": "The Seattle Seahawks. They defeated the New England Patriots 29-13 in Super Bowl LX on February 8, 2026 at Levi's Stadium in Santa Clara, California.",
+      "error": null,
+      "latency_s": 7.95,
+      "agent_answer": "The snippet from the **2026 NFL season** article reveals the answer: it refers to the **Seattle Seahawks** as the \"reigning Super Bowl champion\" heading into the 2026 NFL season, meaning **the Seattle Seahawks won Super Bowl LX** (played in February 2026).",
+      "queries": [
+        "Super Bowl LX 2026",
+        "Super Bowl LX winner champion February 2026"
+      ],
+      "retrieved": [
+        {
+          "query": "Super Bowl LX 2026",
+          "results": "1. Super Bowl LX\n2. Super Bowl LX halftime show\n3. Super Bowl LXI\n4. 2026 Pro Bowl Games\n   Intro: The 2026 Pro Bowl Games was the National Football League (NFL)'s all-star game for the 2025 NFL season. This is the fourth year the event has consisted of a non-contact flag football game, and the first year it has been integrated into the Super Bowl's festivities instead of a standalone event. It took place in the week leading up to Super Bowl LX on Tuesday, February 3, 2026, at the Moscone Center in San Francisco, California, the site of this season's Super Bowl Experience. The  NFC defended their win from the previous year's flag football game with a 66\u201352 win, extending their win streak to four straight, retaining their undefeated record since the format change, and allowing them to retake a 27\u201326 all-time lead over the AFC in Pro Bowl events.\n5. List of Super Bowl champions\n   Intro: The Super Bowl is the annual American football game that determines the champion of the National Football League (NFL). The game culminates a season that begins in the previous calendar year, and is the conclusion of the NFL playoffs. The winner receives the Vince Lombardi Trophy. The contest is held in an American city, chosen three to four years beforehand, usually at warm-weather sites or domed stadiums. Since January 1971, the winner of the American Football Conference (AFC) Championship Game has faced the winner of the National Football Conference (NFC) Championship Game in the culmination of the NFL playoffs.\nBefore the 1970 merger between the American Football League (AFL) and the NFL, the two leagues met in four such contests. The first two were marketed as the \"AFL\u2013NFL World Championship Game\", but were also casually referred to as \"the Super Bowl game\" during the television broadcast. Super Bowl III in January 1969 was the first such game that carried the \"Super Bowl\" moniker\u2026"
+        },
+        {
+          "query": "Super Bowl LX winner champion February 2026",
+          "results": "1. Super Bowl LX\n2. List of Super Bowl champions\n   Intro: The Super Bowl is the annual American football game that determines the champion of the National Football League (NFL). The game culminates a season that begins in the previous calendar year, and is the conclusion of the NFL playoffs. The winner receives the Vince Lombardi Trophy. The contest is held in an American city, chosen three to four years beforehand, usually at warm-weather sites or domed stadiums. Since January 1971, the winner of the American Football Conference (AFC) Championship Game has faced the winner of the National Football Conference (NFC) Championship Game in the culmination of the NFL playoffs.\nBefore the 1970 merger between the American Football League (AFL) and the NFL, the two leagues met in four such contests. The first two were marketed as the \"AFL\u2013NFL World Championship Game\", but were also casually referred to as \"the Super Bowl game\" during the television broadcast. Super Bowl III in January 1969 was the first such game that carried the \"Super Bowl\" moniker\u2026\n3. Super Bowl XLIII\n4. 2026 NFL season\n   Intro: The 2026 NFL season is scheduled to be the 107th season of the National Football League (NFL). The regular season is scheduled to begin on September 9, 2026, with reigning Super Bowl champion Seattle hosting New England in the NFL Kickoff Game, and will end on January 10, 2027. The playoffs will begin on January 16 and conclude with Super Bowl LXI at SoFi Stadium in Inglewood, California on February 14.\n5. Super Bowl LVI"
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "seattle seahawks"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identified the Seattle Seahawks as the Super Bowl LX winner, matching the gold answer's core fact.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The 2026 NFL season snippet describes Seattle as the reigning Super Bowl champion hosting New England, supporting the answer.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "recent_04",
+      "category": "recent",
+      "question": "Who won the Eurovision Song Contest 2026?",
+      "gold_answer": "Bulgaria, with the song 'Bangaranga' performed by Dara - Bulgaria's first Eurovision win (516 points, topping both the jury vote and the televote). The contest was held in Vienna, with the grand final on 16 May 2026. Naming either the country or the artist/song counts as correct.",
+      "error": null,
+      "latency_s": 4.56,
+      "agent_answer": "**Bulgaria** won the Eurovision Song Contest 2026! \ud83c\udde7\ud83c\uddec\n\nThe contest was held on **16 May 2026** at the Wiener Stadthalle in **Vienna, Austria**. Bulgaria was represented by **Dara** (Darina Yotova) performing the song **\"Bangaranga\"**. Bulgaria placed first out of the 25 participating countries in the grand final, having also topped the second semi-final with 278 points.",
+      "queries": [
+        "Eurovision Song Contest 2026"
+      ],
+      "retrieved": [
+        {
+          "query": "Eurovision Song Contest 2026",
+          "results": "1. Eurovision Song Contest 2026\n   Intro: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16 May 2026, held at Wiener Stadthalle in Vienna, Austria, and presented by Victoria Swarovski and Michael Ostrowski, with Emily Busvine acting as the green room host. It was organised by the European Broadcasting Union (EBU) and host broadcaster \u00d6sterreichischer Rundfunk (ORF), which staged the event after winning the 2025 contest for Austria with the song \"Wasted Love\" by JJ.\nBroadcasters from thirty-five countries participated in the contest, two fewer than in 2025 and the smallest number of participants since 2003, before the introduction of semi-finals. Iceland, Ireland, the Netherlands, Slovenia, and Spain opted not to participate in protest at Israel's inclusion in the context of the Gaza war, marking the largest number of boycotting countries in the contest's history since 1970, while Bulgaria, Moldova, and Romania returned after\u2026\n2. Junior Eurovision Song Contest 2026\n3. Eurovision Song Contest 2027\n4. Eurovision Song Contest Asia\n5. Bulgaria in the Eurovision Song Contest 2026\n   Intro: Bulgaria was represented at the Eurovision Song Contest 2026 with the song \"Bangaranga\", written by Anne Judith Wik, Cristian Tarcea, Darina Yotova and Dimitris Kontopoulos, and performed by Yotova under her stage name Dara. The Bulgarian participating broadcaster, Bulgarian National Television (BNT), returned to the contest after a three-year hiatus and organised the national final Natsionalnata selektsiya in order to select its entry for the contest.\nBulgaria was drawn to compete in the second semi-final of the Eurovision Song Contest which took place on 14 May 2026. Performing during the show in position 1, \"Bangaranga\" was announced among the top 10 entries of the second semi-final and therefore qualified to compete in the final on 16 May. It was later revealed that Bulgaria placed first out of the 15 participating countries in the semi-final with 278 points. In the final, Bulgaria performed in position 12 and placed first out of the 25 participating countries, winning the contest\u2026"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "bulgaria"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Bulgaria, Dara, and 'Bangaranga' as the winner, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "All key claims (Bulgaria winning, Dara, Bangaranga, Vienna, 16 May 2026, top of second semi-final with 278 points) are directly supported by the retrieved snippets.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "recent_05",
+      "category": "recent",
+      "question": "Who won the men's singles title at the 2026 Australian Open?",
+      "gold_answer": "Carlos Alcaraz. He defeated Novak Djokovic 2-6, 6-2, 6-3, 7-5 in the men's singles final of the 2026 Australian Open.",
+      "error": null,
+      "latency_s": 6.33,
+      "agent_answer": "**Carlos Alcaraz** won the men's singles title at the 2026 Australian Open. He defeated Novak Djokovic in the final with a score of 2\u20136, 6\u20132, 6\u20133, 7\u20135. It was his first Australian Open title and seventh Grand Slam title overall, and the victory made him the youngest man to complete the **career Grand Slam** (winning all four majors), achieving the feat at just 22 years, 8 months, and 27 days old.",
+      "queries": [
+        "2026 Australian Open men's singles"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 Australian Open men's singles",
+          "results": "1. 2026 Australian Open \u2013 Men's singles\n   Intro: Carlos Alcaraz defeated Novak Djokovic in the final, 2\u20136, 6\u20132, 6\u20133, 7\u20135 to win the men's singles tennis title at the 2026 Australian Open. It was his first Australian Open title and seventh major title overall, becoming the ninth player and youngest man to complete the career Grand Slam in singles (at 22 years, 8 months and 27 days old). He was also the youngest man in the Open Era to reach the singles final of all four majors. The final was a rematch of the previous year's quarterfinal match, won by Djokovic. With the win, Alcaraz ended Djokovic's unbeaten 10\u20130 record in Australian Open finals.\nJannik Sinner was the two-time defending champion, but lost in the semifinals to Djokovic in a rematch of their semifinal match two years prior. Sinner's loss ended his streak of five consecutive major finals, dating to the 2024 US Open.\nAt 38 years and 255 days old, Djokovic became the oldest man in history to reach the Australian Open final, and the oldest major finalist overall since Ken Ros\u2026\n2. 2026 French Open \u2013 Men's singles\n3. 2026 Australian Open \u2013 Men's singles qualifying\n4. 2026 Australian Open\n   Intro: The 2026 Australian Open was a Grand Slam level tennis tournament that was held at Melbourne Park, from 18 January to 1 February 2026, with the preliminary rounds played from 12 to 15 January. It was the 114th edition of the Australian Open, the 58th in the Open Era and the first major of the year. The tournament consisted of events for professional players in singles, doubles and mixed doubles. Junior and wheelchair players competed in singles and doubles tournaments.\nThe defending men's singles champion, Jannik Sinner, lost in the semifinals. The defending women's singles champion, Madison Keys, lost in the fourth round. Venus Williams became the oldest player to play in the women's singles draw at age 45.\nRussian and Belarusian players were still required to participate as neutral athletes. Their national flags were not shown against their names and both flags were still banned from the tournament venue due to the ongoing war between Russia and Ukraine.\n5. 2026 Australian Open \u2013 Women's singles"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "carlos alcaraz"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Carlos Alcaraz as the winner with the exact matching score against Djokovic.",
+        "groundedness": "grounded",
+        "groundedness_reason": "All key claims including the score, first Australian Open title, seventh major, and youngest career Grand Slam completion at 22 years 8 months 27 days are supported by snippet 1.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "no_search_01",
+      "category": "no_search",
+      "question": "What is 17 multiplied by 24?",
+      "gold_answer": "408.",
+      "error": null,
+      "latency_s": 1.67,
+      "agent_answer": "This is a straightforward arithmetic calculation that doesn't require a Wikipedia search.\n\n17 multiplied by 24 is:\n\n17 \u00d7 24 = **408**",
+      "queries": [],
+      "retrieved": [],
+      "num_searches": 0,
+      "did_search": false,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "408"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent answered 408, matching the gold answer.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "No searches were performed; groundedness is not applicable.",
+        "honest_decline": false
+      }
+    },
+    {
+      "id": "no_search_02",
+      "category": "no_search",
+      "question": "A rectangle is 8 cm wide and 5 cm tall. What is its area in square centimeters?",
+      "gold_answer": "40 square centimeters.",
+      "error": null,
+      "latency_s": 3.84,
+      "agent_answer": "This is a straightforward math calculation that doesn't require a Wikipedia search.\n\nThe area of a rectangle is calculated using the formula:\n\n**Area = Width \u00d7 Height**\n\nSo:\n\n**Area = 8 cm \u00d7 5 cm = 40 cm\u00b2**\n\nThe area of the rectangle is **40 square centimeters**.",
+      "queries": [],
+      "retrieved": [],
+      "num_searches": 0,
+      "did_search": false,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "40"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly computed 8 \u00d7 5 = 40 square centimeters, matching the gold answer.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "No searches were performed; groundedness is not applicable.",
+        "honest_decline": false
+      }
+    }
+  ]
+}

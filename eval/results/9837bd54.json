@@ -1,0 +1,1178 @@
+{
+  "run_id": "9837bd54",
+  "started_at": "2026-07-10T17:42:30",
+  "agent_model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "judge_model": "claude-opus-4-8",
+  "questions_file": "/Users/souri/Downloads/Anthro Test/eval/questions.json",
+  "num_questions": 27,
+  "summary": {
+    "single_hop": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 5,
+      "closed_form_match": 5,
+      "judged": 5,
+      "correct": 5,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 5,
+      "grounded": 5
+    },
+    "multi_hop": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 0,
+      "closed_form_match": 0,
+      "judged": 5,
+      "correct": 5,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 4,
+      "grounded": 1
+    },
+    "ambiguous_entity": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 0,
+      "closed_form_match": 0,
+      "judged": 5,
+      "correct": 5,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 5,
+      "grounded": 3
+    },
+    "unanswerable": {
+      "n": 5,
+      "search_ok": 4,
+      "closed_form_applicable": 1,
+      "closed_form_match": 1,
+      "judged": 5,
+      "correct": 5,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 3,
+      "grounded": 2
+    },
+    "recent": {
+      "n": 5,
+      "search_ok": 5,
+      "closed_form_applicable": 5,
+      "closed_form_match": 3,
+      "judged": 5,
+      "correct": 3,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "grounded_applicable": 5,
+      "grounded": 5
+    },
+    "no_search": {
+      "n": 2,
+      "search_ok": 2,
+      "closed_form_applicable": 2,
+      "closed_form_match": 2,
+      "judged": 2,
+      "correct": 2,
+      "partially_correct": 0,
+      "incorrect": 0,
+      "grounded_applicable": 0,
+      "grounded": 0
+    },
+    "ALL": {
+      "n": 27,
+      "search_ok": 26,
+      "closed_form_applicable": 13,
+      "closed_form_match": 11,
+      "judged": 27,
+      "correct": 25,
+      "partially_correct": 0,
+      "incorrect": 2,
+      "grounded_applicable": 22,
+      "grounded": 16
+    }
+  },
+  "rows": [
+    {
+      "id": "single_01",
+      "category": "single_hop",
+      "question": "In what year was the Eiffel Tower completed?",
+      "gold_answer": "1889.",
+      "error": null,
+      "latency_s": 3.63,
+      "agent_answer": "The Eiffel Tower was completed in **1889**. It was built for the 1889 Universal Exposition (World's Fair) in Paris, France.",
+      "queries": [
+        "Eiffel Tower construction completion year"
+      ],
+      "retrieved": [
+        {
+          "query": "Eiffel Tower construction completion year",
+          "results": "1. Eiffel Tower: The Eiffel Tower (/\u02c8a\u026af\u0259l/ EYE-f\u0259l; French: Tour Eiffel [tu\u0281 \u025bf\u025bl] ) is a lattice tower on the Champ de Mars in Paris, France. It is named after the engineer\n2. Gustave Eiffel: network, most famously the Garabit Viaduct. He is best known for the Eiffel Tower, designed by his company and built for the 1889 Universal Exposition\n3. Tokyo Tower: tallest tower in Japan until the construction of Tokyo Skytree in 2012. It is a lattice tower inspired by the Eiffel Tower, and is painted white and international\n4. Oriental Pearl Tower: Pearl Tower is a futurist TV tower in Lujiazui, Shanghai. Built from 1991 to 1994, the tower was the tallest structure in China until the completion of nearby\n5. CN Tower: March 1975 Main pod construction, April 1975 Nearing completion, December 1975 Two months after opening, August 1976 The CN Tower opened on June 26, 1976"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "1889"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states the Eiffel Tower was completed in 1889, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippet on Gustave Eiffel confirms the tower was built for the 1889 Universal Exposition in Paris, supporting the answer's claims."
+      }
+    },
+    {
+      "id": "single_02",
+      "category": "single_hop",
+      "question": "What is the chemical symbol for gold?",
+      "gold_answer": "Au.",
+      "error": null,
+      "latency_s": 3.66,
+      "agent_answer": "The chemical symbol for gold is **Au**, which comes from the Latin word *aurum*, meaning gold. Gold has the atomic number 79 on the periodic table.",
+      "queries": [
+        "chemical symbol for gold element"
+      ],
+      "retrieved": [
+        {
+          "query": "chemical symbol for gold element",
+          "results": "1. Chemical symbol: chemical compounds, and other entities. Element symbols for chemical elements, also known as atomic symbols, normally consist of one or two letters from\n2. Gold: Gold is a chemical element; its chemical symbol is Au (from Latin aurum) and atomic number 79. In its pure form, it is a bright-metallic-yellow, dense\n3. Alchemical symbol: alchemical symbols. Without proper rendering support, you may see question marks, boxes, or other symbols instead of alchemical symbols. Alchemical symbols were\n4. List of chemical elements: arrangement of the elements by their chemical properties that usually uses abbreviated chemical symbols in place of full element names, but the linear list format\n5. List of chemical element name etymologies: elements. List of chemical element naming controversies Naming of elements Kevin A. Boudreaux. \"Derivations of the Names and Symbols of the Elements\"."
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "au"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states the chemical symbol for gold is Au, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "Snippet 2 confirms gold's symbol Au (from Latin aurum) and atomic number 79, supporting all the answer's claims."
+      }
+    },
+    {
+      "id": "single_03",
+      "category": "single_hop",
+      "question": "Who wrote the novel 'Pride and Prejudice'?",
+      "gold_answer": "Jane Austen.",
+      "error": null,
+      "latency_s": 3.39,
+      "agent_answer": "The novel *Pride and Prejudice* was written by **Jane Austen**, an English author. It was first published in 1813 and remains one of the most celebrated works in English literature.",
+      "queries": [
+        "Pride and Prejudice novel"
+      ],
+      "retrieved": [
+        {
+          "query": "Pride and Prejudice novel",
+          "results": "1. Pride and Prejudice: Pride and Prejudice is a novel by English author Jane Austen. Written when she was aged 20\u201321, it was her third novel scribed and became the second to\n2. Pride and Prejudice and Zombies: Pride and Prejudice and Zombies is a 2009 parody novel by Seth Grahame-Smith. It is a mashup combining Jane Austen's classic 1813 novel Pride and Prejudice\n3. Pride and Prejudice (2026 TV series): Pride and Prejudice is an upcoming television series. It is an adaptation of the Jane Austen novel of the same name written by Dolly Alderton and directed\n4. Pride & Prejudice (2005 film): Pride & Prejudice is a 2005 period romance film directed by Joe Wright, in his feature directorial debut, based on Jane Austen's 1813 novel of the same\n5. Pride and Prejudice and Zombies (film): film based on Seth Grahame-Smith's 2009 novel of the same name, which parodies the 1813 novel Pride and Prejudice by Jane Austen. The film is directed by"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "jane austen"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Jane Austen as the author, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm the novel is by Jane Austen and published in 1813."
+      }
+    },
+    {
+      "id": "single_04",
+      "category": "single_hop",
+      "question": "What is the capital city of Australia?",
+      "gold_answer": "Canberra.",
+      "error": null,
+      "latency_s": 3.62,
+      "agent_answer": "The capital city of Australia is **Canberra**. It is located within the Australian Capital Territory (ACT) and serves as the seat of the Australian federal government, with an estimated population of around 484,630 as of 2025.",
+      "queries": [
+        "capital city of Australia"
+      ],
+      "retrieved": [
+        {
+          "query": "capital city of Australia",
+          "results": "1. List of Australian capital cities: eight capital cities in Australia, each of which functions as the seat of government for the state or territory in which it is located. One of these,\n2. Australian Capital Territory: Canberra, the capital city of Australia, is situated within the territory and is the territory's primate city. The Australian Capital Territory is located\n3. List of cities in Australia by population: areas defined by the Australian Bureau of Statistics for Sydney and its surrounds. The extent of the Greater Sydney Greater Capital City Statistical Area\n4. Capital city: seat of government. A capital is typically a city that physically encompasses the government's offices and meeting places; the status as capital is often\n5. Canberra: the capital city of Australia and the largest population centre in the Australian Capital Territory. With an estimated population of 484,630 as of 2025"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "canberra"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Canberra as the capital city of Australia, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm Canberra is the capital within the ACT and cite the population figure of 484,630 as of 2025."
+      }
+    },
+    {
+      "id": "single_05",
+      "category": "single_hop",
+      "question": "How many bones are in the adult human body?",
+      "gold_answer": "206.",
+      "error": null,
+      "latency_s": 4.13,
+      "agent_answer": "The adult human body typically has **206 bones**. At birth, the skeleton starts with around **270 bones**, but as a person grows, many of these bones fuse together, reducing the total to approximately 206 by adulthood.",
+      "queries": [
+        "number of bones in adult human body"
+      ],
+      "retrieved": [
+        {
+          "query": "number of bones in adult human body",
+          "results": "1. List of bones of the human skeleton: An adult human skeleton is commonly quoted as consisting of 206 bones. Reports on the typical number of bones have varied historically depending on how\n2. List of organs of the human body: types in the adult human body List of skeletal muscles of the human body Gene Wiki List of organ transplant donors and recipients List of bones of the human\n3. Composition of the human body: lipids), hydroxyapatite (in bones), carbohydrates (such as glycogen and glucose) and DNA. In terms of tissue type, the body may be analyzed into water\n4. Development of the human body: Development of the human body is the process of growth to maturity. The process begins with fertilization, where an egg released from the ovary of a female\n5. Human skeleton: The human skeleton is the internal framework of the human body. It is composed of around 270 bones at birth \u2013 this total decreases to around 206 bones by"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "206"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent states 206 bones, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "Both the 206 adult figure and 270-at-birth fusion detail are supported by the retrieved snippets."
+      }
+    },
+    {
+      "id": "multi_01",
+      "category": "multi_hop",
+      "question": "Which is taller, the Eiffel Tower or the Statue of Liberty, and by roughly how much?",
+      "gold_answer": "The Eiffel Tower is much taller. It is about 330 m tall (to the tip, including antennas); the Statue of Liberty is about 93 m from ground to the tip of the torch. The Eiffel Tower is therefore roughly 235-240 m taller.",
+      "error": null,
+      "latency_s": 6.57,
+      "agent_answer": "Based on the search results, the **Eiffel Tower** is significantly taller than the Statue of Liberty.\n\n- **Eiffel Tower**: ~330 metres (1,083 ft) tall\n- **Statue of Liberty**: ~93 metres (305 ft) tall (including its pedestal)\n\nThe Eiffel Tower is roughly **237 metres (about 778 feet) taller** than the Statue of Liberty \u2014 more than three times its height!",
+      "queries": [
+        "Eiffel Tower height",
+        "Statue of Liberty height",
+        "Statue of Liberty total height meters feet"
+      ],
+      "retrieved": [
+        {
+          "query": "Eiffel Tower height",
+          "results": "1. Eiffel Tower: The Eiffel Tower (/\u02c8a\u026af\u0259l/ EYE-f\u0259l; French: Tour Eiffel [tu\u0281 \u025bf\u025bl] ) is a lattice tower on the Champ de Mars in Paris, France. It is named after the engineer\n2. Eiffel Tower replicas and derivatives: Tower. The tower is 330 metres (1,083\u00a0ft) tall. Other Eiffel-inspired towers are listed in the table in descending order of scale and height, imperial\n3. Gustave Eiffel: network, most famously the Garabit Viaduct. He is best known for the Eiffel Tower, designed by his company and built for the 1889 Universal Exposition\n4. Eiffel Tower (Paris, Texas): Texas's Eiffel Tower is a landmark in the city of Paris, Texas. The tower was constructed in 1993. It is a rough scale model of the Eiffel Tower in Paris\n5. Eiffel Tower (Six Flags): The two Eiffel Towers in Six Flags parks\u2014one at Kings Dominion and one at Kings Island\u2014are replicas of the Eiffel Tower in Paris, France. They each opened"
+        },
+        {
+          "query": "Statue of Liberty height",
+          "results": "1. Replicas of the Statue of Liberty: Hundreds of replicas of New York City's Statue of Liberty (Liberty Enlightening the World) have been created worldwide. The original Statue of Liberty, designed\n2. List of tallest statues: (secondary coordinates) This list of tallest statues includes completed statues that are at least 50 m (164 ft) tall. The height values in this list are measured\n3. Statue of Liberty: The Statue of Liberty (Liberty Enlightening the World; French: La Libert\u00e9 \u00e9clairant le monde) is a colossal neoclassical sculpture of a robed and crowned\n4. Statue of Unity: The Statue of Unity is the world's tallest statue, with a height of 182 metres (597 feet), located in Narmada valley, near Kevadia in the state of Gujarat\n5. Statue of Liberty (Finland): The Statue of Liberty (Finnish: Suomen Vapaudenpatsas; Swedish: Finlands frihetsstaty) is a monumental bronze sculpture complex located in the Market"
+        },
+        {
+          "query": "Statue of Liberty total height meters feet",
+          "results": "1. List of tallest statues: Heights stated are those of the statue itself and (separately) the total height of the monument that includes structures the statue is standing on or holding\n2. Statue of Liberty: The Statue of Liberty (Liberty Enlightening the World; French: La Libert\u00e9 \u00e9clairant le monde) is a colossal neoclassical sculpture of a robed and crowned\n3. Statue of Social Justice: Constitution. The statue is 125 feet (38\u00a0m) tall and stands on an 81 feet (25\u00a0m) tall base building, making its total height 206 feet (63\u00a0m). It is the\n4. List of tallest statues in the Philippines: This list of tallest statues in the Philippines includes free-standing, completed statues that are at least 5 meters (16 feet) tall. The height of these statues\n5. List of tallest buildings in the United States: architectural height of 1,776 feet (541\u00a0m), connoting the year the Declaration of Independence was signed, though the absolute tip (or pinnacle) of the structure"
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states the Eiffel Tower is taller (~330 m vs ~93 m) and roughly 237 m taller, matching the gold answer.",
+        "groundedness": "partially_grounded",
+        "groundedness_reason": "The Eiffel Tower height (330 m) is directly supported by the snippets, but the Statue of Liberty's 93 m figure is not stated in any retrieved snippet."
+      }
+    },
+    {
+      "id": "multi_02",
+      "category": "multi_hop",
+      "question": "Who was born first, Albert Einstein or Isaac Newton?",
+      "gold_answer": "Isaac Newton was born first. Newton was born in 1643 (or 1642 Old Style); Einstein was born in 1879.",
+      "error": null,
+      "latency_s": 4.71,
+      "agent_answer": "**Isaac Newton** was born first. Here's a quick comparison:\n\n- **Isaac Newton** was born on **January 4, 1643**\n- **Albert Einstein** was born on **March 14, 1879**\n\nNewton was born approximately **236 years** before Einstein.",
+      "queries": [
+        "Albert Einstein birth date",
+        "Isaac Newton birth date"
+      ],
+      "retrieved": [
+        {
+          "query": "Albert Einstein birth date",
+          "results": "1. Albert Einstein: Albert Einstein (14 March 1879\u00a0\u2013 18 April 1955) was a German-born theoretical physicist best known for developing the known theory of relativity. Einstein\n2. Albert Einstein Memorial: The Albert Einstein Memorial is a monumental bronze statue by sculptor Robert Berks, depicting Albert Einstein seated with manuscript papers in hand. It\n3. Subtle Is the Lord: \"Subtle Is the Lord\"\u2014The Science and the Life of Albert Einstein is a biography of Albert Einstein written by Abraham Pais. First published in 1982 by\n4. Bohr\u2013Einstein debates: The Bohr\u2013Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr. Their debates are remembered\n5. General relativity: theory of relativity, and as Einstein's theory of gravity, is the geometric theory of gravitation published by Albert Einstein in May 1916 and is the accepted"
+        },
+        {
+          "query": "Isaac Newton birth date",
+          "results": "1. Isaac Newton's occult studies: English physicist and mathematician Isaac Newton produced works exploring chronology, biblical interpretation (especially of the Apocalypse), and alchemy\n2. Date of the birth of Jesus: date of the birth of Jesus is not stated in the gospels or in any historical sources and the evidence is insufficient to allow for consistent dating.\n3. Early life of Isaac Newton: biography of Sir Isaac Newton, the English mathematician and scientist, author of the Principia. It portrays the years after Newton's birth in 1643, his education\n4. Isaac Newton: Sir Isaac Newton (/\u02c8nju\u02d0t\u0259n/ ; (1643-01-04)4 January 1643 [O.S. 25 December 1642]\u00a0\u2013 31 March\u00a0[O.S. 20 March]\u00a01727) was an English polymath who was a mathematician\n5. Hannah Ayscough: Hannah Ayscough or Askew or Askeu (circa 1616 - 1679) was Isaac Newton's mother. She was born to a yeoman family near Grantham, in Lincolnshire. Following"
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Newton as born first with accurate birth dates matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "Both birth dates (Newton 4 January 1643, Einstein 14 March 1879) are directly supported by the retrieved snippets."
+      }
+    },
+    {
+      "id": "multi_03",
+      "category": "multi_hop",
+      "question": "Who has won more Academy Awards for Best Director: Steven Spielberg or Martin Scorsese?",
+      "gold_answer": "Steven Spielberg, with two Best Director Oscars (Schindler's List, Saving Private Ryan), versus Martin Scorsese's one (The Departed).",
+      "error": null,
+      "latency_s": 8.02,
+      "agent_answer": "**Steven Spielberg** has won more Academy Awards for Best Director than Martin Scorsese.\n\n- **Steven Spielberg** has won the Academy Award for Best Director **twice**: for *Schindler's List* (1993) and *Saving Private Ryan* (1998).\n- **Martin Scorsese** has won the Academy Award for Best Director **once**: for *The Departed* (2006).\n\nIt's worth noting that both directors have received multiple nominations over their careers, and Scorsese in particular was nominated many times before finally winning.",
+      "queries": [
+        "Steven Spielberg Academy Award Best Director wins",
+        "Martin Scorsese Academy Award Best Director wins",
+        "Academy Award Best Director winners complete list Spielberg Scorsese"
+      ],
+      "retrieved": [
+        {
+          "query": "Steven Spielberg Academy Award Best Director wins",
+          "results": "1. Steven Spielberg: youngest Academy Award winners and nominees \u2014 Youngest nominees for Best Director Steven Spielberg's unrealized projects \"Top Grossing Director at the Worldwide\n2. List of awards and nominations received by Steven Spielberg: director. Spielberg is recipient of various awards including three Academy Awards, four BAFTA Awards, thirteen Emmy Awards, five Golden Globe Awards,\n3. 98th Academy Awards: The 98th Academy Awards ceremony, presented by the Academy of Motion Picture Arts and Sciences (AMPAS), took place on March 15, 2026, at the Dolby Theatre\n4. Daniels (directors): then-highest-grossing film, and won the duo many awards, including Academy Awards for Best Picture, Best Director, and Best Original Screenplay. Kwan and Scheinert\n5. Lincoln (film): American biographical historical drama film directed and produced by Steven Spielberg, starring Daniel Day-Lewis as United States President Abraham Lincoln"
+        },
+        {
+          "query": "Martin Scorsese Academy Award Best Director wins",
+          "results": "1. Martin Scorsese: five Academy Awards, including Best Picture, Best Actor for Leonardo DiCaprio, Best Supporting Actor for Jonah Hill, Best Director for Martin Scorsese, and\n2. List of awards and nominations received by Martin Scorsese: Martin Scorsese is an American filmmaker who has received several awards over his six decade long career, including an Academy Award, four BAFTA Awards\n3. Academy Award for Best Director: The Academy Award for Best Director (officially known as the Academy Award of Merit for Directing) is an award presented annually by the Academy of Motion\n4. Mr. Scorsese: Mr. Scorsese is a five-part documentary series directed by Rebecca Miller about American filmmaker Martin Scorsese. It features interviews with Robert\n5. Critics' Choice Movie Award for Best Director: of the award. 2 wins Alfonso Cuar\u00f3n Sam Mendes Martin Scorsese Steven Spielberg BAFTA Award for Best Direction Academy Award for Best Director Golden"
+        },
+        {
+          "query": "Academy Award Best Director winners complete list Spielberg Scorsese",
+          "results": "1. Academy Award for Best Director: The Academy Award for Best Director (officially known as the Academy Award of Merit for Directing) is an award presented annually by the Academy of Motion\n2. Martin Scorsese: episode of Steven Spielberg's Amazing Stories. With After Hours (1985), for which he won a Best Director Award at Cannes, Scorsese made an esthetic shift\n3. Steven Spielberg: by CinemaScore List of oldest and youngest Academy Award winners and nominees \u2014 Youngest nominees for Best Director Steven Spielberg's unrealized projects\n4. Academy Award for Best Picture: The Academy Award for Best Picture is one of the Academy Awards (also known as Oscars) presented annually by the Academy of Motion Picture Arts and Sciences\n5. List of oldest and youngest Academy Award winners and nominees: youngest Academy Award winners and nominees in the directing and acting award categories. This list is current as of the 98th Academy Awards ceremony"
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states Spielberg won twice (Schindler's List, Saving Private Ryan) versus Scorsese's one (The Departed), matching the gold.",
+        "groundedness": "partially_grounded",
+        "groundedness_reason": "Snippets confirm Scorsese's single Best Director win but only vaguely support Spielberg's specific two Best Director wins and the named films."
+      }
+    },
+    {
+      "id": "multi_04",
+      "category": "multi_hop",
+      "question": "Which country hosted the Summer Olympics more recently, Brazil or the United Kingdom?",
+      "gold_answer": "Brazil - it hosted the 2016 Summer Olympics in Rio de Janeiro, which is more recent than the United Kingdom's 2012 Games in London.",
+      "error": null,
+      "latency_s": 8.88,
+      "agent_answer": "Based on the search results, the answer is clear:\n\n**Brazil** hosted the Summer Olympics more recently. Brazil hosted the **2016 Summer Olympics** in Rio de Janeiro (August 5\u201321, 2016), while the United Kingdom last hosted the Summer Olympics in **2012** in London. So Brazil's hosting was 4 years more recent than the UK's.",
+      "queries": [
+        "Brazil Summer Olympics host",
+        "United Kingdom Summer Olympics host",
+        "2012 Summer Olympics London United Kingdom"
+      ],
+      "retrieved": [
+        {
+          "query": "Brazil Summer Olympics host",
+          "results": "1. Brazil at the Olympics: different Summer sports and 1 in a Winter sport. In its inaugural participation at the 1920 Summer Olympics in Antwerp, Brazil won its first Olympic medal\n2. Brazil at the 2016 Summer Olympics: Brazil was the host nation of the 2016 Summer Olympics in Rio de Janeiro from 5 to 21 August 2016. This was the nation's twenty-second appearance at the\n3. List of Olympic Games host cities: International Olympic Committee (IOC) decided to unrecognize the 1906 Games. The 2020 Summer Olympics in Tokyo were postponed for the first time in the Olympics history\n4. Football at the 2016 Summer Olympics: football tournament at the 2016 Summer Olympics was held from 3 to 20 August in Brazil. In addition to the Olympic host city of Rio de Janeiro, matches\n5. 2016 Summer Olympics: being the host nation. China finished third. Host nation Brazil won seven gold medals and 19 total medals, its best result at any Olympics, finishing"
+        },
+        {
+          "query": "United Kingdom Summer Olympics host",
+          "results": "1. Summer Olympic Games: The Summer Olympic Games, also known as the Summer Olympics or the Games of the Olympiad, are a major international multi-sport event normally held once\n2. List of Olympic Games host cities: International Olympic Committee (IOC) decided to unrecognize the 1906 Games. The 2020 Summer Olympics in Tokyo were postponed for the first time in the Olympics history\n3. Football at the Summer Olympics: 2016 and 2020 Summer Olympics, there are 127 venues that have hosted Olympic football, the most of any sport. From the 1992 Summer Olympics Football games\n4. 1936 Summer Olympics: The 1936 Summer Olympics (German: Olympische Sommerspiele 1936), officially the Games of the XI Olympiad (German: Spiele der XI. Olympiade) and branded\n5. 2032 Summer Olympics: and Sydney will host some events during the Games. It will be held in Brisbane's winter, the second Summer Olympics held in the host city's winter after"
+        },
+        {
+          "query": "2012 Summer Olympics London United Kingdom",
+          "results": "SEARCH ERROR: Wikipedia search for '2012 Summer Olympics London United Kingdom' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=2012+Summer+Olympics+London+United+Kingdom&srlimit=5&format=json)."
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Brazil (2016) as more recent than the UK (2012), matching the gold answer.",
+        "groundedness": "partially_grounded",
+        "groundedness_reason": "Brazil's 2016 hosting is well supported by snippets, but the UK's 2012 London hosting claim is not present in any retrieved snippet (the relevant search failed)."
+      }
+    },
+    {
+      "id": "multi_05",
+      "category": "multi_hop",
+      "question": "Which is older, the University of Oxford or Harvard University, and by roughly how long?",
+      "gold_answer": "The University of Oxford is much older. Teaching at Oxford dates to around 1096, while Harvard University was founded in 1636 - so Oxford predates Harvard by roughly five centuries.",
+      "error": null,
+      "latency_s": 19.17,
+      "agent_answer": "I'm currently experiencing repeated errors when trying to reach Wikipedia. However, based on well-established historical facts, I can answer this confidently:\n\n**The University of Oxford is significantly older than Harvard University.**\n\n- **University of Oxford**: Teaching began there as early as **1096 AD**, and it developed rapidly from 1167. It is the oldest university in the English-speaking world.\n- **Harvard University**: Founded in **1636**, it is the oldest university in the United States.\n\nThat means Oxford predates Harvard by roughly **400\u2013500 years** (approximately 440 years, comparing Oxford's commonly cited development date of around 1096\u20131167 to Harvard's founding in 1636).",
+      "queries": [
+        "University of Oxford founding history",
+        "Harvard University founding history",
+        "University of Oxford",
+        "Harvard University",
+        "Oxford University founded year",
+        "Oxford University"
+      ],
+      "retrieved": [
+        {
+          "query": "University of Oxford founding history",
+          "results": "SEARCH ERROR: Wikipedia search for 'University of Oxford founding history' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=University+of+Oxford+founding+history&srlimit=5&format=json)."
+        },
+        {
+          "query": "Harvard University founding history",
+          "results": "SEARCH ERROR: Wikipedia search for 'Harvard University founding history' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Harvard+University+founding+history&srlimit=5&format=json)."
+        },
+        {
+          "query": "University of Oxford",
+          "results": "SEARCH ERROR: Wikipedia search for 'University of Oxford' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=University+of+Oxford&srlimit=5&format=json)."
+        },
+        {
+          "query": "Harvard University",
+          "results": "SEARCH ERROR: Wikipedia search for 'Harvard University' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Harvard+University&srlimit=5&format=json)."
+        },
+        {
+          "query": "Oxford University founded year",
+          "results": "SEARCH ERROR: Wikipedia search for 'Oxford University founded year' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Oxford+University+founded+year&srlimit=5&format=json)."
+        },
+        {
+          "query": "Oxford University",
+          "results": "SEARCH ERROR: Wikipedia search for 'Oxford University' failed after 2 attempts (429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Oxford+University&srlimit=5&format=json)."
+        }
+      ],
+      "num_searches": 6,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Oxford as much older (1096 vs 1636), predating Harvard by roughly five centuries, matching the gold answer.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "All searches failed, so no snippets were available and the answer relied on the model's own knowledge."
+      }
+    },
+    {
+      "id": "ambiguous_01",
+      "category": "ambiguous_entity",
+      "question": "Where is Cambridge located?",
+      "gold_answer": "The name is ambiguous. Most commonly it refers to Cambridge, England (Cambridgeshire, United Kingdom), home of the University of Cambridge; it may also refer to Cambridge, Massachusetts, USA (home of Harvard and MIT), among other places.",
+      "error": null,
+      "latency_s": 6.05,
+      "agent_answer": "Cambridge is most commonly referring to one of two well-known places:\n\n1. **Cambridge, England** \u2013 Located in the East of England, in the county of Cambridgeshire. It lies on the River Cam, about 50 miles (80 km) north of London. It is famously home to the **University of Cambridge**, one of the world's oldest and most prestigious universities.\n\n2. **Cambridge, Massachusetts, USA** \u2013 Located in the Greater Boston area in the state of Massachusetts. It is situated just across the Charles River from Boston and is home to **Harvard University** and the **Massachusetts Institute of Technology (MIT)**.\n\nCould you clarify which Cambridge you meant? I'd be happy to provide more details!",
+      "queries": [
+        "Cambridge location"
+      ],
+      "retrieved": [
+        {
+          "query": "Cambridge location",
+          "results": "1. Cambridge: farmsteads and a village in the Cambridge district of Newnham. Following the Roman withdrawal from Britain around 410, the location may have been abandoned by\n2. University of Cambridge: University of Cambridge is a collegiate public research university in Cambridge, England. Founded in 1209, the University of Cambridge is the second-oldest\n3. Cambridge, Massachusetts: later settlement of Cambridge, which was not so named until 1638. An indigenous place name for the present day location of Cambridge is not known, though\n4. Trinity College, Cambridge: constituent college of the University of Cambridge. Founded in 1546 by King Henry VIII, Trinity is one of the largest Cambridge colleges, with the largest financial\n5. King's College, Cambridge: College of Our Lady and Saint Nicholas in Cambridge, is a constituent college of the University of Cambridge. The college lies beside the River Cam and"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent identifies both Cambridge, England (University of Cambridge) and Cambridge, Massachusetts (Harvard/MIT), flagging the ambiguity in line with the gold.",
+        "groundedness": "grounded",
+        "groundedness_reason": "Snippets support Cambridge, England as home of the University and Cambridge, Massachusetts as a distinct location, matching the answer's key claims."
+      }
+    },
+    {
+      "id": "ambiguous_02",
+      "category": "ambiguous_entity",
+      "question": "Who is Michael Jordan?",
+      "gold_answer": "Most commonly the retired American basketball player widely regarded as one of the greatest of all time. The name is ambiguous, though - it also refers to Michael I. Jordan, a prominent machine-learning researcher, and others.",
+      "error": null,
+      "latency_s": 11.07,
+      "agent_answer": "## Michael Jordan\n\n**Michael Jeffrey Jordan** (born February 17, 1963), widely known by his initials **MJ**, is widely regarded as the **greatest basketball player of all time**. Here are the key highlights about him:\n\n### Basketball Career\n- He played the majority of his NBA career with the **Chicago Bulls** (1984\u20131993, 1995\u20131998) and later had a brief comeback with the **Washington Wizards** (2001\u20132003).\n- He won **6 NBA Championships** with the Chicago Bulls and was named **Finals MVP all 6 times**.\n- He is a **5-time NBA Most Valuable Player (MVP)** and a **14-time NBA All-Star**.\n- He won **2 Olympic Gold Medals** (1984 and 1992) representing the United States.\n- He is renowned for his scoring ability, competitiveness, and athleticism, earning nicknames like **\"Air Jordan\"** and **\"His Airness.\"**\n\n### Business Ventures\n- After retiring from basketball, Jordan became a successful **businessman**.\n- He is the majority owner of the **Charlotte Hornets** NBA franchise.\n- His partnership with **Nike** produced the iconic **Air Jordan** sneaker line, which remains one of the most successful athletic shoe brands in history.\n\n### Legacy\n- Jordan is a **Naismith Memorial Basketball Hall of Fame** inductee.\n- He had a massive cultural impact, transcending sports and becoming a global icon, further popularized by the 1996 film **\"Space Jam.\"**\n- His career and competitive mindset were the subject of the acclaimed 2020 documentary series **\"The Last Dance.\"**\n\nMichael Jordan's influence on basketball, sports culture, and business is considered unparalleled, making him one of the most recognized athletes in the world.",
+      "queries": [
+        "Michael Jordan basketball player"
+      ],
+      "retrieved": [
+        {
+          "query": "Michael Jordan basketball player",
+          "results": "1. Michael Jordan: Michael Jeffrey Jordan (born February 17, 1963), also known by his initials MJ, is an American businessman, former professional basketball player, former\n2. Larry Jordan (basketball): playing professionally in the World Basketball League. He is an older brother of former basketball player Michael Jordan. Noted for his vertical leap, he\n3. Jeffrey Jordan: Jeffrey Michael Jordan (born November 18, 1988) is an American former basketball player who played for the University of Illinois and the University of\n4. Marcus Jordan: retired Hall of Fame basketball player Michael Jordan. Jordan originally played high school basketball with his older brother Jeffrey Jordan at Loyola Academy\n5. Michael Jordan (disambiguation): Michael Jordan (born 1963) is an American businessman and former professional basketball player. Michael Jordan or Mike Jordan may also refer to: Michael"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies the dominant referent as the basketball player regarded as the greatest of all time, matching the gold's primary answer.",
+        "groundedness": "partially_grounded",
+        "groundedness_reason": "The core identity (birth date, businessman, basketball player) is supported by the snippets, but the many specific career details (championships, MVPs, Nike, Space Jam, etc.) are not present in the retrieved text."
+      }
+    },
+    {
+      "id": "ambiguous_03",
+      "category": "ambiguous_entity",
+      "question": "What is Mercury?",
+      "gold_answer": "The term has several meanings: the planet Mercury (closest to the Sun); the chemical element mercury (symbol Hg, a liquid metal); the Roman god Mercury; and other uses (e.g., Freddie Mercury, the Mercury car brand).",
+      "error": null,
+      "latency_s": 12.97,
+      "agent_answer": "\"Mercury\" is a term with several important meanings. Here are the most notable ones:\n\n---\n\n### 1. \ud83e\ude90 Mercury (Planet)\nMercury is the **first planet from the Sun** and the **smallest planet in the Solar System**. It is a rocky, terrestrial planet with a trace atmosphere and a surface gravity slightly less than Earth's. It is part of the inner Solar System along with Venus, Earth, and Mars.\n\n---\n\n### 2. \u2697\ufe0f Mercury (Chemical Element)\nMercury is a **chemical element** with the symbol **Hg** and atomic number **80**. It is commonly known as **quicksilver**. It is a heavy, silvery liquid metal at room temperature, making it unique among metals. It is a d-block element and is known for its use in thermometers, barometers, and various industrial applications.\n\n---\n\n### 3. \ud83c\udfdb\ufe0f Mercury (Roman Mythology)\nMercury is a **major god in Roman religion and mythology**, one of the 12 Dii Consentes (the principal Roman deities). He is the god of trade, communication, travelers, and thieves, and serves as the messenger of the gods. He is the Roman equivalent of the Greek god **Hermes**.\n\n---\n\n### 4. \ud83c\udfa4 Freddie Mercury (Person)\n**Freddie Mercury** (born Farrokh Bulsara, 1946\u20131991) was a legendary **British singer and songwriter**, best known as the lead vocalist of the rock band **Queen**.\n\n---\n\n### 5. \ud83c\udfb5 Mercury Records\nMercury Records is an **American record label** owned by Universal Music Group, with significant success dating back to the 1940s and 1950s.\n\n---\n\nCould you clarify which **Mercury** you're referring to? I'd be happy to go into more detail on any of the above!",
+      "queries": [
+        "Mercury",
+        "Mercury planet Solar System",
+        "Mercury element chemical properties",
+        "Mercury Roman god mythology"
+      ],
+      "retrieved": [
+        {
+          "query": "Mercury",
+          "results": "1. Mercury: up Mercury\u00a0or mercury in Wiktionary, the free dictionary. Mercury most commonly refers to: Mercury (planet), the closest planet to the Sun Mercury (element)\n2. Freddie Mercury: Freddie Mercury (born Farrokh Bulsara; 5 September 1946\u00a0\u2013 24 November 1991) was a British singer and songwriter who achieved global fame as the lead vocalist\n3. Mercury (planet): Mercury is the first planet from the Sun and the smallest in the Solar System. It is a rocky planet with a trace atmosphere and a surface gravity slightly\n4. Mercury (element): Mercury is a chemical element; it has symbol Hg and atomic number 80. It is commonly known as quicksilver. A heavy, silvery d-block element, mercury is\n5. Mercury Records: Mercury Records is an American record label owned by Universal Music Group. It had significant success as an independent operation in the 1940s and 1950s"
+        },
+        {
+          "query": "Mercury planet Solar System",
+          "results": "1. Mercury (planet): Mercury is the first planet from the Sun and the smallest in the Solar System. It is a rocky planet with a trace atmosphere and a surface gravity slightly\n2. Outline of the Solar System: are larger than the smallest planet, Mercury. Sun \u2609 Solar wind Interplanetary medium Inner Solar System Inner planets Mercury \u263f Venus \u2640 Earth \ud83d\udf28 The Moon\n3. Solar System: terrestrial planets \u2013 Mercury, Venus, Earth and Mars. These four planets are part of the inner Solar System. Earth and Mars are the only planets that orbit\n4. List of gravitationally rounded objects of the Solar System: count, there are eight planets in the Solar System; four terrestrial planets (Mercury, Venus, Earth, and Mars) and four giant planets, which can be divided\n5. Planet: not one itself. The Solar System has eight planets by the most restrictive definition of the term: the terrestrial planets Mercury, Venus, Earth, and Mars"
+        },
+        {
+          "query": "Mercury element chemical properties",
+          "results": "1. Mercury (element): Mercury is a chemical element; it has symbol Hg and atomic number 80. It is commonly known as quicksilver. A heavy, silvery d-block element, mercury is\n2. List of chemical elements: arrangement of the elements by their chemical properties that usually uses abbreviated chemical symbols in place of full element names, but the linear list format\n3. List of chemical element name etymologies: (or other objects in the Solar System), such as Mercury (mythology) \u2013 Mercury (planet) \u2013 Mercury (element), etc. Also, astrological symbols for the planets\n4. Oganesson: Oganesson - Element information, properties and uses, Royal Chemical Society Grosse, A. V. (1965). \"Some physical and chemical properties of element 118 (Eka-Em)\n5. Timeline of chemical element discoveries: History of the Origin of the Chemical Elements and Their Discoverers, Individual Element Names and History, \"Technetium\" \"Chemical Elements Discovered at Lawrence"
+        },
+        {
+          "query": "Mercury Roman god mythology",
+          "results": "1. Mercury (mythology): Mercury (/\u02c8m\u025c\u02d0rkj\u028ari/; Latin: Mercurius [m\u025br\u02c8k\u028arij\u028as] ) is a major god in Roman religion and mythology, being one of the 12 Dii Consentes within the ancient\n2. Lugus: identified with the Roman god Mercury) has been interpreted as a reference to the god Lugus. Caesar's description of Gaulish Mercury has been examined against\n3. Uranus (mythology): Indo-European mythology is the contested identification by Georges Dum\u00e9zil (1934) of Uranus with the Vedic deity V\u00e1ru\u1e47a (Mitanni Aruna), god of the sky and\n4. Pan (god): In ancient Greek religion and mythology, Pan (/p\u00e6n/; Ancient Greek: \u03a0\u03ac\u03bd, romanized:\u00a0P\u00e1n) is the god of the wild, shepherds and flocks, rustic music and\n5. Set (deity): Egyptians or Studies in Egyptian Mythology: Volume 2\", London: Methuen & Co, 1904, p.254. Herman te Velde(1968). The Egyptian God Seth as a Trickster. In: Journal"
+        }
+      ],
+      "num_searches": 4,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Mercury as an ambiguous term covering the planet, element, Roman god, and Freddie Mercury, matching the gold answer's disambiguation.",
+        "groundedness": "grounded",
+        "groundedness_reason": "All key claims (planet, element with symbol Hg, Roman god, Freddie Mercury, Mercury Records) are directly supported by the retrieved snippets."
+      }
+    },
+    {
+      "id": "ambiguous_04",
+      "category": "ambiguous_entity",
+      "question": "What is the population of Georgia?",
+      "gold_answer": "Ambiguous: the country of Georgia has roughly 3.7 million people, while the U.S. state of Georgia has roughly 11 million. The answer depends on which Georgia is meant.",
+      "error": null,
+      "latency_s": 9.52,
+      "agent_answer": "Since \"Georgia\" can refer to two different places, here are the populations for both:\n\n---\n\n\ud83c\uddfa\ud83c\uddf8 **Georgia (U.S. State)**\n- **~10.9 million** (based on the 2020 U.S. Census count of **10,711,908**, with a 2025 estimate placing it as the **8th most populous U.S. state**)\n\n---\n\n\ud83c\uddec\ud83c\uddea **Georgia (Country)**\n- **~3.7 million** \u2014 Georgia is a country in the Caucasus region, located at the intersection of Eastern Europe and West Asia along the Black Sea coast.\n\n---\n\nCould you clarify which Georgia you meant? I'd be happy to provide more details!",
+      "queries": [
+        "Georgia U.S. state population",
+        "Georgia country population",
+        "Georgia country Caucasus population 2024"
+      ],
+      "retrieved": [
+        {
+          "query": "Georgia U.S. state population",
+          "results": "1. Demographics of Georgia (U.S. state): Georgia is a South Atlantic U.S. state with a population of 10,711,908 according to the 2020 United States census, or just over 3% of the U.S. population\n2. List of municipalities in Georgia (U.S. state): in 2009 Georgia statistical areas List of census-designated places in Georgia List of counties in Georgia (U.S. state) \"GCT-PH1 \u2013 Population, Housing\n3. Georgia (U.S. state): 50 U.S. states, Georgia is the 24th-largest by area and eighth-most populous. According to the U.S. Census Bureau, its 2025 estimated population was\n4. List of U.S. states and territories by population: U. S. Census Bureau. Archived from the original on August 7, 2010. Retrieved August 13, 2010. Statistical Abstract of the United States, 1995, U.S. Census\n5. List of counties in Georgia: The U.S. state of Georgia is divided into 159 counties, the second-highest number after Texas, which has 254 counties. Under the Georgia State Constitution"
+        },
+        {
+          "query": "Georgia country population",
+          "results": "1. List of countries and dependencies by population: Population distribution by country in June-July 2025: India (17.3%) China (17.2%) United States (4.20%) Indonesia (3.50%) Pakistan (2.90%) Nigeria (2.70%)\n2. Georgia (country): Georgia is a country in the Caucasus region on the coast of the Black Sea. It is located at the intersection of Eastern Europe and West Asia, and is today\n3. List of countries and dependencies by population density: The following is a list of countries and dependencies ranked by population density, sorted by inhabitants per square kilometre or square mile. The list\n4. List of countries and dependencies by population (United Nations): This is the list of countries and other inhabited territories of the world by estimated total population. It is based on estimates published by the United\n5. List of European countries by population: This list of European countries by population comprises the 51 countries and 5 territories, and dependencies in Europe, broadly defined, including Cyprus"
+        },
+        {
+          "query": "Georgia country Caucasus population 2024",
+          "results": "1. Area and population of European countries: list of countries and territories in Europe by population density. Data are from the United Nations unless otherwise specified. Abkhazia, Georgia and South\n2. Georgia (country): Georgia is a country in the Caucasus region on the coast of the Black Sea. It is located at the intersection of Eastern Europe and West Asia, and is today\n3. List of European countries by population: Kazakhstan, Turkey, and the countries of the Caucasus. The most populous European country is Russia, with a population of over 110 million in its European\n4. Caucasus: comprising parts of Southern Russia, Georgia, Armenia, and Azerbaijan. The Caucasus Mountains, including the Greater Caucasus range, have conventionally been\n5. Caucasus Greeks: present-day Georgia. Greek settlers in the Caucasus generally became assimilated into the indigenous population, particularly in Georgia, where Byzantine"
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent flags the ambiguity and gives both populations (~10.9 million US state, ~3.7 million country), matching the gold answer.",
+        "groundedness": "partially_grounded",
+        "groundedness_reason": "The US state figure (10,711,908) is directly supported by the snippets, but the country's ~3.7 million figure is not found in any retrieved snippet."
+      }
+    },
+    {
+      "id": "ambiguous_05",
+      "category": "ambiguous_entity",
+      "question": "Who wrote 'Ulysses'?",
+      "gold_answer": "Ambiguous by title: the 1922 modernist novel 'Ulysses' was written by James Joyce, while the poem 'Ulysses' was written by Alfred, Lord Tennyson. Joyce's novel is the most common referent.",
+      "error": null,
+      "latency_s": 3.46,
+      "agent_answer": "**Ulysses** was written by the Irish writer **James Joyce**. It is a modernist novel that was partially serialised in the American journal *The Little Review* from March 1918 before being published in full in 1922.",
+      "queries": [
+        "Ulysses novel"
+      ],
+      "retrieved": [
+        {
+          "query": "Ulysses novel",
+          "results": "1. Ulysses (novel): Ulysses is a modernist novel by the Irish writer James Joyce. Partially serialised in the American journal The Little Review from March 1918 to December\n2. HMS Ulysses (novel): HMS Ulysses is the debut novel by Scottish author Alistair MacLean. Originally published in 1955, it was also released by Fontana Books in 1960. MacLean's\n3. Ulysses: Ulysses in Wiktionary, the free dictionary. Ulysses commonly refers to: Odysseus, a hero in Greek mythology Ulysses (novel), by James Joyce Ulysses may\n4. Gilbert schema for Ulysses: This schema for the novel Ulysses was produced by its author, James Joyce, in November 1921 in order to help his friend, Valery Larbaud, prepare a public\n5. List of Ulysses characters: novel of artistic existence A Portrait of the Artist as a Young Man and an important character in Joyce's Ulysses. Stephen Dedalus appears in Ulysses"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The question is ambiguous but the gold identifies Joyce's novel as the dominant referent, which the agent correctly identifies.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The claims about James Joyce, the modernist novel, serialisation in The Little Review from March 1918, and 1922 publication are supported by the retrieved snippets."
+      }
+    },
+    {
+      "id": "unanswerable_01",
+      "category": "unanswerable",
+      "question": "In what year did Albert Einstein win the Nobel Prize in Chemistry?",
+      "gold_answer": "False premise: Einstein did not win the Nobel Prize in Chemistry. He won the Nobel Prize in Physics, awarded in 1921 (for the photoelectric effect). The correct answer is to point out the mistaken premise.",
+      "error": null,
+      "latency_s": 4.54,
+      "agent_answer": "Actually, Albert Einstein never won the Nobel Prize in **Chemistry**. He won the **Nobel Prize in Physics** \u2014 specifically, he was awarded the **1921 Nobel Prize in Physics** (announced in 1922) \"for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect.\"",
+      "queries": [
+        "Albert Einstein Nobel Prize"
+      ],
+      "retrieved": [
+        {
+          "query": "Albert Einstein Nobel Prize",
+          "results": "1. Albert Einstein Award: equivalent of a Nobel Prize\". List of physics awards List of awards named after people The award was sometimes mistakenly called the Albert Einstein Medal because\n2. List of awards and honors received by Albert Einstein: In 1922 Albert Einstein was awarded the 1921 Nobel Prize in Physics, \"for his services to Theoretical Physics, and especially for his discovery of the\n3. Albert Einstein House: The Albert Einstein House at 112 Mercer Street in Princeton, Mercer County, New Jersey, United States, was the home of Albert Einstein from 1935 until\n4. Albert Brooks: Albert Lawrence Einstein (born July 22, 1947), known professionally as Albert Brooks, is an American actor, comedian, director, and screenwriter. He received\n5. Outline of Albert Einstein: Investigation file on Albert Einstein Einstein and his love of music, Physics World Albert Einstein on NobelPrize.org Albert Einstein, videos on History"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly rejects the false premise, noting Einstein won the 1921 Nobel Prize in Physics, not Chemistry.",
+        "groundedness": "grounded",
+        "groundedness_reason": "Snippet 2 confirms Einstein was awarded the 1921 Nobel Prize in Physics with the exact citation quoted."
+      }
+    },
+    {
+      "id": "unanswerable_02",
+      "category": "unanswerable",
+      "question": "In which year did Leonardo da Vinci paint the ceiling of the Sistine Chapel?",
+      "gold_answer": "False premise: Leonardo da Vinci did not paint the Sistine Chapel ceiling. It was painted by Michelangelo, between 1508 and 1512. The correct answer is to correct the premise.",
+      "error": null,
+      "latency_s": 4.55,
+      "agent_answer": "Actually, there is a common misconception here! It was not **Leonardo da Vinci** who painted the ceiling of the Sistine Chapel \u2014 it was **Michelangelo**. He painted it in fresco between **1508 and 1512**.\n\nLeonardo da Vinci and Michelangelo were contemporaries, but Leonardo had no involvement in the Sistine Chapel.",
+      "queries": [
+        "Sistine Chapel ceiling painting"
+      ],
+      "retrieved": [
+        {
+          "query": "Sistine Chapel ceiling painting",
+          "results": "1. Sistine Chapel ceiling: The Sistine Chapel ceiling (Italian: Soffitto della Cappella Sistina), painted in fresco by Michelangelo between 1508 and 1512, is a cornerstone work of\n2. Gallery of the Sistine Chapel ceiling: The Sistine Chapel ceiling, painted by Michelangelo between 1508 and 1512, is one of the most renowned artworks of the High Renaissance. Central to the\n3. Restoration of the Sistine Chapel frescoes: works of Western art ever created. The frescoes of the Sistine Chapel and in particular the ceiling and accompanying lunettes by Michelangelo have been subject\n4. The Creation of Adam: Creation of Man, is a fresco painting by Italian artist Michelangelo, which forms part of the Sistine Chapel's ceiling, painted 1508\u20131512. It illustrates\n5. Sistine Chapel: 916yds Sistine Chapel \u00a0\u00a0\u00a0 The Sistine Chapel (/\u02c8s\u026asti\u02d0n/ SIST-een; Latin: Sacellum Sixtinum; Italian: Cappella Sistina [kap\u02c8p\u025blla si\u02c8sti\u02d0na]) is a chapel in"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly rejects the false premise and identifies Michelangelo as the painter, dated 1508-1512.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets confirm Michelangelo painted the ceiling in fresco between 1508 and 1512."
+      }
+    },
+    {
+      "id": "unanswerable_03",
+      "category": "unanswerable",
+      "question": "Who was the king of the United States in 1850?",
+      "gold_answer": "False premise: the United States has never had a king; it is a republic. In 1850 the U.S. president was Zachary Taylor (until his death in July 1850), succeeded by Millard Fillmore. The correct answer is to reject the premise.",
+      "error": null,
+      "latency_s": 3.97,
+      "agent_answer": "The United States has never had a king. The United States is a **federal republic**, not a monarchy, and has never had a king at any point in its history.\n\nIn 1850, the **President** of the United States was **Millard Fillmore**, who assumed the presidency on July 9, 1850, following the death of President Zachary Taylor. Before that, Zachary Taylor held the office at the start of that year.\n\nThe U.S. has been led by elected presidents since its founding in 1789, with **George Washington** being the first. In fact, there were proposals for Washington to become a king, but he firmly rejected the idea, reinforcing the republican values of the new nation.",
+      "queries": [],
+      "retrieved": [],
+      "num_searches": 0,
+      "did_search": false,
+      "search_ok": false,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent rejects the false premise and correctly identifies Zachary Taylor and Millard Fillmore as the presidents in 1850.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "No snippets were retrieved, and the agent correctly rejected the false premise without needing snippet support."
+      }
+    },
+    {
+      "id": "unanswerable_04",
+      "category": "unanswerable",
+      "question": "Which chemical element has the symbol 'Zz'?",
+      "gold_answer": "No element has the symbol 'Zz'. It is not a valid element symbol on the periodic table. The correct answer is to say no such element exists.",
+      "error": null,
+      "latency_s": 4.75,
+      "agent_answer": "No chemical element has the symbol **'Zz'**. Chemical element symbols consist of either one or two letters, but **'Zz' is not a valid or recognized symbol** for any element on the periodic table. You may be thinking of **Zinc**, which has the symbol **Zn**, or **Zirconium**, which has the symbol **Zr**. It's possible the symbol was misremembered or is fictional.",
+      "queries": [
+        "chemical element symbol Zz"
+      ],
+      "retrieved": [
+        {
+          "query": "chemical element symbol Zz",
+          "results": "1. Crossword abbreviations: be used to indicate the letters VI The name of a chemical element may be used to signify its symbol; e.g., W for tungsten The days of the week; e.g.,\n2. B: chemistry, B is the symbol for boron, a chemical element. \ud802\udd01\u00a0: Semitic letter Bet, from which the following symbols originally derive \u0392 \u03b2\u00a0: Greek letter\n3. O: Alphabet, \u27e8o\u27e9 represents the close-mid back rounded vowel. Oxygen, symbol O, a chemical element \u0152 \u0153\u00a0: Latin OE ligature O with diacritics: \u00d8 \u00f8 \u01fe \u01ff \u00d6 \u00f6 \u022a \u022b \u00d3\n4. K: symbol for the kelvin, used to measure thermodynamic temperature (the degree sign is not used with this symbol). K is the chemical symbol for element\n5. F: letter F with stroke \u2109\u00a0: degree Fahrenheit F\u00a0: Fluorine, a chemical element uses the symbol F These are the code points for the forms of the letter in"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": false,
+        "match": null,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": true,
+        "cue_present": true
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states that no element has the symbol 'Zz', matching the gold answer.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "The snippets do not address 'Zz' specifically, but the correct rejection does not require snippet support."
+      }
+    },
+    {
+      "id": "unanswerable_05",
+      "category": "unanswerable",
+      "question": "How many times has Canada won the men's FIFA World Cup?",
+      "gold_answer": "Zero - Canada has never won the men's FIFA World Cup. The honest answer is 'none' rather than any positive number.",
+      "error": null,
+      "latency_s": 5.34,
+      "agent_answer": "Canada has **never won** the men's FIFA World Cup. They have qualified for the tournament on three occasions (1986, 2022, and 2026), but have not won the championship. The FIFA World Cup has been won by only eight nations: Brazil, Germany, Italy, Argentina, France, Uruguay, England, and Spain.",
+      "queries": [
+        "Canada men's national soccer team FIFA World Cup history"
+      ],
+      "retrieved": [
+        {
+          "query": "Canada men's national soccer team FIFA World Cup history",
+          "results": "1. Canada at the FIFA World Cup: Canada men's national soccer team have played at the FIFA World Cup on three occasions: in 1986, 2022, and 2026. For most other editions of the World\n2. Canada men's national soccer team: The Canada men's national soccer team (French: \u00c9quipe du Canada de soccer masculin) represents Canada in men's international soccer, which is governed\n3. History of the United States men's national soccer team: The history of the United States men's national soccer team began with that team's first international match in 1916. Highlights from the team's early\n4. 2026 FIFA World Cup Group A: Group A of the 2026 FIFA World Cup took place from June 11 to 24, 2026. The group consisted of national football teams representing Mexico (co-host), South\n5. United States at the FIFA World Cup: men's national soccer team (USMNT) has participated in twelve editions of the FIFA World Cup, an international soccer competition contested by men's national"
+        }
+      ],
+      "num_searches": 1,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "never"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly states Canada has never won the men's FIFA World Cup, matching the gold answer of zero/none.",
+        "groundedness": "partially_grounded",
+        "groundedness_reason": "The qualification appearances (1986, 2022, 2026) are supported by the snippets, but the list of eight winning nations is not found in the retrieved content."
+      }
+    },
+    {
+      "id": "recent_01",
+      "category": "recent",
+      "question": "Which club won the 2026 UEFA Champions League final?",
+      "gold_answer": "Paris Saint-Germain (PSG). They beat Arsenal 4-3 on penalties after a 1-1 draw after extra time, on 30 May 2026 at the Puskas Arena in Budapest - PSG's second consecutive Champions League title.",
+      "error": null,
+      "latency_s": 10.04,
+      "agent_answer": "Based on the search results, Wikipedia confirms that the 2026 UEFA Champions League final took place as the concluding match of the 2025\u201326 season, but the snippets retrieved do not include the specific winner or score. My knowledge cutoff also does not cover this event definitively. I'm unable to provide a confirmed answer about which club won the 2026 UEFA Champions League final.\n\nI'd recommend checking a reliable and up-to-date source such as **UEFA's official website** or a sports news outlet for the confirmed result.",
+      "queries": [
+        "2026 UEFA Champions League final",
+        "2025-26 UEFA Champions League final winner result",
+        "2026 UEFA Champions League final clubs teams score"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 UEFA Champions League final",
+          "results": "1. 2026 UEFA Champions League final: The 2026 UEFA Champions League final was the final match of the 2025\u201326 UEFA Champions League, the 71st season of Europe's premier club football tournament\n2. 2026\u201327 UEFA Champions League: the UEFA Champions League final after 2019. The winners of the 2026\u201327 UEFA Champions League will automatically qualify for the 2027\u201328 UEFA Champions League\n3. 2027 UEFA Champions League final: The 2027 UEFA Champions League final will be the final match of the 2026\u201327 UEFA Champions League, the 72nd season of Europe's premier club football tournament\n4. List of European Cup and UEFA Champions League finals: tournament was named the European Cup. The UEFA Champions League is open to the league champions of all UEFA (Union of European Football Associations)\n5. 2026 UEFA Europa League final: 2026 UEFA Champions League final 2026 UEFA Conference League final 2026 UEFA Women's Champions League final 2026 UEFA Women's Europa Cup final 2026 UEFA"
+        },
+        {
+          "query": "2025-26 UEFA Champions League final winner result",
+          "results": "1. 2025\u201326 UEFA Champions League: The 2025\u201326 UEFA Champions League was the 71st season of Europe's premier club football tournament organised by UEFA, and the 34th season since it was\n2. 2026 UEFA Champions League final: The 2026 UEFA Champions League final was the final match of the 2025\u201326 UEFA Champions League, the 71st season of Europe's premier club football tournament\n3. 2025 UEFA Champions League final: The 2025 UEFA Champions League final was the final match of the 2024\u201325 UEFA Champions League, the 70th season of Europe's premier club football tournament\n4. 2025\u201326 UEFA Women's Champions League: The 2025\u201326 UEFA Women's Champions League was the 25th edition of the European women's club football championship organised by UEFA, and the 17th edition\n5. 2025\u201326 UEFA Champions League knockout phase: The 2025\u201326 UEFA Champions League knockout phase began on 17 February with the knockout phase play-offs and ended on 30 May 2026 with the final at the"
+        },
+        {
+          "query": "2026 UEFA Champions League final clubs teams score",
+          "results": "1. 2026 UEFA Champions League final: The 2026 UEFA Champions League final was the final match of the 2025\u201326 UEFA Champions League, the 71st season of Europe's premier club football tournament\n2. 2027 UEFA Champions League final: The 2027 UEFA Champions League final will be the final match of the 2026\u201327 UEFA Champions League, the 72nd season of Europe's premier club football tournament\n3. 2026\u201327 UEFA Champions League: the UEFA Champions League final after 2019. The winners of the 2026\u201327 UEFA Champions League will automatically qualify for the 2027\u201328 UEFA Champions League\n4. 2025 UEFA Champions League final: The 2025 UEFA Champions League final was the final match of the 2024\u201325 UEFA Champions League, the 70th season of Europe's premier club football tournament\n5. 2028 UEFA Champions League final: The 2028 UEFA Champions League final will be the final match of the 2027\u201328 UEFA Champions League, the 73rd season of Europe's premier club football tournament"
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": false,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "correctness_reason": "The agent failed to identify PSG as the winner, declining to answer despite the gold providing a definitive result.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets indeed did not contain the winner, so the agent's statement about lacking the result is consistent with what was retrieved."
+      }
+    },
+    {
+      "id": "recent_02",
+      "category": "recent",
+      "question": "Which country topped the medal table at the 2026 Winter Olympics?",
+      "gold_answer": "Norway. It topped the medal table at the 2026 Winter Olympics in Milan-Cortina with 18 gold medals and 41 total medals, leading on both golds and totals.",
+      "error": null,
+      "latency_s": 6.31,
+      "agent_answer": "Based on the search results, **Norway** topped the medal table at the 2026 Winter Olympics (Milano Cortina 2026). Norway finished first with **18 gold medals** and **41 medals overall**, marking the **fourth successive Winter Olympics** in which Norway topped the medal table.",
+      "queries": [
+        "2026 Winter Olympics medal table",
+        "2026 Winter Olympics medal table top country gold medals"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 Winter Olympics medal table",
+          "results": "1. 2026 Winter Olympics medal table: The 2026 Winter Olympics, officially known as the XXV Winter Olympic Games, were an international winter multi-sport event held in Milan and Cortina d'Ampezzo\n2. 2026 Winter Paralympics medal table: The medal table of the 2026 Winter Paralympics ranks the participating National Paralympic Committees (NPCs) by the number of gold medals that were won\n3. All-time Olympic Games medal table: The all-time medal table for all Olympic Games from 1896 to 2026, including Summer Olympic Games, Winter Olympic Games, and a combined total of both,\n4. List of 2026 Winter Olympics medal winners: earlier round. 2026 Winter Olympics medal table \"Milano Cortina Winter Olympics 2026: Live medal count\". olympics.com. Retrieved 6 February 2026. \"Milano-Cortina\n5. 2026 Winter Olympics: The 2026 Winter Olympics (Italian: Olimpiadi invernali del 2026), officially the XXV Olympic Winter Games and commonly known as Milano Cortina 2026, were"
+        },
+        {
+          "query": "2026 Winter Olympics medal table top country gold medals",
+          "results": "1. 2022 Winter Olympics medal table: the most medals overall, with 37, and the most gold medals, with 16. The latter record was the highest gold medal tally at a single Winter Games. Host\n2. Olympic medal table: The Olympic medal table is a method of sorting the medal placements of countries in the modern-day Olympics and Paralympics. The International Olympic Committee\n3. 2026 Winter Olympics: the 2006 Winter Olympics. Norway finished at the top of the medal table for the fourth successive Winter Olympics with 18 gold and 41 medals overall,\n4. Olympic medal: with his gold medal at the 2012 Summer Olympics, the heaviest Summer Olympics medal prior to the 2016 Rio Olympics The presentation of the medals and awards\n5. 1998 Winter Olympics medal table: nations earned medals at these Games, and fifteen won at least one gold medal; forty-eight countries left the Olympics without winning a medal. Competitors"
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "norway"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Norway with 18 gold and 41 total medals, matching the gold answer.",
+        "groundedness": "grounded",
+        "groundedness_reason": "Snippet [Search 2] #3 explicitly states Norway topped the medal table for the fourth successive Winter Olympics with 18 gold and 41 medals overall."
+      }
+    },
+    {
+      "id": "recent_03",
+      "category": "recent",
+      "question": "Who won Super Bowl LX (the 2026 Super Bowl)?",
+      "gold_answer": "The Seattle Seahawks. They defeated the New England Patriots 29-13 in Super Bowl LX on February 8, 2026 at Levi's Stadium in Santa Clara, California.",
+      "error": null,
+      "latency_s": 6.76,
+      "agent_answer": "Based on the Wikipedia search results, the **Seattle Seahawks** won Super Bowl LX, defeating the **New England Patriots** on **February 8, 2026**. This gave the Seahawks the NFL championship for the 2025 season.",
+      "queries": [
+        "Super Bowl LX 2026",
+        "Super Bowl LX winner champion Philadelphia Eagles"
+      ],
+      "retrieved": [
+        {
+          "query": "Super Bowl LX 2026",
+          "results": "1. Super Bowl LX: Super Bowl LX was an American football game played to determine the champion of the National Football League (NFL) for the 2025 season. The National Football\n2. Super Bowl LX halftime show: Super Bowl LX halftime show, officially known as the Apple Music Super Bowl LX Halftime Show for sponsorship purposes, took place on February 8, 2026\n3. Super Bowl LXI: official logo for Super Bowl LXI was unveiled by the game's broadcaster ESPN on February 8, 2026, during a special post-Super Bowl LX edition of SportsCenter\n4. 2026 Pro Bowl Games: into the Super Bowl's festivities instead of a standalone event. It took place in the week leading up to Super Bowl LX on Tuesday, February 3, 2026, at the\n5. List of Super Bowl champions: Reference LLC. Retrieved February 20, 2026. \"Super Bowl LX - Seattle Seahawks vs. New England Patriots - February 8th, 2026\". Pro Football Reference. Sports"
+        },
+        {
+          "query": "Super Bowl LX winner champion Philadelphia Eagles",
+          "results": "1. List of Super Bowl champions: champions are the Seattle Seahawks following their victory over the New England Patriots in Super Bowl LX. Colts Redskins Ravens Giants Jets Eagles Patriots\n2. Super Bowl XLIII: Super Bowl XLIII was an American football game between the American Football Conference (AFC) champions Pittsburgh Steelers and the National Football\n3. Super Bowl Most Valuable Player: (NFL) championship game. The winner is chosen by a panel of 16 football writers and broadcasters, and, since Super Bowl XXXV in 2001, fans voting electronically\n4. America's Game: The Super Bowl Champions: America's Game: The Super Bowl Champions is an American annual documentary series created by NFL Films (broadcast on NFL Network and CBS). Its 59 installments\n5. Super Bowl: the Philadelphia Eagles in Super Bowl LIX. This was the second time the Chiefs had played a rematch against another team in the Super Bowl. The Eagles successfully"
+        }
+      ],
+      "num_searches": 2,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "seattle seahawks"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies the Seattle Seahawks as the winner over the New England Patriots on February 8, 2026, matching the gold answer's core facts.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets explicitly state the Seattle Seahawks defeated the New England Patriots in Super Bowl LX on February 8, 2026, for the 2025 season."
+      }
+    },
+    {
+      "id": "recent_04",
+      "category": "recent",
+      "question": "Who won the Eurovision Song Contest 2026?",
+      "gold_answer": "Bulgaria, with the song 'Bangaranga' performed by Dara - Bulgaria's first Eurovision win (516 points, topping both the jury vote and the televote). The contest was held in Vienna, with the grand final on 16 May 2026. Naming either the country or the artist/song counts as correct.",
+      "error": null,
+      "latency_s": 12.49,
+      "agent_answer": "Based on the Wikipedia search results, it is confirmed that the Eurovision Song Contest 2026 did take place (it was the 70th edition), with the final held on **16 May 2026**. However, the search snippets available do not explicitly state the winner. The results are limited in detail, and as of my knowledge cutoff, the full outcome may not be fully captured here.\n\nThat said, the Wikipedia article on the Eurovision Song Contest 2026 does exist and mentions the event has concluded. I'd recommend checking the full Wikipedia article on **\"Eurovision Song Contest 2026\"** or the **\"List of Eurovision Song Contest winners\"** directly for the confirmed winner, as the search snippets don't include that specific detail.",
+      "queries": [
+        "Eurovision Song Contest 2026",
+        "Eurovision Song Contest 2026 winner result",
+        "List of Eurovision Song Contest winners 2026"
+      ],
+      "retrieved": [
+        {
+          "query": "Eurovision Song Contest 2026",
+          "results": "1. Eurovision Song Contest 2026: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16\n2. Junior Eurovision Song Contest 2026: The Junior Eurovision Song Contest 2026 is set to be the 24th edition of the Junior Eurovision Song Contest, held on 24 October 2026 at the Malta Fairs\n3. Eurovision Song Contest Asia: The Eurovision Song Contest Asia (ESCA) is an upcoming international song competition modelled after the Eurovision Song Contest, where broadcasters from\n4. Eurovision Song Contest 2027: The Eurovision Song Contest 2027 will be the 71st edition of the Eurovision Song Contest. It is set to be organised by the European Broadcasting Union\n5. Bulgaria in the Eurovision Song Contest 2026: Bulgaria was represented at the Eurovision Song Contest 2026 with the song \"Bangaranga\", written by Anne Judith Wik, Cristian Tarcea, Darina Yotova and"
+        },
+        {
+          "query": "Eurovision Song Contest 2026 winner result",
+          "results": "1. Eurovision Song Contest 2026: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on 16\n2. List of Eurovision Song Contest winners: 73 songs written by 154 songwriters have won the Eurovision Song Contest, an international song competition organised annually by the European Broadcasting\n3. Bulgaria in the Eurovision Song Contest 2026: Bulgaria was represented at the Eurovision Song Contest 2026 with the song \"Bangaranga\", written by Anne Judith Wik, Cristian Tarcea, Darina Yotova and\n4. Eurovision Song Contest Asia: The Eurovision Song Contest Asia (ESCA) is an upcoming international song competition modelled after the Eurovision Song Contest, where broadcasters from\n5. Moldova in the Eurovision Song Contest 2026: Moldova was represented at the Eurovision Song Contest 2026 with the song \"Viva, Moldova!\", written by Andrei Vulpe, C\u0103t\u0103lin Temciuc, Vasile Advahov\u00a0[ro]"
+        },
+        {
+          "query": "List of Eurovision Song Contest winners 2026",
+          "results": "1. List of Eurovision Song Contest winners: 73 songs written by 154 songwriters have won the Eurovision Song Contest, an international song competition organised annually by the European Broadcasting\n2. Junior Eurovision Song Contest 2026: The Junior Eurovision Song Contest 2026 is set to be the 24th edition of the Junior Eurovision Song Contest, held on 24 October 2026 at the Malta Fairs\n3. Eurovision Song Contest 2026: The Eurovision Song Contest 2026 was the 70th edition of the Eurovision Song Contest. It consisted of two semi-finals on 12 and 14 May and a final on\n4. Eurovision Song Contest 2027: The Eurovision Song Contest 2027 will be the 71st edition of the Eurovision Song Contest. It is set to be organised by the European Broadcasting Union\n5. Eurovision Song Contest Asia: The Eurovision Song Contest Asia (ESCA) is an upcoming international song competition modelled after the Eurovision Song Contest, where broadcasters from"
+        }
+      ],
+      "num_searches": 3,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": false,
+        "matched_on": null
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "incorrect",
+        "correctness_reason": "The agent failed to name the winner (Bulgaria/Dara), even though the retrieved snippets contained enough clues to identify it.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The claims the agent did make (70th edition, final on 16 May 2026) are supported by the snippets."
+      }
+    },
+    {
+      "id": "recent_05",
+      "category": "recent",
+      "question": "Who won the men's singles title at the 2026 Australian Open?",
+      "gold_answer": "Carlos Alcaraz. He defeated Novak Djokovic 2-6, 6-2, 6-3, 7-5 in the men's singles final of the 2026 Australian Open.",
+      "error": null,
+      "latency_s": 10.16,
+      "agent_answer": "**Carlos Alcaraz** won the men's singles title at the 2026 Australian Open. He defeated **Novak Djokovic** in the final with a score of **2\u20136, 6\u20132, 6\u20133, 7\u20135**. It was his first Australian Open title and his seventh Grand Slam major title overall.",
+      "queries": [
+        "2026 Australian Open men's singles",
+        "2026 Australian Open men's singles winner champion",
+        "2026 Australian Open men's singles final seventh major title",
+        "2026 Australian Open men's singles Carlos Alcaraz Zverev"
+      ],
+      "retrieved": [
+        {
+          "query": "2026 Australian Open men's singles",
+          "results": "1. 2026 Australian Open \u2013 Men's singles: 2\u20136, 6\u20132, 6\u20133, 7\u20135 to win the men's singles tennis title at the 2026 Australian Open. It was his first Australian Open title and seventh major title overall\n2. 2026 French Open \u2013 Men's singles: the final, 6\u20131, 4\u20136, 6\u20134, 6\u20137(5\u20137), 6\u20131 to win the men's singles tennis title at the 2026 French Open. It was his first major title, following three previous\n3. 2026 Australian Open \u2013 Women's singles: Sabalenka in the final, 6\u20134, 4\u20136, 6\u20134 to win the women's singles tennis title at the 2026 Australian Open. It was her second major title. Rybakina was the fourth\n4. 2026 Australian Open \u2013 Men's singles qualifying: The 2026 Australian Open \u2013 Men's singles qualifying is a series of tennis matches that took place from 12 to 15 January 2026 to determine the sixteen qualifiers\n5. 2025 Australian Open \u2013 Men's singles: 6\u20133, 7\u20136(7\u20134), 6\u20133 to win the men's singles tennis title at the 2025 Australian Open. It was his second Australian Open title and third major title overall"
+        },
+        {
+          "query": "2026 Australian Open men's singles winner champion",
+          "results": "1. 2026 Australian Open: singles and doubles tournaments. The defending men's singles champion, Jannik Sinner, lost in the semifinals. The defending women's singles champion,\n2. 2026 Australian Open \u2013 Women's singles: Sabalenka in the final, 6\u20134, 4\u20136, 6\u20134 to win the women's singles tennis title at the 2026 Australian Open. It was her second major title. Rybakina was the fourth\n3. List of French Open men's singles champions: 1968, it was the first Grand Slam tournament to open to non-amateur players. The winner of the men's singles event receives the Coupe des Mousquetaires, named\n4. 2024 Australian Open \u2013 Men's singles: Era to win a singles major, after Adriano Panatta at the 1976 French Open. He was the first new Australian Open men's singles champion since Stan Wawrinka\n5. List of US Open men's singles champions: US Open mixed doubles champions Grand Slam men's singles List of Australian Open men's singles champions List of French Open men's singles champions List"
+        },
+        {
+          "query": "2026 Australian Open men's singles final seventh major title",
+          "results": "1. 2026 Australian Open \u2013 Men's singles: final, 2\u20136, 6\u20132, 6\u20133, 7\u20135 to win the men's singles tennis title at the 2026 Australian Open. It was his first Australian Open title and seventh major\n2. 2006 Australian Open \u2013 Men's singles: final, 5\u20137, 7\u20135, 6\u20130, 6\u20132 to win the men's singles tennis title at the 2006 Australian Open. It was his second Australian Open title and his seventh major\n3. 2022 Australian Open \u2013 Men's singles: the final, 2\u20136, 6\u20137(5\u20137), 6\u20134, 6\u20134, 7\u20135 to win the men's singles tennis title at the 2022 Australian Open. It was his second Australian Open title and\n4. 2007 Australian Open \u2013 Men's singles: final, 7\u20136(7\u20132), 6\u20134, 6\u20134 to win the men's singles tennis title at the 2007 Australian Open. It was his third Australian Open title and tenth major title\n5. 2025 Wimbledon Championships \u2013 Women's singles: became the first Pole to win a Wimbledon singles title. This was only the third major final, and the second in the Open Era, to end in a \"double bagel\" scoreline"
+        },
+        {
+          "query": "2026 Australian Open men's singles Carlos Alcaraz Zverev",
+          "results": "1. Carlos Alcaraz: Carlos Alcaraz Garfia (born 5 May 2003) is a Spanish professional tennis player. He has been ranked world No. 1 in men's singles by the Association of\n2. 2026 Australian Open \u2013 Men's singles: Carlos Alcaraz defeated Novak Djokovic in the final, 2\u20136, 6\u20132, 6\u20133, 7\u20135 to win the men's singles tennis title at the 2026 Australian Open. It was his\n3. 2025 Australian Open \u2013 Men's singles: Alexander Zverev in the final, 6\u20133, 7\u20136(7\u20134), 6\u20133 to win the men's singles tennis title at the 2025 Australian Open. It was his second Australian Open title\n4. 2026 French Open \u2013 Men's singles: Alexander Zverev defeated Flavio Cobolli in the final, 6\u20131, 4\u20136, 6\u20134, 6\u20137(5\u20137), 6\u20131 to win the men's singles tennis title at the 2026 French Open. It was\n5. 2026 Carlos Alcaraz tennis season: The 2026 Carlos Alcaraz tennis season officially began on 18 January 2026, with the start of the Australian Open in Melbourne. During this season, Alcaraz:"
+        }
+      ],
+      "num_searches": 4,
+      "did_search": true,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "carlos alcaraz"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly identifies Carlos Alcaraz as champion with the correct opponent and score matching the gold.",
+        "groundedness": "grounded",
+        "groundedness_reason": "The snippets explicitly state Alcaraz defeated Djokovic 2\u20136, 6\u20132, 6\u20133, 7\u20135 for his first Australian Open and seventh major title."
+      }
+    },
+    {
+      "id": "no_search_01",
+      "category": "no_search",
+      "question": "What is 17 multiplied by 24?",
+      "gold_answer": "408.",
+      "error": null,
+      "latency_s": 1.76,
+      "agent_answer": "17 multiplied by 24 is **408**.\n\nThis is a straightforward arithmetic calculation (17 \u00d7 24 = 408) and does not require a Wikipedia search.",
+      "queries": [],
+      "retrieved": [],
+      "num_searches": 0,
+      "did_search": false,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "408"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent answered 408, matching the gold answer.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "No snippets were retrieved as this is a simple arithmetic calculation requiring no search."
+      }
+    },
+    {
+      "id": "no_search_02",
+      "category": "no_search",
+      "question": "A rectangle is 8 cm wide and 5 cm tall. What is its area in square centimeters?",
+      "gold_answer": "40 square centimeters.",
+      "error": null,
+      "latency_s": 1.89,
+      "agent_answer": "This is a straightforward math question that doesn't require a Wikipedia search.\n\nThe area of a rectangle is calculated using the formula:\n\n**Area = Width \u00d7 Height**\n\nSo:\n\n**Area = 8 cm \u00d7 5 cm = 40 cm\u00b2**\n\nThe area of the rectangle is **40 square centimeters**.",
+      "queries": [],
+      "retrieved": [],
+      "num_searches": 0,
+      "did_search": false,
+      "search_ok": true,
+      "closed_form": {
+        "applicable": true,
+        "match": true,
+        "matched_on": "40"
+      },
+      "premise_pushback": {
+        "applicable": false,
+        "cue_present": null
+      },
+      "judge": {
+        "correctness": "correct",
+        "correctness_reason": "The agent correctly computed 8 \u00d7 5 = 40 square centimeters, matching the gold answer.",
+        "groundedness": "not_applicable",
+        "groundedness_reason": "No snippets were retrieved and this is a math computation not requiring snippet support."
+      }
+    }
+  ]
+}
